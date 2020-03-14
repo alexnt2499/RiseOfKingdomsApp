@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "525868055299",
+    "firebase_url": "https://riseofkingdoms-protools.firebaseio.com",
+    "project_id": "riseofkingdoms-protools",
+    "storage_bucket": "riseofkingdoms-protools.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525868055299:android:349713d76c603416890736",
+        "android_client_info": {
+          "package_name": "com.rokappntd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525868055299-3r6uai2lm5r29cklk1lan9ptat2sf2vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUjOETKMCNjjn0KYzvxjoeWPxYm8famdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525868055299-3r6uai2lm5r29cklk1lan9ptat2sf2vo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+ 
+}
