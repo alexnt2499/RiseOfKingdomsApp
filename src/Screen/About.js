@@ -2,20 +2,19 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image,SafeAreaView } from 'react-native';
 import {colors,fonts} from './../theme/theme';
-import Icon from 'react-native-vector-icons/Ionicons'
+import Icon from 'react-native-vector-icons/Ionicons';
+import Header from './../Components/Header/Header';
 // create a component
 const About = ({navigation}) => {
     return (
+        
         <SafeAreaView style={styles.container}>
-            <View style={{flex : 2}}>
-            <View style={{height : 50}}>
-                    <TouchableOpacity
-                        onPress={() => {navigation.goBack()}}
-                    >
-                        <Icon name='ios-arrow-back' size={30} color='#FFF' style={{top : 10, left : 20}}></Icon>
-                    </TouchableOpacity>
+            <ScrollView style={{flex : 2}}>
+                <Header checkBack={true} navigation={navigation} checkPerson={true} title={'info'} ></Header>
+                <View style={{justifyContent : 'center', alignItems : 'center'}}>
+                    <Image style={{width : 150, height : 150}} source={require('./../../assets/images/logome.png')}></Image>
                 </View>
-            </View>
+            </ScrollView>
         </SafeAreaView>
     );
 };

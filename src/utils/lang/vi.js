@@ -80,7 +80,9 @@ export default {
     "tocDoDieuHanh" : "Tốc đội diễu hành",
     "tocDoThuGom" : "Tốc độ thu gom",
     "kinhNghiemChiHuy" : "Kinh nghệm chỉ huy",
-    "satThuongManRo" : "Sát thương man rợ"
+    "satThuongManRo" : "Sát thương man rợ",
+    "info" : "GIỚI THIỆU"
+
 
 
 

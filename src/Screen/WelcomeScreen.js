@@ -1,17 +1,18 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { Component,useEffect } from 'react';
+import { View, Text, StyleSheet, Image,ActivityIndicator } from 'react-native';
 import HomeScreen from './HomeScreen';
 
 // create a component
 const WelcomeScreen = ({navigation}) => {
+    
+
     return (
         <View style={styles.container}>
-            <Text>WelcomeScreen</Text>
-            <Text onPress={() => {
-                navigation.navigate('Home')
-            }}>HomeScreen go</Text>
-        </View>
+            <Image style={{width : 100, height : 100}} source={require('./../../assets/images/logo.png')}></Image>
+            <ActivityIndicator size={30} style={{marginTop : 5}} color='orange'></ActivityIndicator>
+
+        </View> 
     );
 };
 
@@ -21,7 +22,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#2c3e50',
+        backgroundColor: '#FFF',
     },
 });
 

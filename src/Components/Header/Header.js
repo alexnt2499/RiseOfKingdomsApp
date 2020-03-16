@@ -12,7 +12,7 @@ import AppText from './../../Components/AppText';
 import {fonts,colors} from  './../../theme/theme';
 
 // create a component
-const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack }) => {
+const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,checkPerson }) => {
     const renderBtn = () => {
         if(checkEquiq == true) {
            return   <Icon name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></Icon>
@@ -21,6 +21,8 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack }) =
             return  <IconFa5 name={'tools'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa5>
         }else if(checkLang == true) {
             return  <IconFa name={'language'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
+        }else if(checkPerson == true) {
+            return  <IconFa5 name={'user-astronaut'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa5>
         }else if(checkBack == true) {
             if(checkEquiq) {
                 return  <IconFa name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
@@ -35,8 +37,8 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack }) =
             <View style={{width : '20%', }}>
                {checkBack ? <TouchableOpacity onPress={() => {navigation.goBack()}}> 
                    <IconIo name='ios-arrow-back' color='#FFF' size={30} style={{marginLeft : 15}}></IconIo>
-                </TouchableOpacity> : <TouchableOpacity onPress={() => {navigation.openDrawer()}}> 
-                   <Icon name='menu' color='#FFF' size={30} style={{marginLeft : 15}}></Icon>
+                </TouchableOpacity> : <TouchableOpacity style={{marginLeft : 20}} onPress={() => {navigation.openDrawer()}}> 
+                   <Icon name='menu' color='#FFF' size={30} ></Icon>
                 </TouchableOpacity>}
             </View>
             <View style={{width : '60%', alignItems : 'center'}}>

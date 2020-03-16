@@ -7,19 +7,17 @@ import Header from './../Components/Header/Header';
 import { ScrollView } from 'react-native-gesture-handler';
 import { SliderBox } from "react-native-image-slider-box";
 import listCommanderVi from './../database/ListCommander';
+import ListCommanderEn from '../database/ListCommanderEn';
 import listCommanderEpicVi from './../database/ListCommanderEpic';
-
-import listCommanderEn from './../database/ListCommander';
-import listCommanderEpicEn from './../database/ListCommanderEpic';
+import listCommanderEpicEn from './../database/ListCommanderEpicEn';
 import CardCommanders from './../Components/Items/CardCommander2';
 import AppText from './../Components/AppText';
 import {LocalizationContext} from './../../App';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconFA5 from 'react-native-vector-icons/FontAwesome5';
-import { RewardedAd, TestIds,RewardedAdEventType } from '@react-native-firebase/admob';
 
-import ListCommanderEn from '../database/ListCommanderEn';
 import BannerAds2 from './../Components/AdsMob/BannerAds';
+import AsyncStorage from '@react-native-community/async-storage';
 
 const imagess =  [
     require("./../../assets/images/events/event2.jpg"),
@@ -34,15 +32,18 @@ const {width} = Dimensions.get('window');
 // create a component
 const HomeScreen = ({ navigation }) => {
     const {t,locale, setLocale} = React.useContext(LocalizationContext);
-    const [listCommander,setListCommander] = useState([]);
-    const [listCommanderEpic,setListCommanderEpic] = useState([]);
- 
+    const [listCommanders,setListCommander] = useState([]);
+    const [listCommanderEpics,setListCommanderEpic] = useState([]);
+    const [lang,setLang] = useState('vi');
 
     useEffect(() => {
-        changeDrop();
+        changeDrop(locale);
     },[])
-    const changeDrop = () => {
-        if(locale == 'vi') {
+    const changeDrop = async () => {
+        let lang = await AsyncStorage.getItem('@lang');
+        console.log(lang);
+        
+        if(lang == 'vi') {
             setListCommander(listCommanderVi)
             setListCommanderEpic(listCommanderEpicVi)
 
@@ -77,7 +78,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
                 <View style={{justifyContent : 'center', alignItems : 'center'}}>
                 <FlatList 
-                    data={listCommander}
+                    data={listCommanders}
                     showsHorizontalScrollIndicator={false}
                     horizontal
                     keyExtractor={item => item.id}
@@ -106,7 +107,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
                 <View style={{justifyContent : 'center', alignItems : 'center'}}>
                 <FlatList 
-                    data={listCommanderEpic}
+                    data={listCommanderEpics}
                     showsHorizontalScrollIndicator={false}
                     horizontal
                     keyExtractor={item => item.id}

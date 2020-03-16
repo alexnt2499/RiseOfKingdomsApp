@@ -80,7 +80,8 @@ export default {
     "tocDoDieuHanh" : "March Speed",
     "tocDoThuGom" : "Gathering Speed",
     "kinhNghiemChiHuy" : "Commander EXP Gain (EXP)",
-    "satThuongManRo" : "Damage to Barbarians"
+    "satThuongManRo" : "Damage to Barbarians",
+    "info" : "INFO"
     
 
 

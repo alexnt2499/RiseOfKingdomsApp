@@ -7,7 +7,7 @@ import i18n from './src/utils/i18n';
 import AsyncStorage from '@react-native-community/async-storage';
 import PushNotification  from "react-native-push-notification";
 import messaging from '@react-native-firebase/messaging';
-
+import WelcomeScreen from './src/Screen/WelcomeScreen';
 
 export const LocalizationContext = React.createContext();
 
@@ -17,6 +17,10 @@ YellowBox.ignoreWarnings(['Warning: ReactNative.createElement']);
 const App = () => {
   console.disableYellowBox = true;
   const [locale, setLocale] = React.useState('vi');
+  const [page,setPage] = React.useState(false);
+    
+
+    
   const localizationContext = React.useMemo(
     () => ({
       t: (scope, options) => i18n.t(scope, { locale, ...options }),
@@ -26,9 +30,11 @@ const App = () => {
     [locale]
   );
 
-  const testPush = () => {
-   
-  }
+  const changePage = () => {
+    setTimeout(() => {
+        setPage(true);
+    },2000)
+}
 
   const requestPermission = async () => {
     
@@ -67,6 +73,7 @@ const App = () => {
   React.useEffect(() => {
     getLang()
     requestPermission();
+    changePage()
   },[])
 
   const getLang = async () => {
@@ -87,10 +94,8 @@ const App = () => {
   return (
     <LocalizationContext.Provider value={localizationContext}>
 
-       <AppContainer>
-      
-      </AppContainer>
-      <AppContainer2></AppContainer2>
+       
+      {page ? <AppContainer2></AppContainer2> : <WelcomeScreen></WelcomeScreen>}
      </LocalizationContext.Provider>
   );
 };

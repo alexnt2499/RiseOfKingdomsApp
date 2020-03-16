@@ -255,7 +255,15 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/eulji-mundeok-minex-troops-talent-tree-1024x584.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/eulji-field-flad-fight-talent-tree-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/eulji-mundeok-garrison-talent-tree-1024x584.jpg'
+        }],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -315,7 +323,18 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/hermann-talents-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-archer-build-1024x570.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-garrison-build-1024x570.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-skill-build-1024x570.jpg'
+        }],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -441,7 +460,9 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/kusunoki-masashige-field-battle-1024x574.png'
+        }],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -501,7 +522,9 @@ export default [
             TalentIcon.Peacekeeping,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [    {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/lohar-talent-tree-1024x578.png'
+        } ],
         partner : [],
         trangBi : 'man rợ'
     },
@@ -561,7 +584,12 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/osman-talent-1-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/osman-talent-2-1024x576.png'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -621,7 +649,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-pvp-talent-tree-1-1024x578.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-pvp-talent-tree-2-1024x578.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-garrison-talent-tree-2-1024x578.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -681,7 +719,9 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/scipio-talent-tree-1024x576.png'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -741,7 +781,9 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/stun-tzu-talent-tree-1024x576.png'
+        }],
         partner : [],
         trangBi : 'bộ binh'
     },

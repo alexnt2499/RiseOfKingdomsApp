@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import {colors,fonts} from './../theme/theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import LinearGradient from 'react-native-linear-gradient';
 // create a component
 const MyComponent = ({navigation}) => {
     return (
        <View>
-            <View style={styles.container}>
+            <LinearGradient
+                    start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
+                    colors={['#42275a','#734b6d']} style={styles.container}>
                <Image
                source={require('./../../assets/images/VanMinh/China.png')}
                 style={{position : 'absolute',
@@ -16,9 +19,9 @@ const MyComponent = ({navigation}) => {
                ></Image>
 
                 <Image 
-                    style={{width : 200, height : 400, marginTop : 270}}
-                    source={require('./../../assets/images/Commander/Legendary/CaoCao/CaoCao.png')}></Image>
-            </View>
+                    style={{width : 250, height : 450, marginTop : 320}}
+                    source={require('./../../assets/images/Commander/Epic/Boudica/Boudica.png')}></Image>
+            </LinearGradient>
             <View style={{marginHorizontal : 10, marginVertical : 20}}>
                 <Text style={styles.textStyle}>Version 1.0.0</Text>
             </View>
@@ -32,8 +35,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: colors.CardColor,
-        height : 150,
+        backgroundColor: 'orange',
+        height : 160,
         overflow : 'hidden',
         borderBottomEndRadius : 5,
         borderBottomLeftRadius : 5,
