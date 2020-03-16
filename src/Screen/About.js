@@ -1,12 +1,12 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image,SafeAreaView } from 'react-native';
 import {colors,fonts} from './../theme/theme';
 import Icon from 'react-native-vector-icons/Ionicons'
 // create a component
 const About = ({navigation}) => {
     return (
-        <ScrollView style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <View style={{flex : 2}}>
             <View style={{height : 50}}>
                     <TouchableOpacity
@@ -16,7 +16,7 @@ const About = ({navigation}) => {
                     </TouchableOpacity>
                 </View>
             </View>
-        </ScrollView>
+        </SafeAreaView>
     );
 };
 

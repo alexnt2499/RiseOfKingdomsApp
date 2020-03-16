@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component, useState, useEffect,useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity,ScrollView, Picker,Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity,ScrollView, Picker,Image,SafeAreaView } from 'react-native';
 import {fonts,colors} from './../../theme/theme';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -18,7 +18,7 @@ import gem from '../../utils/dataPicker/gem';
 import resDropVi from './../../utils/langDrop/resVi';
 import resDropEn from './../../utils/langDrop/resEn';
 import {LocalizationContext} from './../../../App';
-
+import BannerAds from './../../Components/AdsMob/BannerAds';
 const options = {
     title: 'Select Image',
     storageOptions: {
@@ -209,7 +209,8 @@ const ResourseTool = ({navigation}) => {
     }
 
     return (
-        <ScrollView style={styles.container}>
+        <SafeAreaView style={styles.container}>
+        <ScrollView >
             <View style={styles.cardHeader}>
                 <View style={{height : 50}}>
                     <TouchableOpacity
@@ -388,6 +389,8 @@ const ResourseTool = ({navigation}) => {
                 isVisible={isVisible}
             />
         </ScrollView>
+        <BannerAds></BannerAds>
+        </SafeAreaView>
     );
 };
 

@@ -20,11 +20,11 @@ import ChooseLang from './../Screen/ChooseLang';
 import About from './../Screen/About';
 import {LocalizationContext} from './../../App';
 import Event from './../Screen/EventTracker';
-
+import EquipmentS from './../Screen/Tools/EquipmentTool';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconTool from 'react-native-vector-icons/FontAwesome5';
 import IconFa from 'react-native-vector-icons/FontAwesome';
-
+import { RewardedAd, TestIds,RewardedAdEventType } from '@react-native-firebase/admob';
 import DrawerC from './../Components/DrawerContent';
 import {fonts, colors} from './../theme/theme';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -85,6 +85,11 @@ const ToolStack = () => (
          <Stack.Screen 
          name='STool'
          component={SpeedTool} 
+         options={{headerShown : false}}
+        />
+        <Stack.Screen 
+         name='EquipmentS'
+         component={EquipmentS} 
          options={{headerShown : false}}
         />
           <Stack.Screen 
@@ -290,27 +295,28 @@ function CustomDrawerContent(props) {
             }}
             labelStyle={{color : '#FFF' , fontFamily : fonts.regular}}
         />
+      
         <DrawerItem
             icon={({focused, color, size}) => (
-                <Icon color={'#FFF'} size={size} name={'castle'} />
+                <IconTool color={'#FFF'} size={size} name={'adversal'} />
             )}
-            label={renderLang() == 'vi' ? 'Công trình' : 'Building'}
+            label={'Donate for me (view ads)'}
             style={{color : '#FFF'}}
             onPress={() => { 
-                if(renderLang() == 'vi') alert('Tính năng này đang trong quá trình hoàn thiện, xin vui lòng chờ phiên bản sau.');
-                else alert('This feature is in the process of finishing, please wait for the next version.')
+                LoadAd();
+                props.navigation.closeDrawer();
             }}
             labelStyle={{color : '#FFF' , fontFamily : fonts.regular}}
         />
-    <DrawerItem
+
+        <DrawerItem
             icon={({focused, color, size}) => (
-                <IconTool color={'#FFF'} size={size} name={'chess-knight'} />
+                <IconTool color={'#FFF'} size={size} name={'adversal'} />
             )}
-            label={renderLang() == 'vi' ? 'Quân đội' : 'Troop'}
+            label={'Version no ads'}
             style={{color : '#FFF'}}
             onPress={() => { 
-                if(renderLang() == 'vi') alert('Tính năng này đang trong quá trình hoàn thiện, xin vui lòng chờ phiên bản sau.');
-                else alert('This feature is in the process of finishing, please wait for the next version.')
+             
             }}
             labelStyle={{color : '#FFF' , fontFamily : fonts.regular}}
         />
@@ -330,6 +336,22 @@ function CustomDrawerContent(props) {
         {/* <DrawerItemList {...props} /> */}
       </DrawerContentScrollView>
     );
+  }
+
+
+  const LoadAd = () => {
+    const rewardedAd = RewardedAd.createForAdRequest('ca-app-pub-7033028927124341/9041577773', {
+        requestNonPersonalizedAdsOnly: true,
+    });
+    rewardedAd.onAdEvent((type, error, data) => {
+        console.log('New event: ', type, error);
+       
+        if (type === RewardedAdEventType.LOADED) {
+          rewardedAd.show();
+        }
+      });
+       
+      rewardedAd.load();
   }
   
 

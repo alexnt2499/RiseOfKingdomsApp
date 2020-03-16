@@ -6,7 +6,8 @@ import {AppContainer,AppContainer2} from './src/router/index';
 import i18n from './src/utils/i18n';
 import AsyncStorage from '@react-native-community/async-storage';
 import PushNotification  from "react-native-push-notification";
-import admob from '@react-native-firebase/admob';
+import messaging from '@react-native-firebase/messaging';
+
 
 export const LocalizationContext = React.createContext();
 
@@ -26,20 +27,46 @@ const App = () => {
   );
 
   const testPush = () => {
-    PushNotification.localNotificationSchedule({
-      //... You can use all the options from localNotifications
-      message: "My Notification Message", // (required)
-      date: new Date(Date.now() + 60 * 1000) // in 60 secs
-    });
+   
   }
 
-  const cPush = () => {
-    PushNotification.cancelAllLocalNotifications();
+  const requestPermission = async () => {
+    
+     
+      const granted = messaging().requestPermission();
+ 
+      if (granted) {
+        console.log('User granted messaging permissions!');
+      } else {
+        console.log('User declined messaging permissions :(');
+      }
+      const unsubscribe = messaging().onMessage(async (remoteMessage) => {
+        console.log('FCM Message Data:', remoteMessage.data);
+        PushNotification.localNotification({
+          /* Android Only Properties */
+          largeIcon: remoteMessage.data.image, // (optional) default: "ic_launcher"
+          smallIcon:  remoteMessage.data.image, // (optional) default: "ic_notification" with fallback for "ic_launcher"
+          vibration: 5000, // vibration length in milliseconds, ignored if vibrate=false, default: 1000
+          title: remoteMessage.data.title, // (optional)
+          message: remoteMessage.data.body, // (required)
+          soundName: 'default', // (optional) Sound to play when the notification is shown. Value of 'default' plays the default sound. It can be set to a custom sound such as 'android.resource://com.xyz/raw/my_sound'. It will look for the 'my_sound' audio file in 'res/raw' directory and play it. default: 'default' (default sound is played)
+    
+      });
+       
+      });
+     
+     
+      
 
+  
+
+
+    
   }
+
   React.useEffect(() => {
     getLang()
-    // testPush()
+    requestPermission();
   },[])
 
   const getLang = async () => {

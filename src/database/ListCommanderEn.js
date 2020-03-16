@@ -140,47 +140,47 @@ export default [
         name : 'CaoCao',
         image : require('./../../assets/images/Commander/Legendary/CaoCao/CaoCao.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/CaoCao/tuongCaoCao.png'),
-        about : 'Tào Tháo, tên lịch sự là Mạnh Đức, là một lãnh chúa Trung Quốc và là Thủ tướng áp chót của vương triều Đông Hán. Là một trong những nhân vật trung tâm của thời Tam Quốc, ông đặt nền móng cho những gì sẽ trở thành nhà nước của Cao Wei và được truy tặng là "Hoàng đế Wu của Wei". Ông thường được miêu tả là một bạo chúa tàn nhẫn và tàn nhẫn trong văn học tiếp theo; tuy nhiên, ông cũng được ca ngợi là một nhà cai trị tài ba và một thiên tài quân sự, người đối xử với cấp dưới như gia đình ông. Tào Tháo có nhiều thành công với tư cách là thủ tướng Haan, nhưng cách xử lý của ông đối với hoàng đế nhà Hán, ông Liu Xie đã bị chỉ trích nặng nề và dẫn đến một cuộc nội chiến tiếp tục và sau đó leo thang.',
+        about : 'Cao Cao, courtesy name Mengde, was a Chinese warlord and the penultimate Chancellor of the Eastern Han dynasty. As one of the central figures of the Three Kingdoms period, he laid the foundations for what was to become the state of Cao Wei and was posthumously honoured as "Emperor Wu of Wei". He is often portrayed as a cruel and merciless tyrant in subsequent literature; however, he has also been praised as a brilliant ruler and military genius who treated his subordinates like his family. Cao Cao had much success as the Haan chancellor, but his handling of the Han emperor Liu Xie was heavily criticized and resulted in a continued and then escalated civil war.        ',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/CaoCao/skill1.png'),
                 type : 'Active',
-                name : 'Kỵ sĩ rồng',
+                name : 'Dragon Rider',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên mục tiêu và giảm tốc độ tấn công và diễu hành của mục tiêu trong 3 giây.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400\nGiảm tấn công: 20% / 25% / 30% / 35% / 40%\nGiảm tốc độ hành quân: 5% / 6% / 7% / 8% / 10%'
+                about : 'Deals direct damage to the target, and decreases target\'s attack and march speed for 3 seconds.',
+                update : 'Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400\nAttack Reduction: 20% / 25% / 30% / 35% / 40%\nMarch Speed Reduction: 5% / 6% / 7% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CaoCao/skill2.png') ,
-                name : 'Quân đội Thanh Châu',
+                name : 'The Qingzhou Army',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương tấn công quân man rợ.',
-                update : 'Thưởng tấn công người man rợ: 10% / 20% / 30% / 40% / 50%'
+                about : 'Increases the damage on Barbarians.',
+                update : 'Bonus Damage To Barbarians: 10% / 20% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CaoCao/skill3.png') ,
-                name : 'Hiệp sĩ hổ',
+                name : 'Tiger Knight',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công các đơn vị đồn trú, tăng tất cả lượng sát thương gây ra, và có cơ hội mỗi lượt để giảm phòng thủ của quân đồn trú trong 3 giây.',
-                update : 'Thưởng tốc độ hành quân của kỵ binh: 3% / 4,5% / 6% / 8% / 10%\nThưởng tấn công Kỵ binh: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases cavalry units\' march speed and attack.',
+                update : 'Cavalry March Speed Bonus: 3% / 4.5% / 6% / 8% / 10%\nCavalry Attack Bonus: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CaoCao/skill4.png') ,
-                name : 'Tham vọng cao cả',
+                name : 'Lofty Ambition',
                 type : 'Passive',
                 rage : '',
-                about : 'Các cuộc tấn công thông thường của quân lính có 10% cơ hội chữa lành một phần các đơn vị bị thương nhẹ, khôi phục cơn thịnh nộ và tăng tốc độ diễu hành của quân đội thêm 20% trong 3 giây. Hiệu ứng chỉ có thể kích hoạt cứ sau 2 giây.',
-                update : 'Thưởng hệ số chữa bệnh: 500/600/70/800/1000\nCơn thịnh nộ được khôi phục: 50/60/70/80/100'
+                about : `Troops' normal attacks have a 10% chance to heal a portion of the slightly wounded units, restores rage, and increases troops' march speed by 20% for 3 seconds. Effect can only trigger once every 2 seconds.                `,
+                update : `Healing Factor Bonus: 500 / 600 / 700 / 800 / 1000\nRage Restored: 50 / 60 / 70 / 80 / 100`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CaoCao/skill5.png') ,
-                name : 'Hoàng đế Ngô của Ngụy',
+                name : 'Emperor Wu of Wei',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công kỵ binh thêm 25%, giảm 10% quân phòng thủ',
-                update : 'Tăng tấn công kỵ binh thêm 25%, giảm 10% quân phòng thủ'
+                about : `Increases cavalry attack by 25%, decreases troop defense by 10%`,
+                update : `Increases cavalry attack by 25%, decreases troop defense by 10% `
             },
 
         ],
@@ -204,46 +204,52 @@ export default [
         name : 'Alexander',
         image : require('./../../assets/images/Commander/Legendary/Alex/Alex.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Alex/tuongAlex.png'),
-        about : 'Alexander III của georgon, thường được gọi là Alexander Đại đế, là một vị vua (basileus) của vương quốc Hy Lạp cổ đại của Hy Lạp và là thành viên của triều đại Argead. Ông sinh ra ở Pella vào năm 356 trước Công nguyên và kế vị cha là Philip II lên ngôi ở tuổi 20. Ông dành phần lớn thời gian cầm quyền cho một chiến dịch quân sự chưa từng có ở châu Á và đông bắc châu Phi, và đến năm ba mươi tuổi, ông đã có đã tạo ra một trong những đế chế lớn nhất của thế giới cổ đại, trải dài từ Hy Lạp đến Tây Bắc Ấn Độ. Ông đã bất bại trong trận chiến và được coi là một trong những chỉ huy quân sự thành công nhất trong lịch sử.\nKhi còn trẻ, Alexander được Aristotle dạy dỗ cho đến năm 16 tuổi. Sau khi Philip bị ám sát vào năm 336 trước Công nguyên, ông đã kế vị cha mình lên ngôi và kế thừa một vương quốc mạnh và một đội quân giàu kinh nghiệm. Alexander được trao tặng tướng quân Hy Lạp và sử dụng thẩm quyền này để khởi động dự án pan-Hellenic của cha mình để lãnh đạo người Hy Lạp trong cuộc chinh phạt Ba Tư. Năm 334 trước Công nguyên, ông xâm chiếm Đế quốc Achaemenid (Đế chế Ba Tư) và bắt đầu một loạt các chiến dịch kéo dài 10 năm. Sau cuộc chinh phạt Anatolia, Alexander đã phá vỡ sức mạnh của Ba Tư trong một loạt các trận chiến quyết định, đáng chú ý nhất là các trận chiến của Issus và Gaugamela. Sau đó, ông đã lật đổ Vua Ba Tư Darius III và chinh phục toàn bộ Đế chế Achaemenid. Vào thời điểm đó, đế chế của ông trải dài từ biển Adriatic đến sông Indus.\nAlexander nỗ lực để đến "tận cùng của thế giới và Biển ngoài cùng" và xâm chiếm Ấn Độ vào năm 326 trước Công nguyên, giành chiến thắng quan trọng trước Pauravas trong Trận chiến Hydaspes. Cuối cùng anh ta quay trở lại theo yêu cầu của những người lính nhớ nhà, chết ở Babylon vào năm 323 trước Công nguyên, thành phố mà anh ta dự định thành lập thủ đô của mình, mà không thực hiện một loạt các chiến dịch theo kế hoạch sẽ bắt đầu bằng một cuộc xâm lược Ả Rập. Trong những năm sau cái chết của ông, một loạt các cuộc nội chiến đã xé tan đế chế của ông, dẫn đến việc thành lập một số quốc gia do Diadochi cai trị: Những vị tướng và người thừa kế còn sống sót của Alexandre.\nDi sản của Alexandre bao gồm sự khuếch tán văn hóa và chủ nghĩa đồng bộ hóa mà các cuộc chinh phạt của ông đã gây ra, như Phật giáo Greco. Ông thành lập một số hai mươi thành phố mang tên mình, nổi bật nhất là Alexandria ở Ai Cập. Sự định cư của Alexanders về thực dân Hy Lạp và sự lan rộng của văn hóa Hy Lạp ở phía đông dẫn đến một nền văn minh Hy Lạp mới, những khía cạnh vẫn còn thể hiện rõ trong các truyền thống của Đế quốc Byzantine vào giữa thế kỷ 15 sau Công nguyên và sự hiện diện của những người nói tiếng Hy Lạp ở trung tâm và viễn đông Anatolia cho đến những năm 1920. Alexander trở thành huyền thoại như một anh hùng cổ điển trong khuôn khổ Achilles, và anh ấy nổi bật trong lịch sử và truyền thống thần thoại của cả hai nền văn hóa Hy Lạp và phi Hy Lạp. Anh ta trở thành thước đo để chống lại các nhà lãnh đạo quân sự, và các học viện quân sự trên khắp thế giới vẫn dạy các chiến thuật của anh ta. Ông thường được xếp hạng trong số những người có ảnh hưởng nhất trong lịch sử.',
+        about : `Alexander III of Macedon, commonly known as Alexander the Great, was a king (basileus) of the ancient Greek kingdom of Macedon and a member of the Argead dynasty. He was born in Pella in 356 BC and succeeded his father Philip II to the throne at the age of 20. He spent most of his ruling years on an unprecedented military campaign through Asia and northeast Africa, and by the age of thirty, he had created one of the largest empires of the ancient world, stretching from Greece to northwestern India. He was undefeated in battle and is widely considered one of history's most successful military commanders.
+
+        During his youth, Alexander was tutored by Aristotle until age 16. After Philip's assassination in 336 BC, he succeeded his father to the throne and inherited a strong kingdom and an experienced army. Alexander was awarded the generalship of Greece and used this authority to launch his father's pan-Hellenic project to lead the Greeks in the conquest of Persia. In 334 BC, he invaded the Achaemenid Empire (Persian Empire) and began a series of campaigns that lasted 10 years. Following the conquest of Anatolia, Alexander broke the power of Persia in a series of decisive battles, most notably the battles of Issus and Gaugamela. He subsequently overthrew Persian King Darius III and conquered the Achaemenid Empire in its entirety. At that point, his empire stretched from the Adriatic Sea to the Indus River.
+        
+        Alexander endeavoured to reach the "ends of the world and the Great Outer Sea" and invaded India in 326 BC, winning an important victory over the Pauravas at the Battle of the Hydaspes. He eventually turned back at the demand of his homesick troops, dying in Babylon in 323 BC, the city that he planned to establish as his capital, without executing a series of planned campaigns that would have begun with an invasion of Arabia. In the years following his death, a series of civil wars tore his empire apart, resulting in the establishment of several states ruled by the Diadochi: Alexander's surviving generals and heirs.
+       
+        Alexander's legacy includes the cultural diffusion and syncretism which his conquests engendered, such as Greco-Buddhism. He founded some twenty cities that bore his name, most notably Alexandria in Egypt. Alexander's settlement of Greek colonists and the resulting spread of Greek culture in the east resulted in a new Hellenistic civilization, aspects of which were still evident in the traditions of the Byzantine Empire in the mid-15th century AD and the presence of Greek speakers in central and far eastern Anatolia until the 1920s. Alexander became legendary as a classical hero in the mould of Achilles, and he features prominently in the history and mythic traditions of both Greek and non-Greek cultures. He became the measure against which military leaders compared themselves, and military academies throughout the world still teach his tactics. He is often ranked among the most influential people in history.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Alex/skill1.png'),
                 type : 'Active',
-                name : 'Khiên của nhà vua',
+                name : 'Shield of the King',
                 rage : 'Rage Requirement: 1000',
-                about : 'Alexander Đại đế dựng lên một chiếc khiên mạnh mẽ trong 4 giây và đồng thời dựng lên một chiếc khiên nhỏ hơn, nhỏ hơn cho đội quân thân thiện gần đó với tỷ lệ quân thấp nhất còn lại trong 2 giây (quân đội của riêng Alexander Alexander không thể có được tấm khiên này).',
-                update : 'Khiên (Bản thân): 600/700/800/1000/1200\nKhiên (Đồng minh): 200/300/400/500/600'
+                about : 'Alexander the Great puts up a powerful shield for 4 seconds and at the same time puts up a second, smaller shield for the nearby friendly army with the lowest percentage of troops remaining for 2 seconds (Alexander’s own army cannot gain this shield).',
+                update : `Shield (Self): 600 / 700 / 800 / 1000 / 1200\nShield (Ally): 200 / 300 / 400 / 500 / 600`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Alex/skill2.png') ,
-                name : 'Phí dẫn dắt',
+                name : 'Lead the Charge',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi thiệt hại đến sẽ được giảm trên bản đồ, thay thế giảm thiệt hại. Mỗi đòn tấn công bình thường chống lại 10% cơ hội gây thêm sát thương cũng như giảm hiệu ứng hồi máu mục tiêu trong 5 giây.',
-                update : 'Hệ số thiệt hại trực tiếp: 800/1000/1200/1400/1700\nGiảm hiệu quả chữa bệnh: 10% / 15% / 20% / 25% / 30%'
+                about : `When incoming damage would be reduced on the map, replace the damage reduction. Each normal attack against a 10% chance to deal extra damage as well as to reduce the target’s healing effects for 5 seconds.`,
+                update : `Direct Damage Factor: 800 / 1000 / 1200 / 1400 / 1700\nHealing Effect Reduction: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Alex/skill3.png') ,
-                name : 'Tư lệnh tiền tuyến',
+                name : 'Frontline Commander',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ hành quân và tấn công của đơn vị bộ binh trong khi quân đội đang ở trên bản đồ.',
-                update : 'Phần thưởng tốc độ hành quân của bộ binh: 10% / 15% / 20% / 25% / 30%\nThưởng tấn công bộ binh: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases infantry unit\'s march speed and attack while troops are on the map.',
+                update : `Infantry March Speed Bonus: 10% / 15% / 20% / 25% / 30%\nInfantry Attack Bonus: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Alex/skill4.png') ,
-                name : 'Trận chiến Chaeronea',
+                name : 'Battle of Chaeronea',
                 type : 'Passive',
                 rage : '',
-                about : 'Tấn công được tăng lên khi lá chắn rơi xuống. Khi lá chắn này được kích hoạt, phần thưởng sẽ thay đổi thành phòng thủ.',
-                update : 'Thưởng tấn công: 20% / 25% / 30% / 35% / 40%\nThưởng phòng thủ: 10% / 15% / 20% / 25% / 30%'
+                about : 'Attack is increased when the shield is down. When this shield is activated, the bonus changes to defence.',
+                update : 'Attack Bonus: 20% / 25% / 30% / 35% / 40%\nDefence Bonus:10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Alex/skill5.png') ,
-                name : 'Con trai của Amun',
-                type : 'Tăng cường : Kỹ năng 1',
+                name : 'Son of Amun',
+                type : 'Buff skill 1',
                 rage : '',
-                about : 'Ngay lập tức đưa ra một tấm khiên có thể hấp thụ một lượng sát thương lớn (Damage Factor 1200) trong 4 giây. Đồng thời, Alexander dựng lên một tấm khiên thứ hai, nhỏ hơn cho đội quân thân thiện gần đó với tỷ lệ quân còn lại thấp nhất (Hệ số sát thương 600) trong 2 giây, và tăng sát thương gây ra theo thời gian của kẻ thù gần đó (tối đa 3 mục tiêu) 30% trong 4 giây.',
+                about : `Immediately put up a shield which can absorb a large amount of damage (Damage Factor 1200) for 4 seconds. At the same time, Alexander puts up a second, smaller shield for the nearby friendly army with the lowest percentage of troops remaining (Damage Factor 600) for 2 seconds, and increases the damage taken overtime by nearby enemies (up to 3 targets) by 30% for 4 seconds. `,
                 update : ''
             },
 
@@ -268,47 +274,54 @@ export default [
         name : 'Charlemagne',
         image : require('./../../assets/images/Commander/Legendary/Charlemagne/Charlemagne.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Charlemagne/tuongCharlemagne.png'),
-        about : 'Charlemagne, còn được gọi là Charles Đại đế, (2 tháng 4 năm 742 - 28 tháng 1 năm 814), thống nhất phần lớn miền tây và trung tâm châu Âu trong cái được gọi là Đế quốc Carolingian, đế chế lớn đầu tiên ở Tây Âu kể từ khi Tây La Mã sụp đổ Đế chế.\nCharlemagne là con trai cả của Pepin the Short và Betrada of Laon. Ông trở thành vua vào năm 768 sau cái chết xa hơn của mình, ban đầu là người đồng cai trị với anh trai Carloman I. Cái chết bất ngờ của Carloman vào tháng 12 năm 771 khiến Charlemagne trở thành người thống trị duy nhất của Vương quốc Frankish. Ông theo bước chân của người cha này, bảo vệ Giáo hội Công giáo La Mã, chinh phục người Oliver và vận động chống lại người Tây Ban Nha Hồi giáo và người Saxon. Ông được trao vương miện "Hoàng đế của người La Mã" bởi Giáo hoàng Leo III vào ngày Giáng sinh năm 800.\nSự ổn định của đế chế Charlemagne đã sinh ra một thời đại thịnh vượng và phát triển được gọi là Phục hưng Carolingian. Trong thời gian này, Charlemagne đã tập hợp nhiều học giả và nghệ sĩ vĩ đại nhất châu Âu đến tòa án của mình và thiết lập một hệ thống giáo dục cho giai cấp thống trị dựa trên những người thuộc Đế chế La Mã cũ. Khoảng thời gian này có lẽ được nhớ đến nhiều nhất cho sự đột biến trong việc phục hồi và tạo ra kiến ​​trúc hoành tráng, nhà thờ lớn và nhà thờ, và cho một lượng lớn nghệ thuật cổ xưa được bảo tồn bởi đế chế của Charlemagne.\nTrong khi Charlemagne được ca ngợi khắp châu Âu và bởi Giáo hoàng là Hoàng đế Romand thực sự, điều này đã tạo ra một sự ly dị với Đế quốc Byzantine (còn gọi là Đế chế Đông La Mã), và là một trong những lý do cho sự chia rẽ của Rome và Constantinople, tạo ra cái gọi là ngày nay các nhà thờ Công giáo và Đông chính thống.',
+        about : `Charlemagne, also known as Charles the Great, (2 April 742 - 28 January 814), united the majority of western and central Europe in what became known as the Carolingian Empire, the first major empire in western Europe since the fall of the Western Roman Empire.
+
+        Charlemagne was the eldest son of Pepin the Short and Betrada of Laon. He became king in 768 following his farther's death, initially as co-ruler with his brother Carloman I. Carloman's sudden death in December 771 left Charlemagne as the sole ruler of the Frankish Kingdom. He followed in this father's footsteps, protecting the Roman Catholic Church, conquering the Lombards, and campaigning against Muslim Spain and the Saxons. He was crowned "Emperor of the Romans" by Pope Leo III on Christmas Day of the year 800.
+        
+        The stability of Charlemagne's empire gave birth to an age of prosperity and development known as the Carolingian Renaissance. During this time, Charlemagne gathered many of Europe's greatest scholars and artists to his court and instituting an education system for the ruling class based on those of the former Roman Empire. This period of time is perhaps best remembered for a surge in the restoration and creation of monumental architecture, great cathedrals and churches, and for the large amounts of ancient art that were preserved by Charlemagne's empire.
+        
+        While Charlemagne was lauded throughout Europe and by the Pope as the true Romand Emperor, this created a schism with the Byzantine Empire (aka the Eastern Roman Empire), and was among the reasons for the split of Rome and Constantinople, creating what is now called the Catholic and East Orthodox churches.
+        `,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Charlemagne/skill1.png'),
                 type : 'Active',
-                name : 'Đại bàng Jupiter',
+                name : 'Eagle of Jupiter',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp vào một mục tiêu.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400'
+                about : 'Deal direct damage to a single target.',
+                update : 'Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Charlemagne/skill2.png') ,
-                name : 'Ngôi nhà hạnh phúc',
+                name : 'Happy Home',
                 type : 'Passive',
                 rage : '',
-                about : 'Trong khi trên bản đồ, tất cả các binh sĩ dưới quyền chỉ huy này có 10% cơ hội để có được một lá chắn khi họ bị tấn công. Tấm khiên này tồn tại trong 4 giây và có thể gây ra một lượng sát thương lớn.',
-                update : 'Hệ số thiệt hại trực tiếp: 500/600/70/800/1000'
+                about : `While on the map, all troops under this commander have a 10% chance to gain a shield when they are attacked. This shield lasts for 4 seconds and can take a large amount of damage.                `,
+                update : `Direct Damage Factor: 500 / 600 / 700 / 800 / 1000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Charlemagne/skill3.png') ,
-                name : 'Pataum',
+                name : 'Plot Maneuvers',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi chỉ huy này bắt đầu một cuộc tấn công Rally, tấn công và phòng thủ của tất cả các đội quân tập hợp.',
-                update : 'Thưởng tấn công / phòng thủ của quân đội Rallied: 2% / 4% / 6% / 8% / 10%'
+                about : 'When this commander initiates a Rally attack, increase the attack and defence of all rallied troops.',
+                update : 'Rallied Army Attack/Defense Bonus: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Charlemagne/skill4.png') ,
-                name : 'Tham vọng cao cả',
+                name : 'Pataum',
                 type : 'Passive',
                 rage : '',
-                about : 'Đối với mỗi mức giảm 10% trong sức mạnh của quân đội, Charlemagne của kỹ năng thiệt hại tăng. Khi quân đội này đã giảm xuống dưới 70 sức mạnh%, tổn thương kỹ năng Charlemagne sẽ được tăng lên.',
-                update : 'Tăng khả năng thiệt hại (Mỗi 10%): 1% / 2% / 3% / 4% / 5%\nKỹ năng thiệt hại khi tấn công các thành phố tăng (Mỗi 10%): 2% / 3% / 4% / 5% / 7%\ntăng khả năng thiệt hại (max): 3% / 6% / 9% / 12% / 15%\nKỹ năng thiệt hại khi tấn công các thành phố tăng (tối đa): 6% / 9% / 12% / 15% / 21%'
+                about : `For every 10% reduction in his army's strength, Charlemagne's skill damage increases. When this army has been reduced to less than 70% strength, Charlemagne's skill damage will be increased.                `,
+                update : 'Skill Damage Increase (Every 10%): 1% / 2% / 3% / 4% / 5%\nSkill Damage When Attacking Cities Increase (Every 10%): 2% / 3% / 4% / 5% / 7%\nSkill Damage Increases (Max): 3% / 6% / 9% / 12% / 15%\nSkill Damage When Attacking Cities Increase (Max): 6% / 9% / 12% / 15% / 21%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Charlemagne/skill5.png') ,
-                name : 'Phục hưng Carolingian',
+                name : 'Carolingian Renaissance',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công một thành phố, ít hơn 10% quân đội của bạn sẽ chết, và thay vào đó sẽ bị thương nặng.',
-                update : 'Khi tấn công một thành phố, ít hơn 10% quân đội của bạn sẽ chết, và thay vào đó sẽ bị thương nặng.'
+                about : `When attacking a city, 10% fewer of your troops will die, and instead will be severly wounded.                `,
+                update : `When attacking a city, 10% fewer of your troops will die, and instead will be severly wounded.                `
             },
 
         ],
@@ -332,47 +345,47 @@ export default [
         name : 'Charles Martel',
         image : require('./../../assets/images/Commander/Legendary/CharlesMartel/CharlesMartel.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/CharlesMartel/tuongCharlesMartel.png'),
-        about : 'Charles Martel là một chính khách và nhà lãnh đạo quân sự người Frank, với tư cách là Công tước và Hoàng tử của Franks và Thị trưởng của Cung điện, là người cai trị trên thực tế của Francia từ năm 718 cho đến khi ông qua đời. Năm 732, quân đội của Umayyad Caliphate do Al Ghhafiqiii lãnh đạo đã gặp các lực lượng Frankish và Burgundian dưới quyền Charles ở một khu vực giữa các thành phố Tours và Poitiers, dẫn đến một chiến thắng Frankish mang tính quyết định, mang tính lịch sử được gọi là Trận chiến cuối cùng của cuộc xâm lược Ả Rập vĩ đại của Pháp ", một chiến thắng quân sự được gọi là" xuất sắc "về phía Charles. Charles cũng được coi là một nhân vật sáng lập của thời trung cổ châu Âu. Có kỹ năng là một quản trị viên cũng như một chiến binh, anh ta được ghi nhận với vai trò chủ yếu trong các trách nhiệm mới nổi của các hiệp sĩ của tòa án, và do đó trong sự phát triển của hệ thống phong kiến ​​Frankish.',
+        about : 'Charles Martel was a Frankish statesman and military leader who as Duke and Prince of the Franks and Mayor of the Palace, was the facto ruler of Francia from 718 until his death. In 732, the army of the Umayyad Caliphate led by Al Ghhafiqiii met Frankish and Burgundian forces under Charles in an area between the cities of Tours and Poitiers, leading to a decisive, historically important Frankish victory known as the Battle of Tours, ending the "last of the great Arab invasion of France", a military victory termed "brilliant" on the part of Charles. Charles is also considered to be a founding figure of the European Middle Ages. Skilled as an administrator as well as a warrior, he is credited with a seminal role in the emerging responsibilities of the knights of courts, and so in the development of the Frankish system of feudalism.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/CharlesMartel/skill1.png'),
                 type : 'Active',
-                name : 'Khiên của người Pháp',
+                name : 'Shield of Francia',
                 rage : 'Rage Requirement: 1000',
-                about : 'Charles kích hoạt một lá chắn có thể hấp thụ sát thương lớn trong 4 giây tiếp theo. Cũng tăng sát thương của quân đội trong khi khiên hoạt động.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/700/800/1000/1200\nPhần thưởng thiệt hại: 10% / 14% / 18% / 24% / 30%'
+                about : 'Charles activates a shield that can absorb massive damage for the next 4 seconds. Also increases troops\' damage while the shield is active.                ',
+                update : `Direct Damage Factor: 600 / 700 / 800 / 1000 / 1200\nDamage Bonus: 10% / 14% / 18% / 24% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CharlesMartel/skill2.png') ,
-                name : 'Bộ binh nặng',
+                name : 'Heavy Infantry',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sức mạnh và phòng thủ của các đơn vị bộ binh.',
-                update : 'Thưởng phòng thủ Bộ binh: 5% / 7% / 9% / 12% / 15%\nThưởng sức khỏe bộ binh: 5% / 7% / 9% / 12% / 15%'
+                about : 'Increases infantry units\' defense and health.',
+                update : 'Infantry Defense Bonus: 5% / 7% / 9% / 12% / 15%\nInfantry Health Bonus: 5% / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CharlesMartel/skill3.png') ,
-                name : 'Vua bất khuất',
+                name : 'The Uncrowned King',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng khả năng phòng thủ của tháp canh và sát thương đồn trú khi chỉ huy này đang phục vụ như một chỉ huy đồn trú.',
-                update : 'Tiền thưởng phòng thủ tháp canh: 2% / 4% / 6% / 8% / 10%\nTiền thưởng tấn công Garrison: 2% / 4% / 6% / 8% / 10%'
+                about : 'Increases watchtower defense and garrison damage when this commander is serving as a garrison commander.',
+                update : 'Watchtower Defense Bonus: 2% / 4% / 6% / 8% / 10%\nGarrison Attack Bonus: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CharlesMartel/skill4.png') ,
-                name : 'Phản công của Martel',
+                name : 'Martel\'s Counterattack',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương phản công của quân đội.',
-                update : 'Thưởng sát thương phản công: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases troops\' counterattack damage.',
+                update : 'Counterattack Damage Bonus: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CharlesMartel/skill5.png') ,
-                name : 'Tăng từ đống tro tàn',
+                name : 'Rise from the Ashes',
                 type : 'Update skill  2',
                 rage : '',
-                about : 'Tăng 20% ​​phòng thủ cho bộ binh, 20% máu và tốc độ hành quân thêm 20%.',
-                update : 'Tăng 20% ​​phòng thủ cho bộ binh, 20% máu và tốc độ hành quân thêm 20%.'
+                about : 'Increases infantry units defense by 20%, health by 20%, and march speed by 20%.',
+                update : `Increases infantry units' defense by 20%, health by 20%, and march speed by 20%.`
             },
 
         ],
@@ -386,6 +399,9 @@ export default [
         talentTree : [
             {
                 uri : 'https://rok.guide/wp-content/uploads/2019/11/charles-martel-field-battle-talent-tree-1-1024x575.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/charles-martel-talent-1-1024x576.png'
             }
         ],
         partner : [],
@@ -396,47 +412,47 @@ export default [
         name : 'Cleopatra VII',
         image : require('./../../assets/images/Commander/Legendary/CleopatraVII/CleopatraVII.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/CleopatraVII/tuongCleopatraVII.png'),
-        about : 'Cleopatra VII Philopator là người cai trị hoạt động cuối cùng của Vương quốc Ptolemaic Ai Cập, trên danh nghĩa còn sống sót với tư cách là pharaoh bởi con trai bà Caesarion. Cô cũng là một nhà ngoại giao, chỉ huy hải quân, polyglot và tác giả y tế. Là một thành viên của triều đại Ptolemy, cô là hậu duệ của người sáng lập ra nó, Ptolemy I Soter, một vị tướng Hy Lạp người Macedonia và là bạn đồng hành của Alexander Đại đế. Sau cái chết của Cleoptra, Ai Cập trở thành một tỉnh của Đế chế La Mã, đánh dấu sự kết thúc của thời kỳ Hy Lạp kéo dài kể từ triều đại của Alexander. Ngôn ngữ mẹ đẻ của cô là tiếng Hy Lạp Koine và cô là người cai trị Ptolemaic đầu tiên học ngôn ngữ Ai Cập.',
+        about : 'Cleopatra VII Philopator was the last active ruler of the Ptolemaic Kingdom of Egypt, nominally survived as pharaoh by her son Caesarion. She was also a diplomat, naval commander, polyglot and medical author. As a member of the Ptolemaic dynasty, she was a descendant of its founder, Ptolemy I Soter, a Macedonian Greek general and companion of Alexander the Great. After the death of Cleoptra, Egypt became a province of the Roman Empire, marking the end of the Hellenistic period that had lasted since the reign of Alexander. Her native language was Koine Greek and she was the first Ptolemaic ruler to learn the Egyptian language.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/CleopatraVII/skill1.png'),
                 type : 'Active',
-                name : 'Nữ hoàng của các vị vua',
+                name : 'Queen of Kings',
                 rage : 'Rage Requirement: 1000',
-                about : 'Chữa lành một số đơn vị bị thương nhẹ trong quân đội của bạn và quân đội thân thiện gần đó và tăng khả năng phòng thủ của những đội quân này trong 2 giây tiếp theo.',
-                update : 'Hệ số chữa lành: 150/200/250/300/400\nThưởng phòng thủ: 5% / 7% / 9% / 12% / 15%'
+                about : 'Heals some of the slightly wounded units in your army and nearby friendly armies and increases defense of these troops for the next 2 seconds.',
+                update : 'Healing Factor : 150 / 200 / 250 / 300 / 400\nDefense Bonus: 5 % / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CleopatraVII/skill2.png') ,
-                name : 'Kết thúc Ptolemy',
+                name : 'End of Ptolemy',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ thu gom đá; tăng tốc độ thu gom lương thực, gỗ và vàng.',
-                update : 'Tốc độ thu thập (đá): 5% / 10% / 15% / 20% / 30%\nTốc độ thu thập (Tài nguyên khác): 3% / 6% / 10% / 15% / 20%'
+                about : `Increase stone gathering speed; increases food, wood and gold gathering speed`,
+                update : 'Bonus Gathering Speed (stone): 5% / 10% / 15% / 20% / 30%\nBonus Gathering Speed (Other Resources): 3% / 6% / 10% / 15% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CleopatraVII/skill3.png') ,
-                name : 'Vẻ đẹp và trí tuệ',
+                name : 'Beauty and Wisdom',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tải trọng quân đội.',
-                update : 'Tăng tải trọng: 10% / 20% / 30% / 40% / 50%'
+                about : 'Increases troop load.',
+                update : 'Load Bonus: 10% / 20% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CleopatraVII/skill4.png') ,
-                name : 'Pharaoh cuối cùng',
+                name : 'The Last Pharaoh',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công và phòng thủ đơn vị bao vây khi tập hợp tại các điểm tài nguyên trên bản đồ.',
-                update : 'Thưởng Tấn công đơn vị bao vây: 10% / 20% / 30% / 40% / 50%\nThưởng phòng thủ đơn vị bao vây: 10% / 20% / 30% / 40% / 50%'
+                about : 'Increases siege unit attack and defense when gathering at resource points on the map.',
+                update : 'Siege Unit Attack Bonus: 10% / 20% / 30% / 40% / 50%\nSiege Unit Defense Bonus: 10% / 20% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/CleopatraVII/skill5.png') ,
-                name : 'Quà tặng của sông Nile',
+                name : 'Gifts of the Nile',
                 type : 'Passive',
                 rage : '',
-                about : 'Cleopatra nhận thêm Gói tài nguyên sau khi cô kết thúc việc thu thập tại các điểm tài nguyên trên bản đồ.',
-                update : 'Cleopatra nhận thêm Gói tài nguyên sau khi cô kết thúc việc thu thập tại các điểm tài nguyên trên bản đồ.'
+                about : `Cleopatra receives additional Resource Packs after she has finished gathering at resource points on the map.`,
+                update : 'Cleopatra receives additional Resource Packs after she has finished gathering at resource points on the map.'
             },
 
         ],
@@ -447,7 +463,14 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : `https://rok.guide/wp-content/uploads/2019/09/cleopatra-cavalry-trap-1024x558.jpg`
+            },
+            {
+                uri : `https://rok.guide/wp-content/uploads/2019/09/cleopatra-support-build-1024x558.jpg`
+            }
+        ],
         partner : [],
         trangBi : 'thu gom'
     },
@@ -456,47 +479,47 @@ export default [
         name : 'Constantine I',
         image : require('./../../assets/images/Commander/Legendary/Constantine/Constantine.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Constantine/tuongConstantine.png'),
-        about : 'Constantine Đại đế, còn được gọi là Constantine I hoặc Saint Constantine, là một Hoàng đế La Mã có nguồn gốc Illyrian và Hy Lạp. Là hoàng đế, Constantine ban hành các cải cách hành chính, tài chính, xã hội và quân sự để củng cố đế chế. Ông tái cơ cấu chính phủ, tách các cơ quan dân sự và quân sự. Để chống lạm phát, ông đã giới thiệu solidus, một đồng tiền vàng mới trở thành tiêu chuẩn cho tiền tệ Byzantine và châu Âu trong hơn một nghìn năm. Quân đội La Mã được tổ chức lại bao gồm các đơn vị chiến trường cơ động và binh lính đồn trú có khả năng chống lại các mối đe dọa nội bộ và các cuộc xâm lược man rợ.',
+        about : `Constantine the Great, also known as Constantine I or Saint Constantine, was a Roman Emperor of Illyrian and Greek origin. As emperor, Constantine enacted administrative, financial, social and military reforms to strengthen the empire. He restructured the government, separating civil and military authorities. To combat inflation he introduced the solidus, a new gold coin that became the standard for Byzantine and European currencies for more than a thousand years. The Roman army was reorganized to consist of mobile field units and garrison soldiers capable of countering internal threats and barbarian invasions.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Constantine/skill1.png'),
                 type : 'Active',
-                name : 'Đạo luật của Milan',
+                name : 'Edict of Milan',
                 rage : 'Rage Requirement: 1000',
-                about : 'Trong 5 giây tiếp theo, giảm đòn tấn công của mục tiêu và tăng giảm sát thương cho quân đội của chỉ huy và quân đội thân thiện gần đó.',
-                update : 'Giảm tấn công: 20% / 25% / 30% / 35% / 40%\nThiệt hại được thực hiện giảm: 3% / 4% / 6% / 8% / 10%'
+                about : `For the next 5 seconds, decreases the target's attack and increases troop damage reduction of his commander's army and nearby friendly armies.`,
+                update : `Attack Reduction: 20% / 25% / 30% / 35% / 40%\nDamage Taken Reduced By: 3% / 4% / 6% / 8% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Constantine/skill2.png') ,
-                name : 'Lòng trung thành',
+                name : 'Allegiance',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sức khỏe cho các đơn vị bộ binh.',
-                update : 'Thưởng cho sức khỏe bộ binh: 15% / 20% / 25% / 30% / 40%'
+                about : `Increases health of infantry units.`,
+                update : `Infantry Health Bonus: 15% / 20% / 25% / 30% / 40%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Constantine/skill3.png') ,
-                name : 'Bế tắc',
+                name : 'Impasse',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của đồn trú và tấn công của tháp canh khi chỉ huy này đang phục vụ như là chỉ huy đồn trú.',
-                update : 'Tiền thưởng tấn công đồn trú: 3% / 4% / 6% / 8% / 10%\nThưởng tấn công của Tháp Canh: 3% / 4% / 6% / 8% / 10%'
+                about : `Increases the attack of the garrison and attack of the watchtower when this commander is serving as garrison commander.`,
+                update : `Garrison Attack Bonus: 3% / 4% / 6% / 8% / 10%\nWatchtower Attack Bonus: 3% / 4% / 6% / 8% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Constantine/skill4.png') ,
-                name : 'Thánh giá',
+                name : 'Cross of the Divine',
                 type : 'Passive',
                 rage : '',
-                about : 'Ôn quân đội do chỉ huy này chỉ huy đã giảm tới 50% sức mạnh, quân đội sẽ nhận được hiệu quả chữa bệnh mạnh mẽ. Hiệu ứng này có thể kích hoạt tối đa một lần mỗi giờ sau khi quân đội rời khỏi thành phố.',
-                update : 'Hệ số chữa bệnh: 7500/9000/1300/1500'
+                about : `Wen the army led by this commander has been reduced to 50% strength, troops will receive a powerful healing effect. This effect can trigger a maximum of once per hour after the army has left the city.`,
+                update : 'Healing Factor: 7500 / 9000 / 130000 / 150000'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Constantine/skill5.png') ,
-                name : 'Augustus đệ nhất',
+                name : 'Sole Augustus',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công quân đội thêm 15% và phòng thủ thêm 5%.',
-                update : 'Tăng tấn công quân đội thêm 15% và phòng thủ thêm 5%.'
+                about : `Increases troop attack by 15% and defense by 5%.`,
+                update : 'Increases troop attack by 15% and defense by 5%.'
             },
 
         ],
@@ -507,7 +530,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Constantine-1024x577.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Constantine_2-1024x577.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/constantine-garrison-tree-2-1024x577.png'
+            }
+        ],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -516,47 +549,47 @@ export default [
         name : 'Edward',
         image : require('./../../assets/images/Commander/Legendary/Edward/Edward.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Edward/tuongEdward.png'),
-        about : 'Edward xứ Woodstock, được lịch sử gọi là Hoàng tử đen, là con trai cả của Vua Edward III của Anh, và là một trong những chỉ huy người Anh thành công nhất trong Chiến tranh Trăm năm. Anh ta chết trước cha mình, và vì vậy trong khi anh ta chưa bao giờ trở thành vua, Edward vẫn được những người cùng thời coi là một hình mẫu của tinh thần hiệp sĩ và là một trong những hiệp sĩ vĩ đại nhất trong thời đại của anh ta.',
+        about : `Edward of Woodstock, known to history as the Black Prince, was the eldest son of King Edward III of England, and one of the most successful English commanders during the Hundred Years' War. He died before his father, and so while he never became king, Edward was still regarded by his contemporaries as a model of chivalry and one of the greatest knights of his age.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Edward/skill1.png'),
                 type : 'Active',
-                name : 'Danh dự của cung thủ',
+                name : 'Archer\'s Honor',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương lớn cho một mục tiêu. Sau khi được sử dụng, sẽ giảm cơn thịnh nộ của quân đội Edward xuống 300 (không thể giảm xuống dưới 0 cơn thịnh nộ).',
-                update : 'Hệ số thiệt hại trực tiếp: 1500/1700/1900/2100/2500\nHệ số thiệt hại (Khi chỉ huy phụ): 750/850/950/950/1250'
+                about : `Deals massive damage to a single target. Once used, will reduce the rage of Edward's troops by 300 (cannot drop below 0 rage).`,
+                update : 'Direct Damage Factor: 1500 / 1700 / 1900 / 2200 / 2500\nDamage Factor (When Secondary Commander): 750 / 850 / 950 / 1100 / 1250'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Edward/skill2.png') ,
-                name : 'Cuộc thập tự chinh báo thù',
+                name : 'Vengeful Crusade',
                 type : 'Passive',
                 rage : '',
-                about : 'tăng sức khỏe và tốc độ diễu hành của các đơn vị cung thủ trong khi quân đội đang ở trên bản đồ.',
-                update : 'Phần thưởng sức khỏe của cung thủ: 10% / 15% / 20% / 25% / 30%\nThưởng tốc độ diễu hành của cung thủ: 10% / 15% / 20% / 25% / 30%'
+                about : 'increases archer units\' health and march speed while troops are on the map.',
+                update : `Archer Health Bonus: 10% / 15% / 20% / 25% / 30%\nArcher March Speed Bonus: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Edward/skill3.png') ,
-                name : 'Chiến dịch của Crécy',
+                name : 'Crécy\'s Campaign',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ chứa các đơn vị cung thủ, sẽ tăng sát thương kỹ năng và tăng sát thương cho các đơn vị bộ binh của các đơn vị cung thủ.',
-                update : 'Thưởng sát thương kỹ năng: 5% / 10% / 15% / 20% / 25%\nThiệt hại cho các đơn vị bộ binh tăng thêm: 1% / 2% / 3% / 4% / 5%'
+                about :  `When the army led by this commander contains only archer units, increases skill damage and increases damage dealt to infantry units by archer units.`,
+                update : `Skill Damage Bonus: 5% / 10% / 15% / 20% / 25%\nDamage To Infantry Units Increased By: 1% / 2% / 3% / 4% / 5%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Edward/skill4.png') ,
-                name : 'Cuộc phục kích của Limoges',
+                name : 'Limoges\' Ambush',
                 type : 'Passive',
                 rage : '',
-                about : 'When the army led by this commander is at 70% strength or higher, increases the attack of archer units and decreases defence by 10%.',
-                update : 'Thưởng Tấn công cung thủ: 15% / 20% / 25% / 30% / 40%'
+                about : `When the army led by this commander is at 70% strength or higher, increases the attack of archer units and decreases defence by 10%.`,
+                update : 'Archer Attach Bonus: 15% / 20% / 25% / 30% / 40%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Edward/skill5.png') ,
-                name : 'Tất cả hoặc không có gì',
+                name : 'All or Nothing',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương thông thường và sát thương phản công thêm 50% trong 2 giây sau khi sử dụng một kỹ năng.',
-                update : 'Tăng sát thương thông thường và sát thương phản công thêm 50% trong 2 giây sau khi sử dụng một kỹ năng.'
+                about : `Increases normal attack and counterattack damage by 50% for 2 seconds after using a skill.`,
+                update : `Increases normal attack and counterattack damage by 50% for 2 seconds after using a skill. `
             },
 
         ],
@@ -567,7 +600,21 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/edward-rally-attack-tree-1024x576.png',
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-2-1024x576.png',
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-1-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-3-1024x576.png'
+            }
+
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -576,46 +623,46 @@ export default [
         name : 'El Cid',
         image : require('./../../assets/images/Commander/Legendary/ElCid/ElCid.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/ElCid/tuongElCid.png'),
-        about : 'Rodrigo Díaz de Vivar là một nhà quý tộc và lãnh đạo quân sự của Castillian ở Tây Ban Nha thời trung cổ. Người Moors gọi ông là El Cid, có nghĩa là Chúa (có lẽ từ tiếng Ả Rập gốc al-Sayyid, tiếng Ả Rập). Năm 1904, sau khi Valentia sụp đổ, El Cid đã thành lập một công quốc độc lập trên bờ biển Địa Trung Hải của Tây Ban Nha. Ông cai trị một xã hội đa nguyên với sự ủng hộ phổ biến của các Kitô hữu và Hồi giáo. Nhân vật El Cid là nguồn gốc cho nhiều tác phẩm văn học, bắt đầu với Canter del Mio Cid, một bài thơ sử thi từ thế kỷ 12, đưa ra một câu chuyện hư cấu một phần về cuộc đời ông. Bài thơ này, cùng với các tác phẩm tương tự sau này như Mộcedades de Rodrigo, đã góp phần miêu tả El Cid như một anh hùng hào hiệp của Reconquista, biến anh thành một nhân vật huyền thoại ở Tây Ban Nha.',
+        about : `Rodrigo Díaz de Vivar was a Castillian nobleman and military leader in medieval Spain. The Moors called him El Cid, which meant the Lord (probably from the original Arabic al-Sayyid, السَّيِّد). In 1904, after the fall of Valentia, El Cid established an independent principality on the Mediterranean coast of Spain. He ruled over a pluralist society with the popular support of Christians and Muslims alike. The figure of El Cid has been the source for many literary works, beginning with the Canter del Mio Cid, an epic poem from the 12th century which gives a partly-fictionalized account of his life. This poem, along with similar later works such as the Mocedades de Rodrigo, contributed to portray El Cid as a chivalric hero of the Reconquista, making him a legendary figure in Spain.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/ElCid/skill1.png'),
                 type : 'Active',
-                name : 'Chiến binh nổi tiếng',
+                name : 'Famous Warrior',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên mục tiêu và vô hiệu hóa các đòn tấn công và kỹ năng Active thông thường của mục tiêu trong 1 giây.',
-                update : 'Hệ số thiệt hại trực tiếp: 500/600/70/800/1000'
+                about : `Deals direct damage to the target, and disables target's normal attacks and active skills for 1 second.`,
+                update : `Direct Damage Factor: 500 / 600 / 700 / 800 / 1000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/ElCid/skill2.png') ,
-                name : 'Bài thơ của El Cid',
+                name : `Poem of El Cid`,
                 type : 'Passive',
                 rage : '',
-                about : 'Quân đội của El Cid có 10% cơ hội gây thêm sát thương cho mục tiêu.',
-                update : 'Hệ số thiệt hại bổ sung: 500/600/70/800/1000'
+                about : 'El Cid\'s troops have a 10% chance to deal additional damage to the target.',
+                update : 'Additional Damage Factor: 500 / 600 / 700 / 800 / 1000'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/ElCid/skill3.png') ,
-                name : 'Người bảo vệ của Valencia',
+                name : 'Guardian of Valencia',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng phòng thủ và tốc độ diễu hành của các đơn vị cung thủ. ',
-                update : 'Thưởng phòng thủ cung thủ: 10% / 12% / 14% / 16% / 20%\nThưởng tốc độ hành quân của cung thủ: 5% / 7% / 9% / 12% / 15%'
+                about : 'Increases archer units\' defense and march speed.',
+                update : `Archer Defence Bonus: 10% / 12% / 14% / 16% / 20%\nArcher March Speed Bonus: 5% / 7% / 9% / 12% / 15%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/ElCid/skill4.png') ,
-                name : 'Không chịu khuất phục',
+                name : `Unyielding`,
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội của Cid đã bị giảm xuống dưới 50% số đơn vị của anh ta, làm tăng thiệt hại của tất cả quân đội và tốc độ diễu hành của tất cả quân đội. Hiệu ứng kéo dài cho đến khi quân đội bị giải tán.',
-                update : 'Thưởng thiệt hại: 5% / 10% / 15% / 20% / 25%\nThưởng tốc độ hành quân: 5% / 10% / 15% / 20% / 25%'
+                about :    `When Cid's army has been reduced to less than 50% of his units, increases the damage of all troops and march speed of all troops. The effect lasts until the army is disbanded.`,
+                update : `Damage Bonus: 5% / 10% / 15% / 20% / 25%\nMarch Speed Bonus: 5% / 10% / 15% / 20% / 25%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/ElCid/skill5.png') ,
-                name : 'Mất kiểm soát',
+                name : 'Out of Control',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương gây ra cho các đơn vị bộ binh bằng 5% đơn vị cung thủ, và giảm 5% sát thương từ các đơn vị bộ binh của các đơn vị cung thủ xuống 5%.',
+                about :  `Increases damage dealt to infantry units by archer units by 5%, and decreases damage taken from infantry units by archer units by 5%.`,
 
             },
 
@@ -627,7 +674,14 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/el-cid-archer-build-1024x558.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/el-cid-skill-tree-1024x558.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -636,46 +690,46 @@ export default [
         name : 'Frederick I',
         image : require('./../../assets/images/Commander/Legendary/Frederick/Frederick.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Frederick/tuongFrederick.png'),
-        about : 'Frederick I, còn được gọi là Frederick Barbarossa, là Hoàng đế La Mã thần thánh từ năm 1155 cho đến khi qua đời. Các nhà sử học coi ông trong số các hoàng đế thời trung cổ vĩ đại nhất của Đế chế La Mã. Anh ta kết hợp những phẩm chất khiến anh ta trở nên gần như siêu phàm với những người cùng thời: tham vọng, kỹ năng tổ chức, sự nhạy bén trong chiến trường và quan điểm chính trị của anh ta. Trong số những đóng góp của ông cho xã hội và văn hóa Trung Âu bao gồm việc tái lập Corpus Juris Civilis, hay luật pháp La Mã, làm đối trọng với quyền lực của giáo hoàng thống trị các quốc gia Đức kể từ khi kết thúc Cuộc tranh cãi Đầu tư. Frederick chết năm 1190 tại Tiểu Á khi đang lãnh đạo một đội quân trong cuộc Thập tự chinh thứ ba.',
+        about : `Frederick I, also known as Frederick Barbarossa, was the Holy Roman Emperor from 1155 until his death. Historians consider him among the Holy Roman Empire's greatest medieval emperors. He combined qualities that made him appear almost superhuman to his contemporaries: his ambition, his skills at organization, his battlefield acumen and his political perspicuity. Among his contribution to Central European society and culture include the re-establishment of the Corpus Juris Civilis, or the Roman rule of law, which counterbalanced the papal power that dominated the German states since the conclusion of the Investiture Controversy. Frederick died in 1190 in Asia Minor while leading an army in the Third Crusade.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Frederick/skill1.png'),
                 type : 'Active',
                 name : 'Barbarossa',
                 rage : 'Rage Requirement: 1000',
-                about : 'Trong 3 giây tiếp theo, tất cả các đòn tấn công có 80% cơ hội gây thêm sát thương cho mục tiêu.',
-                update : 'Hệ số thiệt hại trực tiếp:  400 / 500 / 600 / 700 / 800'
+                about : `For the next 3 seconds, all attacks have a 80% chance to deal additional damage to the target.`,
+                update : `Direct Damage Factor: 400 / 500 / 600 / 700 / 800`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Frederick/skill2.png') ,
-                name : 'Không bao giờ bỏ cuộc',
+                name :  `Never Give Up`,
                 type : 'Passive',
                 rage : '',
-                about : 'Đòn tấn công thông thường của quân lính có 10% cơ hội chữa lành một phần của các đơn vị bị thương nhẹ. Hiệu ứng này chỉ có thể kích hoạt cứ sau 5 giây.',
-                update : 'Hệ số chữa lành: 500/600/700/800/1000'
+                about : `Troops' normal attack has a 10% chance to heal a portion of the slightly wounded units. This effect can only trigger once every 5 seconds.`,
+                update : 'Healing Factor: 500 / 600 / 700 / 800 / 1000'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Frederick/skill3.png') ,
-                name : 'Cuộc xâm lăng',
+                name : `Invasion`,
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tất cả thiệt hại khi tấn công các thành phố khác của Thống đốc.',
-                update : 'Thưởng tấn công bộ binh: 2% / 4% / 6% / 8% / 10% '
+                about : `Increases all damage when attacking other Governors' cities.`,
+                update : `Infantry Attack Bonus: 2% / 4% / 6% / 8% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Frederick/skill4.png') ,
-                name : 'Vua nước Đức',
+                name : 'King of Deutschland',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng quân tối đa.',
-                update : 'Tăng quân đội tối đa: 3% / 6% / 9% / 12% / 15%'
+                about : 'Increases maximum troop capacity.',
+                update : `Troop Capacity Bonus: 3% / 6% / 9% / 12% / 15%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Frederick/skill5.png') ,
-                name : 'Barbarossa tức giận',
+                name :  `Furious Barbarossa`,
                 type : 'Passive',
                 rage : '',
-                about : 'Trong 3 giây tiếp theo, tất cả các đòn tấn công có 100% cơ hội gây thêm sát thương (Damage Factor 800) cho mục tiêu.',
+                about : `For the next 3 seconds, all attacks have a 100% chance to deal additional damage (Damage Factor 800) to the target.`,
 
             },
 
@@ -687,7 +741,17 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/Fredrick-Field-Battle-tree-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/frederick-1-skilled-leadership.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/uncle-fred-ultimate-build-1024x677.jpg'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -696,46 +760,46 @@ export default [
         name : 'Genghis Khan',
         image : require('./../../assets/images/Commander/Legendary/Khan/Khan.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Khan/tuongKhan.png'),
-        about : 'Genghis Khans, Temüjin sinh ra, là người sáng lập ra đế chế tiếp giáp lớn nhất trong lịch sử - Đế chế Mông Cổ. Cha của anh, người đứng đầu một bộ lạc Mông Cổ du mục, đã bị Tatars giết khi Temüjin chỉ mới 9 tuổi và gia đình anh bị gia tộc của họ bỏ rơi. Sự gia tăng quyền lực của Temüjin bắt đầu ngay sau khi một pháp sư tên Kokochu tuyên bố rằng anh ta đã được bầu trời xanh vĩnh cửu chọn để thống trị thế giới. Đến năm 1206, ông đã hợp nhất tất cả các bộ lạc gãy xương sống trên vùng đồng bằng Mông Cổ và đảm nhận một tước hiệu mới, là Genghis Khan Hồi, biểu thị vị trí của ông là người cai trị toàn cầu. Thành Cát Tư Hãn nhanh chóng bắt tay vào một loạt các cuộc xâm lược thành công vào Trung Quốc và Trung Á. Ông là một nhà lãnh đạo quân sự tài giỏi và một chính trị gia sắc sảo, cho phép ông củng cố những vùng đất mà ông đã chinh phục dưới sự lãnh đạo của Mông Cổ. Thành Cát Tư Hãn qua đời năm 1227, sau khi chinh phục vương triều Tây Xia. Theo truyền thuyết, thi thể của ông đã được đưa trở lại Mông Cổ bởi một người hộ tống tang lễ gắn kết đã giết chết bất cứ ai và bất cứ thứ gì băng qua đường trên đường đến đích của họ. Sau khi chôn cất xong, người hộ tống sau đó đóng dấu lên khu chôn cất, trồng cây để che giấu địa điểm và cuối cùng đã tự sát để đảm bảo bí mật sẽ không bao giờ được tiết lộ.',
+        about : `Genghis Khans, born Temüjin, was the founder of the largest contiguous empire in history - the Mongol Empire. His father, the head of a nomadic Mongol tribe, was killed by Tatars when Temüjin was only nine, and his family was abandoned by their clan. Temüjin’s rise to power began soon after a shaman by the name of Kokochu declared that he had been chosen by the Eternal Blue Sky to rule the world. By 1206, he had united all of the fractured tribes living on the Mongol plains and assumed a new title, “Genghis Khan”, signifying his position as universal ruler. Genghis Khan quickly embarked on a series of successful invasions into China and Central Asia. He was a brilliant military leader and shrewd politician, allowing him to consolidate the lands he conquered under Mongol leadership. Genghis Khan died in 1227, after conquering the Western Xia dynasty. According to legend, his body was returned to Mongolia by a mounted funeral escort that killed anyone and anything that crossed their path on the way to their destination. Once the burial was complete, the escort then stampeded over the burial grounds, planted trees to further conceal the site, and finally committed suicide to ensure that the secret would never be revealed.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Khan/skill1.png'),
                 type : 'Active',
-                name : 'Người được chọn',
+                name : `Chosen One`,
                 rage : 'Rage Requirement: 950',
-                about : 'Tấn công một mục tiêu duy nhất, gây sát thương lớn (Damage Factor 800).',
-                update : 'Hệ số thiệt hại trực tiếp:  800 / 1000 / 1200 / 1400 / 1700'
+                about : `Attacks a single target, dealing massive damage (Damage Factor 800). `,
+                update : 'Direct Damage Factor: 800 / 1000 / 1200 / 1400 / 1700'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Khan/skill2.png') ,
-                name : 'Lốc xoáy của thảo nguyên',
+                name : 'Cyclone of the Steppes',
                 type : 'Passive',
                 rage : '',
-                about : 'Giảm chi phí cơn thịnh nộ của khả năng xuống 20 và tăng 3% tốc độ diễu hành của kỵ binh. Khi quân đội do chỉ huy này bị tấn công, phần thưởng tốc độ diễu hành này sẽ bị mất và tốc độ diễu hành của quân đội sẽ giảm thêm 30%.',
-                update : 'Giảm yêu cầu cơn thịnh nộ: 20/40/60/80/100\nThưởng tốc độ hành quân của kỵ binh: 3% / 6% / 9% / 12% / 15%'
+                about : `Reduces rage cost of abilities by 20 and increases cavalry march speed by 3%. When troops led by this commander are attacked, this march speed bonus will be lost, and troop march speed will be further reduced 30%.`,
+                update : 'Rage Requirement Reduction: 20 / 40 / 60 / 80/ 100\nCavalry March Speed Bonus: 3% / 6% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Khan/skill3.png') ,
-                name : 'Đế quốc du mục',
+                name : 'Nomandic Empire',
                 type : 'Passive',
                 rage : '',
-                about : 'Trong khi quân đội do chỉ huy này chỉ huy có sức mạnh hơn 70% và chỉ chứa các đơn vị kỵ binh, tăng 10% sát thương gây ra.',
-                update : 'Thưởng thiệt hại: 10% / 15% / 20% / 25% / 30% '
+                about : `While the army led by this commander is at more than 70% strength, and contains only cavalry units, increases all damage dealt by 10%.`,
+                update : 'Damage Bonus: 10% / 15% / 20% / 25% / 30% '
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Khan/skill4.png') ,
-                name : 'Lối sống quân sự',
+                name : 'Military Lifestyle',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ chứa các đơn vị kỵ binh và đã giảm sức mạnh xuống dưới 50%, tăng 10% sát thương kỹ năng và tăng thêm 5 cơn thịnh nộ khi bị tấn công.',
-                update : 'Phần thưởng sát thương kỹ năng: 10% / 15% / 20% / 25% / 30%\nCơn thịnh nộ được khôi phục: 5/10/15/20/25'
+                about : `When the army led by this commander contains only cavalry units and has ben reduced to less than 50% strength, increasees skill damage dealt by 10% and grants an additional 5 rage when attacked. `,
+                update : `Skill Damage Bonus: 10% / 15% / 20% / 25% / 30%\nRage Restored: 5 / 10 / 15 / 20 / 25`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Khan/skill5.png') ,
-                name : 'Không đứng thứ hai',
+                name : 'Second to None',
                 type : 'Passive',
                 rage : '',
-                about : 'Nếu kỹ năng "Người được chọn" được sử dụng trong khi quân đội do chỉ huy này chỉ chứa các đơn vị kỵ binh, sẽ cho 30% cơ hội rằng kỹ năng "Người được chọn" (Cấp 5) có thể được sử dụng lại ngay lập tức.',
+                about : `If the "Chosen One" skill is used while the army led by this commander contains only cavalry units, grants a 30% chance that the "Chosen One" skill (Level 5) can be used again instantly.`,
 
             },
 
@@ -747,7 +811,14 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/ghenghis-khan-talent-tree-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/genghis-khan-talent-tree-1024x576.png'
+            },
+        ],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -756,46 +827,48 @@ export default [
         name : 'Guan Yu',
         image : require('./../../assets/images/Commander/Legendary/GuanYu/GuanYu.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/GuanYu/tuongGuanYu.png'),
-        about : 'Quan Vũ, tên lịch sự Yunchang, là một vị tướng phục vụ dưới thời lãnh chúa Lưu Bị trong triều đại Đông Hán cuối Trung Quốc. Cùng với Zhang Fei, anh chia sẻ mối quan hệ anh em với Liu Bei và đồng hành cùng anh trong hầu hết các hoạt động khai thác ban đầu. Quan Vũ đã đóng một vai trò quan trọng trong các sự kiện dẫn đến sự kết thúc của triều đại nhà Hán và thành lập nhà nước của Shu Bei là Shu Han trong thời kỳ Tam Quốc. Trong khi anh ta được nhớ đến vì lòng trung thành của anh ta đối với Lưu Bị, anh ta cũng được biết đến vì đã trả ơn lòng tốt của Tào Tháo bằng cách giết chết Yan Liang, một vị tướng dưới quyền đối thủ của Cao Cao Yuan Shao, trong Trận chiến Boma. Sau khi Liu Bei giành được quyền kiểm soát tỉnh Yi vào năm 214, Quan Vũ vẫn ở lại tỉnh Jing để cai quản và bảo vệ khu vực này trong khoảng bảy năm. Vào năm 219, khi ông đang chiến đấu chống lại lực lượng của Tào Tháo trong Trận Fancheng, đồng minh Sun Quan của Liu Be đã phá vỡ liên minh Sun Sun Liu và phái tướng Lü Meng của mình đi chinh phục lãnh thổ của Liu Bei ở tỉnh Jing. Vào lúc Quan Vũ phát hiện ra sự mất mát của tỉnh Jing sau thất bại của mình tại Fancheng, thì đã quá muộn. Sau đó anh ta bị bắt bởi một cuộc phục kích của lực lượng của Sun Quan và bị xử tử.\nCuộc đời của Quan Vũ đã được tôn sùng và những thành tựu của ông được tôn vinh đến mức sau khi ông qua đời, ông được thần thánh hóa trong triều đại nhà Tùy. Qua nhiều thế hệ kể chuyện, đỉnh cao là tiểu thuyết lịch sử thế kỷ 14 Lãng mạn của ba vương quốc, những việc làm và phẩm chất đạo đức của ông đã được chú trọng, khiến cho Quan Vũ trở thành một trong những mô thức trung thành và chính nghĩa phổ biến nhất ở Đông Á. Ngày nay, ông vẫn được nhiều người Trung Quốc tôn thờ ở Trung Quốc đại lục, Đài Loan, Tây Tạng, Hồng Kông và trong số nhiều cộng đồng người Hoa ở nước ngoài. Trong sự sùng bái tôn giáo, anh ta được tôn kính gọi là "Divus Guan" (Guān Dì) hoặc "Lord Guan" (Guān Gōng). Ông là một vị thần được tôn thờ trong tôn giáo dân gian Trung Quốc, Nho giáo phổ biến, Đạo giáo và Phật giáo Trung Quốc, và những ngôi đền nhỏ đối với ông gần như có mặt ở các cửa hàng và nhà hàng truyền thống của Trung Quốc. Quê hương của anh, Yuncheng cũng đặt tên sân bay theo tên anh.',
+        about : `Guan Yu, courtesy name Yunchang, was a general serving under the warlord Liu Bei during the late Eastern Han dynasty of China. Along with Zhang Fei, he shared a brotherly relationship with Liu Bei and accompanied him on most of his early exploits. Guan Yu played a significant role in the events leading up to the end of the Han dynasty and the establishment of Liu Bei's state of Shu Han during the Three Kingdoms period. While he is remembered for his loyalty towards Liu Bei, he is also known for repaying Cao Cao's kindness by slaying Yan Liang, a general under Cao Cao's rival Yuan Shao, at the Battle of Boma. After Liu Bei gained control of Yi Province in 214, Guan Yu remained in Jing Province to govern and defend the area for about seven years. In 219, while he was away fighting Cao Cao's forces at the Battle of Fancheng, Liu Bei's ally Sun Quan broke the Sun–Liu alliance and sent his general Lü Meng to conquer Liu Bei's territories in Jing Province. By the time Guan Yu found out about the loss of Jing Province after his defeat at Fancheng, it was too late. He was subsequently captured in an ambush by Sun Quan's forces and executed.
+
+        Guan Yu's life was lionised and his achievements glorified to such an extent after his death that he was deified during the Sui dynasty. Through generations of storytelling, culminating in the 14th-century historical novel Romance of the Three Kingdoms, his deeds and moral qualities have been given immense emphasis, making Guan Yu one of East Asia's most popular paradigms of loyalty and righteousness. He is still worshipped by many Chinese people today in mainland China, Taiwan, Tibet, Hong Kong and among many overseas Chinese communities. In religious devotion, he is reverentially called the "Divus Guan" (Guān Dì) or "Lord Guan" (Guān Gōng). He is a deity worshipped in Chinese folk religion, popular Confucianism, Taoism, and Chinese Buddhism, and small shrines to him are almost ubiquitous in traditional Chinese shops and restaurants. His hometown Yuncheng has also named its airport after him.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/GuanYu/skill1.png'),
                 type : 'Active',
-                name : 'Thánh chiến',
+                name : 'Saint of War',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên tối đa 3 kẻ địch trong khu vực hình quạt và làm im lặng các mục tiêu này trong 3 giây (sát thương gây ra cho tất cả các mục tiêu sẽ giảm 15% cho mỗi kẻ địch bổ sung). Khi Quan Vũ đang phục vụ với tư cách là chỉ huy phụ, hãy giảm Yếu tố sát thương.',
-                update : 'Hệ số thiệt hại (Khi chỉ huy phụ): 550/650/750/850/1000\nHệ số thiệt hại trực tiếp: 1100/213/1500/1700/2000'
+                about : 'Deals direct damage to up to 3 enemies in a fan-shaped area and silences these targets for 3 seconds (damage dealt to all targets will be decreased by 15% for each additional enemy). When Guan Yu is serving as the secondary commander, decrease Damage Factor.',
+                update : `Damage Factor (When Secondary Commander): 550 / 650 / 750 / 850 / 1000\nDirect Damage Factor: 1100 / 1300 / 1500 / 1700 / 2000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/GuanYu/skill2.png') ,
-                name : 'Ngũ hổ tướng',
+                name : 'Five Tiger Generals',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công đồn trú, tăng sát thương tấn công bình thường. Các cuộc tấn công thông thường có 10% cơ hội để giảm một cuộc tấn công mục tiêu trong 3 giây.',
-                update : 'Phần thưởng sát thương tấn công thông thường: 3% / 6% / 9% / 12% / 15%\nGiảm tấn công: 10% / 15% / 20% / 25% / 30%'
+                about : 'When attacking garrisons, increases normal attack damage. Normal attacks have a 10% chance to reduce a single target\'s attack for 3 seconds.',
+                update : 'Normal Attack Damage Bonus: 3% / 6% / 9% / 12% / 15%\nAttack Reduction: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/GuanYu/skill3.png') ,
-                name : 'Trận thảm sát của Hoa Hùng',
+                name : `The Slaying of Hua Xiong`,
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công và tốc độ hành quân của các đơn vị bộ binh. Khi rời khỏi trận chiến, Quan Vũ chữa lành một phần các đơn vị bị thương nhẹ.',
-                update : 'Thưởng tấn công bộ binh: 10% / 15% / 20% / 25% / 30%\nPhần thưởng tốc độ hành quân của bộ binh: 3% / 6% / 9% / 12% / 15%\nYếu tố chữa bệnh: 500/600/700/800/1000'
+                about : `Increases infantry units' attack and march speed. Upon leaving battle, Guan Yu heals a portion of slightly wounded units.`,
+                update : `Infantry Attack Bonus: 10% / 15% / 20% / 25% / 30%\nInfantry March Speed Bonus: 3% / 6% / 9% / 12% / 15%\nHealing Factor: 500 / 600 / 700 / 800 / 1000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/GuanYu/skill4.png') ,
-                name : 'Thanh long yển nguyệt đao',
+                name : 'Green Dragon Crescent Blade',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi kỹ năng "Thánh chiến" chỉ bắn trúng 1 mục tiêu, có 50% cơ hội gây thêm sát thương cho mục tiêu. Khi kỹ năng tấn công từ 2 mục tiêu trở lên, có 50% cơ hội gây thêm sát thương cho mục tiêu hiện tại.',
-                update : 'Hệ số thiệt hại bổ sung (1 mục tiêu): 600/700/800/900/1000\nHệ số thiệt hại bổ sung (Mục tiêu 2+): 800/900/1000/1200/1400'
+                about : `When the skill "Saint of War" hits only 1 target, there is a 50% chance to deal additional damage to the target. When the skill hits 2 or more targets, there is a 50% chance to deal additional damage to the current target.`,
+                update : 'Additional Damage Factor (1 Target): 600 / 700 / 800 / 900 / 1000\nAdditional Damage Factor (2+ Target): 800 / 900 / 1000 / 1200 / 1400'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/GuanYu/skill5.png') ,
-                name : 'Kỹ mã độc hành',
+                name : 'Lone Rider',
                 type : 'Passive',
                 rage : '',
-                about : 'Bất cứ khi nào Quan Vũ có được khiên, anh ta cũng tăng 15% sát thương kỹ năng Active trong 3 giây. Bất cứ khi nào Quan Vũ rời khỏi một cấu trúc, anh ta tăng 100% tốc độ diễu hành trong 3 giây.',
+                about : `Whenever Guan Yu gains a shield, he also increases his active skill damage by 15% for 3 seconds. Whenever Guan Yu leaves a structure, he increases his march speed by 100% for 3 seconds.`,
 
             },
 
@@ -807,7 +880,12 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/Guan-Yu-Field-Battle-1024x684.jpg'
+            },
+           
+        ],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -816,46 +894,46 @@ export default [
         name : 'Hannibal Barca',
         image : require('./../../assets/images/Commander/Legendary/HannibalBarca/HannibalBarca.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/HannibalBarca/tuongHannibalBarca.png'),
-        about : 'Hannibal Barca là một vị tướng Carthage, được coi là một trong những chỉ huy quân sự vĩ đại nhất trong lịch sử. Cha của anh Hamilcar Barca là chỉ huy Carthage hàng đầu trong Chiến tranh Punic lần thứ nhất. Các em trai của ông là Mago và Hasdrubal, và ông là anh rể của Hasdrubal Hội chợ. Hannibal sống trong thời kỳ căng thẳng lớn ở lưu vực phía tây Địa Trung Hải khi Cộng hòa La Mã thiết lập quyền lực tối cao đối với các cường quốc như Carthage cổ đại, Etruscans, Samnites và vua Hy Lạp của Hy Lạp. Một trong những thành tựu nổi tiếng nhất của ông là sự bùng nổ của Chiến tranh Punic lần thứ hai khi ông hành quân một đội quân bao gồm những con voi chiến từ Iberia qua Pyrenees và dãy Alps vào Ý. Trong vài năm đầu tiên ở Ý, anh đã giành được ba chiến thắng kịch tính - Trebia, Hồ Trasimene và Cannae, trong đó anh nổi bật nhờ khả năng xác định điểm mạnh và điểm yếu tương ứng của đối thủ và lên kế hoạch cho trận chiến - và chiến thắng nhiều đồng minh của Rome. Hannibal chiếm phần lớn nước Ý trong 15 năm nhưng không thể hành quân đến Rome. Một kẻ thù phản công xâm chiếm Bắc Phi đã buộc anh phải trở về Carthage, nơi anh bị Scipio Africanus đánh bại một cách quyết đoán trong Trận chiến Zama.',
+        about : `Hannibal Barca was a Carthaginian general, considered one of the greatest military commanders in history. His father Hamilcar Barca was the leading Carthaginian commander during the First Punic War. His younger brothers were Mago and Hasdrubal, and he was brother-in-law to Hasdrubal the Fair. Hannibal lived during a period of great tension in the western Mediterranean Basin when the Roman Republic established its supremacy over great powers such as ancient Carthage, the Etruscans, Samnites and the Greek king of Syracuse. One of his most famous achievements was the outbreak of the Second Punic War when he marched an army which included war elephants from Iberia over the Pyrenees and the Alps into Italy. In his first few years in Italy, he won three dramatic victories - the Trebia, Lake Trasimene, and Cannae, in which he distinguished himself for his ability to determine his and his opponents' respective strengths and weaknesses, and to plan the battle accordingly - and won over many allies of Rome. Hannibal occupied much of Italy for 15 years but was unable to march on Rome. An enemy counter-invasion of Nort Africa forced him to return to Carthage, where he was decisively defeated by Scipio Africanus at the Battle of Zama.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/HannibalBarca/skill1.png'),
                 type : 'Active',
-                name : 'Voi chiến',
+                name : 'War Elephants',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp cho một mục tiêu sau đó giảm sát thương và phòng thủ của mục tiêu trong 5 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 150/200/250/300/400\n Giảm sát thương / Giảm phòng thủ: 10% / 13% / 16% / 20% / 25%'
+                about : `Deals direct damage to a single target then decreases target's damage and defense for the next 5 seconds.`,
+                update : `Direct Damage Factor: 150 / 200 / 250 / 300 / 400\nDamage/Defense Reduction: 10% / 13% / 16% / 20% / 25%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/HannibalBarca/skill2.png') ,
-                name : 'Chiến thuật bao bọc',
+                name : `Envelopment Tactics`,
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội của Hannibal chứa 2 loại đơn vị khác nhau, tất cả thiệt hại sẽ tăng lên. Nếu đội quân này chứa 3 loại khác nhau, tất cả thiệt hại thậm chí còn tăng thêm. (Chiến binh và kiếm sĩ là cùng loại đơn vị, trong khi chiến binh và người trượt băng là loại đơn vị khác nhau.)',
-                update : 'Thưởng thiệt hại (2 loại đơn vị): 1% / 2% / 3% / 4% / 5%\n Thưởng thiệt hại  (3 loại đơn vị): 5% / 6% / 7% / 8% / 10%'
+                about : `When Hannibal's army contains 2 different unit types, all damage is increased. If this army contains 3 different types, all damage is even further increased. (Warriors and swordsmen are the same unit type, while warriors and slingers are different unit types.)`,
+                update : `Bonus Damage (2 Unit Types): 1% / 2% / 3% / 4% / 5%\nBonus Damage (3 Unit Types): 5% / 6% / 7% / 8% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/HannibalBarca/skill3.png') ,
-                name : 'Cuộc bao vây',
+                name : 'Siege',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công các đơn vị đồn trú của các Thống đốc khác, Hannibal có 10% cơ hội chữa lành một số đơn vị bị thương nhẹ.',
-                update : 'Hệ số chữa lành: 500/600/700/800/1000'
+                about : `When attacking other Goverrnors' garrisons, Hannibal has a 10% chance to heal some of his slightly wounded units.`,
+                update : `Healing Factor: 500 / 600 / 700 / 800 / 1000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/HannibalBarca/skill4.png') ,
-                name : 'Đoàn thám hiểm',
+                name : 'Expedition',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng năng lực đoàn quân. Khi chiến đấu bên ngoài lãnh thổ liên minh, tăng sát thương cho tất cả quân đội của Hannibal trong 3 giây sau khi sử dụng một kỹ năng.',
-                update : 'Tăng quân đội tối đa: 3% / 4,5% / 6% / 8% / 10%\nThưởng thiệt hại: 5% / 7% / 9% / 12% / 15%'
+                about : `Increases troop capacity. When battling outside of alliance territory, increases the damage of all Hannibal's troops for 3 seconds after using a skill.`,
+                update : 'Troop Capacity Bonus: 3% / 4.5% / 6% / 8% / 10%\nDamage Bonus: 5% / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/HannibalBarca/skill5.png') ,
-                name : 'Voi chiến tấn công',
+                name : 'War Elephant Trample',
                 type : 'Update skill  1',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Hệ số sát thương 400) cho một mục tiêu sau đó gây thêm sát thương (Hệ số sát thương 300) cho 3 mục tiêu trong một đòn tấn công về phía trước ở lượt tiếp theo và giảm 25% sát thương của 3 mục tiêu và giảm 25% trong 3 giây .',
+                about : `Deals direct damage (Damage Factor 400) to a single target then deals additional damage (Damage Factor 300) to 3 targets in a forward direrction on the next turn and decreases damage of the 3 targets by 25% and defense by 25% for 3 seconds.`,
 
             },
 
@@ -867,7 +945,14 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/hannibal-barca-field-battles-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/hannibal-barca-rally-attack-tree-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -876,46 +961,54 @@ export default [
         name : 'Ishida Mitsunari',
         image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/IshidaMitsunari.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/IshidaMitsunari/tuongIShidaMitsunari.png'),
-        about : 'Ishida Mitsunari là một samurai Nhật Bản và chỉ huy quân sự của thời kỳ cuối sengoku của Nhật Bản. Ông có lẽ được nhớ đến nhiều nhất với tư cách là chỉ huy của quân đội phương Tây trong Trận Sekigahara sau thời kỳ Azuchi-Momoyama của thế kỷ 16. Ông cũng được biết đến bởi tên tòa án của mình, Jibu-no-shō (治 部 少).\nMitsunari đã gặp Toyotomi Hideyoshi khi người còn trẻ và người sau là daimyō của Nagahama. Khi Hideyoshi tham gia vào một chiến dịch ở vùng Chūgoku, Mitsunari đã hỗ trợ lãnh chúa của mình trong các cuộc tấn công chống lại các lâu đài như Lâu đài Tottori và Lâu đài Takamatsu (ở Okayama ngày nay).\nSau khi Hideyoshi nắm quyền, Mitsunari được biết đến như một nhà quản lý tài chính tài năng nhờ kiến ​​thức và kỹ năng tính toán. Từ năm 1585 trở đi, anh ta là quản trị viên của Sakai, một vai trò mà anh ta đã đảm nhận cùng với anh trai của mình là Ishida Masazumi. Ông được bổ nhiệm là một trong năm bugyō, hoặc quản trị viên hàng đầu của chính phủ Hideyoshi.\nMitsunari là một nhà lãnh đạo của các quan chức trong chính phủ của Hideyoshi, và được biết đến với tính cách không khoan nhượng. Mặc dù anh ta có nhiều bạn bè, anh ta có mối quan hệ xấu với một số daimyou được biết đến như những chiến binh giỏi, bao gồm cả người thân của Hideyoshi là Kuroda Nagamasa và Hachisuka Iemasa. Ngoài ra, chiến binh trẻ Kobayakawa Hideaki đã nảy sinh ác cảm với Mitsunari do những tin đồn được truyền bá bởi Tokugawa Ieyasu. Đến cuối đời Taiko Hideyoshi, Hideyoshi ra lệnh xử tử người thừa kế Hidetsugu và xử tử gia đình, để lại người thừa kế mới là đứa trẻ cực kỳ trẻ trung Toyotomi Hideyori. Sau cái chết của Hideyoshi, các cuộc xung đột tại tòa án trở nên tồi tệ hơn. Điểm mấu chốt của cuộc xung đột là câu hỏi liệu Tokugawa Ieyasu có thể dựa vào như một người ủng hộ chính phủ Toyotomi hay không, mà lãnh chúa danh nghĩa vẫn còn là một đứa trẻ, với sự lãnh đạo thực sự rơi vào một hội đồng nhiếp chính. Sau cái chết của Maeda Toshiie "trung lập" đáng kính năm 1599, cuộc xung đột đã nổ ra, với Mitsunari thành lập một liên minh của những người trung thành với người thừa kế trẻ của Toyotomi để chống lại Tokugawa. Sự hỗ trợ của Mitsunari phần lớn đến từ phía nam và phía tây Nhật Bản, với sự bổ sung của tộc Uesugi ở phía bắc, trong khi sự hỗ trợ của Tokugawa đến từ miền trung và miền bắc Nhật Bản, nhưng có ảnh hưởng và đe dọa đối với một số lãnh chúa phương Tây. Người đứng đầu của liên minh phương Tây là Mōri Terumoto, nhưng Mōri vẫn cố thủ trong lâu đài của mình; lãnh đạo rơi vào Mitsunari trong lĩnh vực này. Năm 1600, anh bao vây lâu đài Fushimi trước khi tiến hành xung đột trực tiếp với liên minh của Tokugawa tại Sekigahara. Một số lãnh chúa ở lại trung lập, theo dõi trận chiến từ xa, không muốn tham gia vào phe thua cuộc. Lực lượng của Tokugawa đã giành được lợi thế trong trận chiến, đặc biệt là với sự phản bội của Kobayakawa Hideaki về phía mình, và giành chiến thắng trong trận chiến.\nSau thất bại, Mitsunari tìm cách trốn thoát nhưng bị dân làng bắt. Anh ta bị chặt đầu ở Kyoto. Các daimyō khác của quân đội phương Tây, như Konishi Yukinaga và Ankokuji Ekei cũng bị xử tử. Sau khi hành quyết, đầu của anh ta, bị cắt đứt khỏi cơ thể, được đặt trên một giá đỡ cho tất cả mọi người ở Kyoto nhìn thấy. Hài cốt của anh được chôn cất tại Sangen-in, một ngôi đền phụ của Daitoku-ji, Kyoto.',
+        about : `Ishida Mitsunari was a Japanese samurai and military commander of the late Sengoku period of Japan. He is probably best remembered as the commander of the Western army in the Battle of Sekigahara following the Azuchi-Momoyama period of the 16th century. He is also known by his court title, Jibu-no-shō (治部少輔).
+
+        Mitsunari met Toyotomi Hideyoshi when the former was still young and the latter was the daimyō of Nagahama. When Hideyoshi engaged in a campaign in the Chūgoku region, Mitsunari assisted his lord in attacks against castles like the Tottori Castle and Takamatsu Castle (in present-day Okayama).
+        
+        After Hideyoshi seized power, Mitsunari became known as a talented financial manager due to his knowledge and skill at calculation. From 1585 onward, he was the administrator of Sakai, a role he took together with his elder brother Ishida Masazumi. He was appointed one of the five bugyō, or top administrators of Hideyoshi's government.
+        
+        Mitsunari was a leader of bureaucrats in Hideyoshi's government, and was known for his unbending character. Though he had many friends, he was on bad terms with some daimyōs that were known as good warriors, including Hideyoshi's relatives Kuroda Nagamasa and Hachisuka Iemasa. Additionally, the young warrior Kobayakawa Hideaki developed a grudge against Mitsunari as a result of rumours spread by Tokugawa Ieyasu. Toward the end of Taiko Hideyoshi's life, Hideyoshi ordered the execution of his heir Hidetsugu and the execution of his family, leaving his new heir to be the extremely young child Toyotomi Hideyori. After Hideyoshi's death, the conflicts in the court worsened. The central point of the conflict was the question of whether Tokugawa Ieyasu could be relied on as a supporter of the Toyotomi government, whose nominal lord was still a child, with actual leadership falling to a council of regents. After the death of the respected "neutral" Maeda Toshiie in 1599, the conflict came to arms, with Mitsunari forming an alliance of loyalists to Toyotomi's young heir to stand against Tokugawa. Mitsunari's support largely came from the south and west of Japan, with the addition of the Uesugi clan in the north, while Tokugawa's support came from central and northern Japan, but had influence and intimidation over some of the Western lords. The titular head of the Western alliance was Mōri Terumoto, but Mōri stayed entrenched in his castle; leadership fell to Mitsunari in the field. In 1600, he besieged Fushimi Castle before marching into direct conflict with Tokugawa's alliance at Sekigahara. A number of lords stayed neutral, watching the battle from afar, not wishing to join in the losing side. Tokugawa's forces gained the edge in the battle, especially with the betrayal of Kobayakawa Hideaki to his side, and won the battle.
+        
+        After his defeat, Mitsunari sought to escape, but was caught by villagers. He was beheaded in Kyoto. Other daimyōs of the Western army, like Konishi Yukinaga and Ankokuji Ekei were also executed. After execution, his head, severed from his body, was placed on a stand for all the people in Kyoto to see. His remains were buried at Sangen-in, a sub-temple of the Daitoku-ji, Kyoto.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/skill1.png'),
                 type : 'Active',
-                name : 'Trận chiến Sekigahara',
+                name : 'Battle of Sekigahara',
                 rage : 'Rage Requirement: 1000',
-                about : 'Trong 3 giây tiếp theo, tăng sức tấn công của tất cả các đội quân do Ishida Mitsunari dẫn đầu, và tăng tốc độ cơn thịnh nộ đạt được.',
-                update : 'Thưởng tấn công: 10% / 15% / 20% / 25% / 30%\n Tăng tốc độ của cơn thịnh nộ đạt được: 10% / 15% / 20% / 25% / 30%'
+                about : `For the next 3 seconds, increases attack of all troops led by Ishida Mitsunari, and increases the speed of rage gained.`,
+                update : `Attack Bonus: 10% / 15% / 20% / 25% / 30%\nSpeed of Rage Gained: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/skill2.png') ,
                 name : 'Go-Bugyõ',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ thu thập thực phẩm, tăng thu thập gỗ và đá. ',
-                update : 'Tăng tốc độ thu thập (Thực phẩm): 5% / 10% / 15% / 20% / 30%\n Tăng tốc độ thu thập (Tài nguyên khác): 3% / 5% / 10% / 15% / 20%'
+                about : 'Increases food gathering speed, increases wood and stone gathering.',
+                update : `Bonus Gathering Speed (Food): 5% / 10% / 15% / 20% / 30%\nBonus Gathering Speed (Other Resources): 3% / 5% / 10% / 15% / 20%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/skill3.png') ,
                 name : 'Taiko-kenchi',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tải trọng quân đội do Ishida Mitsunari chỉ huy.',
-                update : 'Tăng tải trọng quân đội: 10% / 20% / 30% / 40% / 50%'
+                about : `Increases load of troops led by Ishida Mitsunari. `,
+                update : `Load Bonus: 10% / 20% / 30% / 40% / 50%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/skill4.png') ,
-                name : 'Không thể thiếu',
+                name : 'Indispensable',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sức khỏe quân đội. Khi phục vụ như là chỉ huy phụ, tăng sát thương kỹ năng Active.',
-                update : 'Thưởng sức khỏe: 5% / 7% / 9% / 12% / 15%\nThưởng sát thương kỹ năng: 5% / 7% / 9% / 12% / 15%'
+                about : `Increases troop health. When serving as the secondary commander, increases active skill damage.`,
+                update : `Health Bonus: 5% / 7% / 9% / 12% / 15%\nSkill Damage Bonus: 5% / 7% / 9% / 12% / 15%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/IshidaMitsunari/skill5.png') ,
-                name : '3 Tách trà',
+                name : `Three Cups of Tea`,
                 type : 'Passive',
                 rage : '',
-                about : 'Các đòn tấn công thông thường của quân đội của Ishida Mitsunari có 10% cơ hội chữa lành một phần các đơn vị bị thương nhẹ (Hệ số chữa bệnh 500), hiệu ứng này chỉ có thể kích hoạt cứ sau 3 giây.',
+                about : `Ishida Mitsunari's troops' normal attacks have a 10% chance to heal a portion of slightly wounded units (Healing Factor 500), this effect can only trigger once every 3 seconds.`,
 
             },
 
@@ -927,7 +1020,11 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://riseofkingdomsguides.com/wp-content/uploads/2020/01/Ishida-Mitsunari-.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'thu gom'
     },
@@ -936,46 +1033,46 @@ export default [
         name : 'Julius Caesar',
         image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/JuliusCaesar.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/JuliusCaesar/tuongJuliusCaesar.png'),
-        about : 'Gaius Julius Caesar là một chính trị gia và tướng quân La Mã, người đóng vai trò phê bình trong các sự kiện dẫn đến sự trỗi dậy của Đế chế La Mã. Caesar vươn lên trở thành một trong những chính trị gia quyền lực nhất thông qua một số thành tựu, đáng chú ý là những chiến thắng của ông trong Chiến tranh Gallic. Sau khi nắm quyền kiểm soát chính phủ, Caesar bắt đầu một chương trình cải cách xã hội và chính phủ, bao gồm cả việc tạo ra Lịch Julian. Những cải cách dân túy và độc đoán của ông đã chọc giận giới tinh hoa, những người bắt đầu âm mưu chống lại ông. Vào Ides của ngày 44 tháng 3 trước Công nguyên, Caesar bị ám sát bởi một nhóm thượng nghị sĩ nổi loạn do Gaius Cassius Longinus, Marcus Junius Brutus và Decimus Junius Brutus lãnh đạo.',
+        about : `Gaius Julius Caesar was a Roman politician and general who played a critic role in the events that led the rise of the Roman Empire. Caesar rose to become one of the most powerful politicians through a number of is accomplishments, notably his victories in the Gallic Wars. After assuming control of the government, Caesar began a program of social and governmental reforms, including the creation of the Julian Calendar. His populist and authoritarian reforms angered the elites, who began to conspire against him. On the Ides of March 44 BC, Caesar was assassinated by a group of rebellious senators led by Gaius Cassius Longinus, Marcus Junius Brutus, and Decimus Junius Brutus.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/skill1.png'),
                 type : 'Active',
-                name : 'Quân đội bất khuất',
+                name : `Indomitable Army`,
                 rage : 'Rage Requirement: 1000',
-                about : 'Trong 5 giây tiếp theo, tăng sức tấn công và phòng thủ của quân đội và tăng tất cả sát thương.',
-                update : 'Thưởng Tấn công / Phòng thủ: 10% / 12% / 14% / 16% / 20%\nThưởng thiệt hại: 10% / 14% / 18% / 24% / 30%'
+                about : `For the next 5 seconds, increase troops' attack and defense and increase all damage.`,
+                update :  `Attack/Defense Bonus: 10% / 12% / 14% / 16% / 20%\nDamage Bonus: 10% / 14% / 18% / 24% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/skill2.png') ,
-                name : 'Julius thần thánh',
+                name : 'Divine Julius',
                 type : 'Passive',
                 rage : '',
-                about : 'Giảm sát thương của quân đội Caesar. Khi quân đội của Caesar đã giảm xuống 60% hoặc ít hơn các đơn vị của anh ta, anh ta có 10% cơ hội để giảm thêm thiệt hại trong 3 giây tiếp theo mỗi khi quân đội của anh ta bị tấn công. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây.',
-                update : 'Thiệt hại được thực hiện giảm: 3% / 4,5% / 6% / 8% / 10%\nGiảm sát thương bổ sung: 10% / 15% / 20% / 25% / 30%'
+                about : `Reduces damage taken by Caesar's troops. When Caesar's army has been reduced to 60% or less of his units, he has a 10% chance to further reduce damage taken for the next 3 seconds whenever his troops are attacked. The effect can only trigger once every 5 seconds.`,
+                update : `Damage Taken Reduced By: 3% / 4.5% / 6% / 8% / 10%\nAdditional Damage Reduction: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/skill3.png') ,
-                name : 'Kẻ giết thành phố',
+                name : 'City Killer',
                 type : 'Passive',
                 rage : '',
-                about : 'Caesar có 10% cơ hội để giảm phòng thủ của kẻ thù mỗi lượt khi tấn công các thành phố khác của Thống đốc. Hiệu ứng kéo dài trong 3 giây.',
-                update : 'Giảm phòng thủ: 5% / 10% / 15% / 20% / 30%'
+                about : `Caesar has a 10% chance to reduce enemy defense per turn when attacking other Governor's cities. The effect lasts for 3 seconds.`,
+                update : 'Defense Reduction: 5% / 10% / 15% / 20% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/skill4.png') ,
-                name : 'Người sáng lập',
+                name : 'The Founders',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sức chứa tối đa cho quân đội.',
-                update : 'Tăng sức chứa tối đa quân đội: 3% / 6% / 9% / 12% / 15%'
+                about : 'Increases maximum troops capacity.',
+                update : 'Troop Capacity Bonus: 3% / 6% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/JuliusCaesar/skill5.png') ,
-                name : 'Đi trước thời đại',
+                name : 'Ahead of His Time',
                 type : 'Update skill  1',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Hệ số sát thương 400) cho mục tiêu, và trong 5 giây tiếp theo, tăng 20% ​​tấn công và phòng thủ của quân đội và tăng 30% sát thương.',
+                about : `Deals direct damage (Damage Factor 400) to the target, and, for the next 5 seconds, increases troops' attack and defence by 20% and increases all damage by 30%.`,
 
             },
 
@@ -987,7 +1084,17 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-3-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-2-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-1-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -996,46 +1103,46 @@ export default [
         name : 'Leonidas I',
         image : require('./../../assets/images/Commander/Legendary/Leonidas/Leonidas.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Leonidas/tuongLeonidas.png'),
-        about : 'Leonidas I là một vị vua chiến binh của thành phố Sparta của Hy Lạp và là người thứ 17 của dòng Agiad; một triều đại tuyên bố dòng dõi từ vị thần trong thần thoại Heracles và Cadmus. Ông là chồng của Gorgo, con gái của Nữ hoàng I của Sparta. Leonidas đã có một sự tham gia đáng chú ý trong Chiến tranh Ba Tư lần thứ hai, nơi ông đã dẫn dắt các lực lượng Hy Lạp đồng minh đến một vị trí cuối cùng tại Trận Thermopylae (480 trước Công nguyên) trong khi cố gắng bảo vệ đường chuyền từ quân đội Ba Tư xâm lược; ông đi vào huyền thoại với tư cách là thủ lĩnh của 300 người Sparta.',
+        about : `Leonidas I was a warrior king of the Greek city-state of Sparta, and the 17th of the Agiad line; a dynasty which claimed descent from the mythological demigod Heracles and Cadmus. He was the husband of Gorgo, the daughter of Cleomenes I of Sparta. Leonidas had a notable participation in the Second Persian War, where he led the allied Greek forces to a last stand at the Battle of Thermopylae (480 BC) while attempting to defend the pass from the invading Persian army; he entered myth as the leader of the 300 Spartans.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Leonidas/skill1.png'),
                 type : 'Active',
-                name : 'Vua Sparta',
+                name : 'King of Sparta',
                 rage : 'Rage Requirement: 1000',
-                about : 'Tăng sức khỏe cho quân đội do Leonidas I dẫn đầu trong 3 giây. Gây sát thương lên tới 3 mục tiêu trong khu vực hình quạt. Các mục tiêu dưới tác dụng của Im lặng hoặc Giảm tấn công sẽ nhận thêm 50% sát thương.',
-                update : 'Thưởng sức khỏe: 10% / 15% / 20% / 25% / 30%\nHệ số thiệt hại trực tiếp: 200/300/400/500/600'
+                about : `Increases the health of troops led by Leonidas I for 3 seconds. Deals damage to up to 3 targets a fan-shaped area. Targets under the effects of Silence or Attack Reduction will take an additional 50% damage.`,
+                update : `Health Bonus: 10% / 15% / 20% / 25% / 30%\nDirect Damage Factor: 200 / 300 / 400 / 500 / 600`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Leonidas/skill2.png') ,
-                name : 'Ba trăm chiến binh',
+                name : 'Three Hundred Spartans',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ chứa các đơn vị bộ binh, tăng phòng thủ và tăng tốc độ cơn thịnh nộ đã đạt được.',
-                update : 'Thưởng phòng thủ: 10% / 15% / 20% / 25% / 30\nTốc độ của cơn thịnh nộ đạt được: 5% / 7% / 9% / 12% / 15%'
+                about : `When the army led by this commander contains only infantry units, increases defense and increases speed of rage gained.`,
+                update : `Defense Bonus: 10% / 15% / 20% / 25% / 30\nSpeed of Rage Gained: 5% / 7% / 9% / 12% / 15%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Leonidas/skill3.png') ,
-                name : 'Sự hy sinh đáng kính',
+                name : 'Honorable Sacrifice',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ huy đã giảm xuống dưới 50% sức mạnh, có cơ hội để có được một lá chắn khi bị tấn công kéo dài trong 3 giây. Trong khi khiên kéo dài, tăng 3% đòn tấn công của bộ binh bộ binh.',
-                update : 'Khiên (bản thân): 600/650/700/700/800\nThưởng tấn công: 3% / 6% / 9% / 12% / 15%'
+                about : `When the army led by this commander has been reduced to less than 50% strength, there is a chance to gain a shield when attacked that lasts for 3 seconds. While the shield lasts, increase the attack of own infantry troops by 3%.`,
+                update : `Shield (Self): 600 / 650 / 700 / 750 / 800\nAttack Bonus: 3% / 6% / 9% / 12% / 15%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Leonidas/skill4.png') ,
-                name : 'Con trai của Sư tử',
+                name : 'Son of the Lion',
                 type : 'Passive',
                 rage : '',
-                about : 'Trong khi trên bản đồ, đòn tấn công của Leonidas I có 25% cơ hội tăng khả năng gây sát thương bằng quân đội của mình, tồn tại trong 5 giây và dồn tới 4 lần.',
-                update : 'Thưởng thiệt hại: 5% / 6% / 7% / 8% / 10%'
+                about : `While on the map, Leonidas I's attack have a 25% chance to increase all damage dealth by his own troops, lasts for 5 seconds and stacks up to 4 times.`,
+                update : 'Damage Bonus: 5% / 6% / 7% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Leonidas/skill5.png') ,
-                name : 'Trận chiến Thermopylae',
+                name : 'Battle of Thermopylae',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ huy đã giảm xuống dưới 10% sức mạnh, tăng tất cả sát thương gây ra thêm 400% và tăng giảm 50% sát thương, kéo dài trong 10 giây. Hiệu ứng này chỉ có thể kích hoạt một lần mỗi giờ sau khi quân đội rời khỏi thành phố.',
+                about : `When the army led by this commander has been reduced to less than 10% strength, increase all damage dealt by 400% and increase damage reduction by 50%, lasts for 10 seconds. This effect can trigger only once per hour after the army has left the city.`,
 
             },
 
@@ -1047,7 +1154,11 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Defense,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/Leonidas-Field-Battle-1024x576.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -1056,46 +1167,50 @@ export default [
         name : 'Mehmed II',
         image : require('./../../assets/images/Commander/Legendary/Mehmed/Mehmed.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Mehmed/tuongMehmed.png'),
-        about : 'Mehmed II, thường được gọi là Người chinh phục Hồi giáo là một người Thổ Nhĩ Kỳ đã chinh phục Constantinople và tàn nhẫn củng cố và mở rộng Đế chế Ottoman bằng một cuộc thập tự chinh quân sự vào Châu Á và Châu Âu.\nMehmed đã chinh phục thủ đô Byzantine của Constantinople vào năm 1453, sau đó xây dựng lại thành thủ đô Istanbul thịnh vượng của Istanbul. Mục tiêu tiếp theo của anh là tạo ra một đế chế thế giới với sự chinh phục, thống nhất Anatolia và tiến vào Đông Nam Âu xa tận phía tây như Bosnia. Ông cũng đã phát triển quân đoàn bộ binh Janissary - những chiến binh Cơ đốc trẻ tuổi, những người được trả lương để giữ cho họ trung thành với người sultan.\nMehmed là người ủng hộ tự do tôn giáo và nhấn mạnh tầm quan trọng của công lý. Trong triều đại của ông, toán học, thiên văn học và thần học Hồi giáo đạt đến đỉnh cao của họ trong Ottoman. Ngày nay, Mehmed được coi là một anh hùng ở Thổ Nhĩ Kỳ và một phần của thế giới Hồi giáo rộng lớn hơn.',
+        about : `Mehmed II, commonly known as “The Conqueror” was a Turkish sultan who conquered Constantinople and ruthlessly consolidated and expanded the Ottoman Empire with a military crusade into Asia and Europe.
+
+        Mehmed conquered the Byzantine capital of Constantinople in 1453, then rebuild it into the prosperous Ottoman capital of Istanbul. His next goal was to create a world empire with conquest, reunifying Anatolia and pressing into Southeast Europe as far west as Bosnia. He also developed the Janissary infantry corps – young Christian warriors who were given salaries to keep them loyal to the sultan.
+        
+        Mehmed was a proponent of religious freedom and emphasized the importance of justice of all. During his reign, mathematics, astronomy and Muslim theology reached their high point among the Ottomans. Today, Mehmed is considered a hero in Turkey and parts of the wider Islamic world.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Mehmed/skill1.png'),
                 type : 'Active',
-                name : 'Đại bác Ottoman',
+                name : 'Ottoman Cannons',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương lên kẻ thù trong khu vực hình quạt hướng về phía trước (tối đa 5 mục tiêu). Kỹ năng này gây thêm sát thương cho các đồn bốt thành phố và tháp canh.',
-                update : 'Hệ số thiệt hại trực tiếp: 450/600/70/950/1150\nHệ số thiệt hại bổ sung: 300/400/500/600/700'
+                about : `Deals damage to enemies in a forward-facing fan-shaped area (maximum 5 targets). This skill deals additional damage to city garrisons and watchtowers.`,
+                update : `Direct Damage Factor: 450 / 600 / 700 / 950 / 1150\nAdditional Damage Factor: 300 / 400 / 500 / 600 / 700`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Mehmed/skill2.png') ,
-                name : 'Chúa đất và biển',
+                name : 'Lord of Land and Sea',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công quân đội và tăng sát thương kỹ năng.',
-                update : 'Thưởng tấn công: 8% / 10% / 12% / 16% / 20%\nThưởng sát thương kỹ năng: 8% / 10% / 12% / 16% / 20%'
+                about : 'Increases troop attack and increases skill damage dealt.',
+                update : `Attack Bonus: 8% / 10% / 12% / 16% / 20%\nSkill Damage Bonus: 8% / 10% / 12% / 16% / 20%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Mehmed/skill3.png') ,
-                name : 'Niềm tin',
+                name : 'Faith',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công các thành phố, các cuộc tấn công thông thường có 10% cơ hội gây thêm sát thương cho quân đồn trú.',
-                update : 'Hệ số thiệt hại bổ sung: 500/600/70/800/1000'
+                about : `When attacking cities, normal attacks have a 10% chance to deal additional damage to the garrison.`,
+                update : `Additional Damage Factor: 500 / 600 / 700 / 800 / 1000`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Mehmed/skill4.png') ,
-                name : 'Vua hiền triết',
+                name : 'Sage King',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng năng lực đoàn quân. Khi chỉ huy này phát động một cuộc biểu tình, tăng năng lực quân đội tập hợp.',
-                update : 'Tăng quân tập hợp: 2% / 4% / 6% / 8% / 10%\nThưởng giới hạn quân đội tăng: 2% / 4% / 6% / 8% / 10%'
+                about : `Increases troop capacity. When this commander launches a rally, increases rallied army capacity.`,
+                update : `Troop Capacity Bonus: 2% / 4% / 6% / 8% / 10%\nRallied Army Capacity Bonus: 2% / 4% / 6% / 8% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Mehmed/skill5.png') ,
-                name : 'Bom tấn Orban',
+                name : 'Orban Bombard',
                 type : 'Update skill  1',
                 rage : '',
-                about : 'Gây sát thương (Damage Factor 1350) cho kẻ địch trong khu vực hình quạt hướng về phía trước (tối đa 5 mục tiêu). Kỹ năng này gây thêm sát thương cho các đồn bốt và tháp canh của thành phố (Damage Factor 800), và có 50% cơ hội để gây ra một đợt sát thương thứ hai cho các đồn bốt và tháp canh của thành phố (Damage Factor 500).',
+                about : `Deals damage (Damage Factor 1350) to enemies in a forward-facing fan-shaped area (maximum 5 targets). This skill deals additional damage to city garrisons and watchtowers (Damage Factor 800), and has a 50% chance to deal a second burst of additional damage to city garrisons and watchtowers (Damage Factor 500).`,
 
             },
 
@@ -1107,7 +1222,14 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/mehmed-ii-pvp-buildings-build-1024x570.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/mehmed-ii-pvp-map-build-1024x570.jpg'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -1116,46 +1238,46 @@ export default [
         name : 'Minamoto',
         image : require('./../../assets/images/Commander/Legendary/Minamoto/Minamoto.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Minamoto/tuongMina.png'),
-        about : 'Minamoto no Yoshitsune là một chỉ huy quân sự của bộ tộc Minamoto của Nhật Bản vào cuối thời Heian và đầu Kamakura. Trong cuộc chiến Genpei, anh ta đã lãnh đạo một loạt các trận chiến lật đổ chi nhánh Ise-Heishi của tộc Taira, giúp anh em cùng cha khác mẹ Yoritoomo củng cố quyền lực. Vào năm 1189, Fujiwara no Yasuhira, con trai của một đồng minh đáng tin cậy, sợ áp lực từ Yoriomo, đã phản bội Yoshitsune, xung quanh nơi cư trú Koromogawa-no-tachi của anh ta với quân đội của mình, đánh bại những người giữ chân anh ta và buộc Yoshitsune phải phạm tội. Yoshitsune được coi là một trong những chiến binh vĩ đại nhất và nổi tiếng nhất trong thời đại của ông, và là một trong những chiến binh samurai nổi tiếng nhất trong lịch sử Nhật Bản.',
+        about : 'Minamoto no Yoshitsune was a military commander of the Minamoto clan of Japan in the late Heian and early Kamakura periods. During the Genpei War, he led a series of battles which toppled the Ise-Heishi branch of the Taira clan, helping his half-brother Yoritoomo consolidate power. In year 1189, Fujiwara no Yasuhira, the son of a trusted ally, fearing of the pressure from Yoriomo, betrayed Yoshitsune, surrounding his Koromogawa-no-tachi residence with his troops, defeating his retainers, and forcing Yoshitsune to commit seppuku. Yoshitsune is considered one of the greatest and the most popular warrior of his era, and one of the most famous samurai fighters in the history of Japan.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill1.png'),
                 type : 'Active',
                 name : 'Kyohachiryu',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên mục tiêu và có 50% cơ hội gây thêm sát thương cho mục tiêu mỗi giây trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400\nThiệt hại bổ sung: 200/280/360/480/600'
+                about : 'Deals direct damage to the target and has a 50% chance to deal additional damage to the target each second for the next 2 seconds.',
+                update : `Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400\nAdditional Damage: 200 / 280 / 360 / 480 / 600`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill2.png') ,
-                name : 'Thử nghiệm ở Kurama-dera',
+                name : 'Trial in Kurama-dera',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng đơn vị kỵ binh tốc độ hành quân và tấn công.',
-                update : 'Thưởng tốc độ hành quân của kỵ binh: 3% / 4,5% / 6% / 8% / 10%\nThưởng tấn công cho Kỵ binh: 10% / 12% / 14% / 16% / 20%'
+                about : 'Increase cavalry units’ march speed and attack.',
+                update : 'Cavalry March Speed Bonus: 3% / 4.5% / 6% / 8% / 10%\nCavalry Attack Bonus: 10% / 12% / 14% / 16% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill3.png') ,
-                name : 'Bậc thầy của Kendo',
+                name : 'Master of Kendo',
                 type : 'Passive',
                 rage : '',
-                about : 'Thiệt hại tiền thưởng cho người man rợ: 10% / 20% / 30% / 40% / 50%',
-                update : 'Hệ số thiệt hại bổ sung: 500/600/70/800/1000'
+                about : 'Increases damage dealt to barbarians by troops led by this commander.',
+                update : 'Bonus Damage to Barbarians: 10% / 20% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill4.png') ,
-                name : 'Lãnh chúa',
+                name : 'Warlord',
                 type : 'Passive',
                 rage : '',
-                about : 'Đội quân tấn công bình thường có 10% cơ hội tăng sát thương của mục tiêu trong 3 giây tiếp theo. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây..',
-                update : 'Thiệt hại tăng thêm: 10% / 15% / 20% / 25% / 30%'
+                about : 'Troops’ normal attack have a 10% chance to increase damage taken by the target for the next 3 seconds. Effect can only trigger once every 5 seconds.',
+                update : 'Damage Taken Increased By: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill5.png') ,
                 name : 'Kyohachiryu Kiwami',
                 type : 'Update skill  1',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Hệ số sát thương 1400) cho mục tiêu và có 75% cơ hội gây thêm sát thương (Hệ số sát thương 600) cho mục tiêu mỗi giây trong 2 giây tiếp theo.',
+                about : `Deals direct damage (Damage Factor 1400) to the target and has a 75% chance to deal additional damage (Damage Factor 600) to the target each second for the next 2 seconds.`,
 
             },
 
@@ -1167,7 +1289,11 @@ export default [
             TalentIcon.Peacekeeping,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/minamoto-no-yoshitsune-talent-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -1176,46 +1302,46 @@ export default [
         name : 'Richard I',
         image : require('./../../assets/images/Commander/Legendary/Richard/Richard.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Richard/tuongRichard.png'),
-        about : 'Richard I là Vua Anh từ ngày 6 tháng 7 năm 1189 cho đến khi qua đời. Ông được biết đến với cái tên Richard the Lionheart vì danh tiếng của ông là một nhà lãnh đạo quân sự và chiến binh vĩ đại. Richard là một chỉ huy trung tâm của Kitô giáo trong cuộc Thập tự chinh thứ ba, lãnh đạo chiến dịch sau sự ra đi của Philip II của Pháp và giành được những chiến thắng đáng kể trước người đồng đạo Hồi giáo, Saladin. Thay vì coi vương quốc của mình như một trách nhiệm đòi hỏi sự hiện diện của anh ta với tư cách là người cai trị, Richard đã được coi là thích sử dụng nó chỉ như một nguồn thu để hỗ trợ quân đội của mình. Tuy nhiên, anh ta được các đối tượng của mình coi là một anh hùng ngoan đạo. Ông vẫn là một trong số ít các vị vua của nước Anh được nhớ đến bởi văn bia của mình, chứ không phải là số vương giả, và là một nhân vật biểu tượng lâu dài cả ở Anh và Pháp',
+        about : `Richard I was King of England from 6 July 1189 until his death. He was known as Richard the Lionheart because of his reputation ass a great military leader and warrior. Richard was a central Christian commander during the Third Crusade, leading the campaign after the departure of Philip II of France and scoring considerable victories against his Muslim counterpart, Saladin. Rather than regarding his kingdom as a responsibility requiring his presence as ruler, Richard has been perceived as preferring to use it merely as a source of revenue to support his armies. Nevertheless, he was seen as a pious hero by his subjects. He remains one of the few kings of England remembered by his epithet, rather than regnal number, and is an enduring iconic figure both in England and in France`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Richard/skill1.png'),
                 type : 'Active',
-                name : 'Linh hồn của thập tự quân',
+                name : 'Soul of the Crusaders',
                 rage : 'Rage Requirement: 1000',
-                about : 'Chữa lành một số đơn vị bị thương nhẹ trong quân đội của Richard. Thêm một debuff cho tối đa 5 mục tiêu trong khu vực hình quạt. (Hiệu ứng Debuff giảm sát thương gây ra và tốc độ diễu hành trong 2 giây.)',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400\nGiảm sát thương: 10% / 15% / 20% / 25% / 30%\nGiảm tốc độ hành quân: 5% / 7% / 9% / 12% / 15%'
+                about : 'Heals some of the slightly wounded units in Richard\'s army. Adds a debuff to a maximum of 5 targets in a fan-shaped area. (Debuff effect reduces damage dealt and march speed for 2 seconds.)',
+                update : 'Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400\nDamage Reduction: 10% / 15% / 20% / 25% / 30%\nMarch Speed Reduction: 5% / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Richard/skill2.png') ,
-                name : 'Tinh thần hiệp sĩ',
+                name : 'Chivalry',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương giảm quân và sát thương phản công. Hiệu ứng này áp dụng cho tất cả các đội quân đồn trú khi chỉ huy này đang phục vụ như một chỉ huy đồn trú.',
-                update : 'Thiệt hại đã giảm: 5% / 7% / 9% / 12% / 15%\nThưởng phản công: 4% / 5% / 6% / 8% / 10%'
+                about : 'Increases troop damage reduction and counterattack damage. The effect applies to all garrison troops when this commander is serving as a garrison commander.',
+                update : 'Damage Taken Reduced: 5% / 7% / 9% / 12% / 15%\nCounterattack Bonus: 4% / 5% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Richard/skill3.png') ,
-                name : 'Trái tim sư tử',
+                name : 'The Lionheart',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của các đơn vị bộ binh và phòng thủ các đơn vị bộ binh.',
-                update : 'Thưởng tấn công bộ binh: 5% / 7% / 9% / 12% / 15%\nThưởng phòng thủ cho Bộ binh: 5% / 7% / 9% / 12% / 15%'
+                about : 'Increases the attack of infantry units and defence of infantry units.',
+                update : 'Infantry Attack Bonus: 5% / 7% / 9% / 12% / 15%\nInfantry Defense Bonus: 5% / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Richard/skill4.png') ,
-                name : 'Trận chiến cứng',
+                name : 'Battle-Hardened',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng hiệu ứng hồi máu mà quân đội nhận được và giảm sát thương của tháp canh.',
-                update : 'Tăng cường hiệu quả chữa lành: 10% / 15% / 20% / 25% / 30%\nThiệt hại cho các tháp canh giảm: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases healing effects received by troops and reduces watchtower damage taken by troops.',
+                update : 'Healing Effect Enhancement: 10% / 15% / 20% / 25% / 30%\nDamage Taken From Watchtowers Reduced By: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Richard/skill5.png') ,
-                name : 'Sư tử tàn bạo',
+                name : 'Tyrannical Lion',
                 type : 'Passive',
                 rage : '',
-                about : 'Giảm 5% sát thương và giảm 2% lực sát thương cho các đơn vị kỵ binh bằng các đơn vị bộ binh thêm 2%. Ngoài ra, cứ sau 10 giây, giảm 50% tốc độ diễu hành mục tiêu trong 5 giây.',
+                about : 'Reduces all damage taken by 5% and increases damage dealth to cavalry units by infantry units by 2%. In addition, every 10 seconds, decreases target march speed by 50% for 5 seconds.',
 
             },
 
@@ -1227,7 +1353,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Defense,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-flag-defense-talent-build-1024x498.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-i-garrison-talent-1024x570.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-i-infantry-talent-1024x570.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -1236,46 +1372,51 @@ export default [
         name : 'Saladin',
         image : require('./../../assets/images/Commander/Legendary/Saladin/Saladin.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Saladin/tuongSaladin.png'),
-        about : 'Saladin là vị vua Hồi giáo đầu tiên của Ai Cập, Syria, Yemen, Palestine, người sáng lập vương triều Ayyūbid và là một trong những anh hùng Hồi giáo nổi tiếng nhất mọi thời đại. Saladin đã chiến đấu chống lại Thập tự quân Kitô giáo, đáng chú ý nhất là chống lại Richard the Lionheart trong cuộc Thập tự chinh thứ ba. Năm 1187, Saladin đã gây ra một thất bại nặng nề đối với quân đội của Vương quốc Jerusalem và chiếm lại thành phố linh thiêng đã bị chiếm giữ bởi Franks trong gần chín thập kỷ.\nTrái ngược với cuộc tắm máu mà các cuộc thập tự chinh đã gây ra ở Jerusalem, Saladin đã hành động rất hào hùng đối với thành phố cư dân Kitô giáo và người Do Thái. Ông cho phép phụ nữ, người già và người nghèo rời đi mà không phải trả tiền chuộc. Saladin đã được nhiều người coi là lý tưởng của một vị Vua chiến binh: khủng khiếp trong trận chiến nhưng vẫn hào phóng với kẻ thù của mình. Mặc dù có niềm tin khác nhau, Saladin rất được Richard kính trọng, người đã ca ngợi ông là nhà lãnh đạo vĩ đại và quyền lực nhất trong thế giới Hồi giáo.\nNăm 1192, Saladin và Richard đã ký một thỏa thuận ngừng bắn. Saladin qua đời vào năm sau - sau khi trao phần lớn tài sản cá nhân của mình cho các đối tượng của mình - nhưng triều đại Ayyubid vẫn tiếp tục cai trị ở Ai Cập và Syria trong nhiều thế hệ. Được tôn sùng rộng rãi bởi những người ngưỡng mộ Hồi giáo và kẻ thù Kitô giáo, huyền thoại Saladin vẫn còn tồn tại đến ngày nay.',
+        about : `Saladin was the first Muslim sultan of Egypt, Syria, Yemen, a Palestine, the founder of the Ayyūbid dynasty, and one of the most-famous Muslim heroes of all time. Saladin fought against the Christian Crusaders, most notably against Richard the Lionheart during the Third Crusade. In 1187, Saladin inflicted a crushing defeat on the army of the Kingdom of Jerusalem and recaptured the holy city which had been occupied by the Franks for nearly nine decades.
+
+        In contrast with the bloodbath the Crusades had inflicted on Jerusalem, Saladin acted with great magnanimity to the city´s Christian and Jewish residents. He allowed women, the old, and the poor to leave without paying a ransom. Saladin has been considered by many to be the ideal of a Warrior-King: terrible in battle yet generous to his enemies. Despite their different beliefs, Saladin was highly respected by Richard, who praised him as undoubtedly the greatest and most powerful leader in the Islamic world.
+        
+        In 1192, Saladin and Richard signed a truce. Saladin died the following year – after giving away much of his personal wealth to his subjects – but the Ayyubid dynasty continued to rule in Egypt and Syria for many generations. Widely revered by Muslim admirers and Christian foes alike, Saladin´s legend still lives on today.      
+        `,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Saladin/skill1.png'),
                 type : 'Active',
-                name : 'Móc sắc',
+                name : 'Hold Fast',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên mục tiêu, sau đó giảm tốc độ diễu hành của mục tiêu và giảm hiệu ứng hồi máu nhận được trong 5 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400\nGiảm tốc độ hành quân: 10% / 15% / 20% / 25% / 30%\nGiảm hiệu quả chữa lành: 20% / 25% / 30% / 35% / 40%'
+                about : 'Deals direct damage to the target, then reduces target march speed and decreases healing effects received for the next 5 seconds.',
+                update : `Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400\nMarch Speed Reduction: 10% / 15% / 20% / 25% / 30%\nHealing Effect Reduction: 20% / 25% / 30% / 35% / 40%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Saladin/skill2.png') ,
                 name : 'Ghulams',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng phòng thủ tấn công của các đơn vị kỵ binh và tốc độ diễu hành.',
-                update : 'Thưởng phòng thủ kỵ binh: 8% / 10% / 12% / 16% / 20%\nThưởng phòng thủ cho Kỵ binh: 8% / 10% / 12% / 16% / 20%\nThưởng tốc độ hành quân của kỵ binh: 1% / 2% / 3% / 4% / 5%'
+                about : 'Increases cavalry unit\'s attack defense, and march speed.',
+                update : 'Cavalry Defense Bonus: 8% / 10% / 12% / 16% / 20%\nCavalry Attack Bonus: 8% / 10% / 12% / 16% / 20%\nCavalry March Speed Bonus: 1% / 2% / 3% / 4% / 5%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Saladin/skill3.png') ,
-                name : 'Kết nối đức tin',
+                name : 'Bond of Fate',
                 type : 'Passive',
                 rage : '',
-                about : 'Giảm sát thương kỹ năng lấy từ kẻ thù và giảm sát thương phản công. ',
-                update : 'Giảm sát thương kỹ năng: 10% / 15% / 20% / 25% / 30%\nGiảm sát thương phản công: 8% / 10% / 12% / 16% / 20%'
+                about : 'Reduces skill damage taken from enemies and reduces counterattack damage taken.',
+                update : 'Skill Damage Taken Reduction: 10% / 15% / 20% / 25% / 30%\nCounterattack Damage Taken Reduction: 8% / 10% / 12% / 16% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Saladin/skill4.png') ,
-                name : 'Lòng khoan dung',
+                name : 'Generosity',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng thiệt hại gây ra cho các đồn bốt thành phố. Tuy nhiên, quân đội của Saladin không thể cướp bóc tài nguyên khi tấn công các thành phố của các thống đốc khác.',
-                update : 'Thưởng thiệt hại: 3% / 6% / 9% / 12% / 15%'
+                about : 'Increases damage dealt to city garrisons. However, Saladin\'s army is unable to plunder resources when attacking other governors\' cities.',
+                update : 'Damage Bonus: 3% / 6% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Saladin/skill5.png') ,
-                name : 'Ca ngợi Đấng Tạo Hóa',
+                name : 'Praise the Creator',
                 type : 'Passive',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Hệ số sát thương 1700) cho mục tiêu, sau đó giảm 50% tốc độ diễu hành của mục tiêu và giảm 50% hiệu ứng hồi máu nhận được trong 5 giây tiếp theo.',
+                about : 'Deals direct damage (Damage Factor 1700) to the target, then reduces target march speed by 50% and decreases healing effects received by 50% for the next 5 seconds.',
 
             },
 
@@ -1287,55 +1428,60 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/saladin-talent-tree-1024x576.png'
+            },
+          
+        ],
         partner : [],
-        trangBi : 'bộ binh'
+        trangBi : 'kỵ binh'
     },
     {
         id: 21,
         name : 'Seondeok',
         image : require('./../../assets/images/Commander/Legendary/Seondeok/Seondeok.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Seondeok/tuongSeondeok.png'),
-        about : 'Nữ hoàng Seondeok của Silla trị vì là Nữ hoàng của Silla, một trong ba vương quốc của Hàn Quốc, từ năm 632 đến 647. Bà là nhà cai trị thứ hai mươi bảy của Silla và là nữ hoàng trị vì đầu tiên của nó. Cô là nữ chủ quyền thứ hai trong lịch sử Đông Á được ghi nhận và khuyến khích sự phục hưng trong tư tưởng, văn học và nghệ thuật ở Silla. Ở Samguksagi, Nữ hoàng Seondeok được mô tả là "hào phóng, nhân từ, khôn ngoan và thông minh".',
+        about : `Queen Seondeok of Silla reigned as Queen Regnant of Silla, one of the Three Kingdoms of Korea, from 632 to 647. She was Silla's twenty-seventh ruler and its first reigning queen. She was the second female sovereign in recorded East Asian history and encourages a renaissance in thought, literature, and the arts in Silla. In Samguksagi, Queen Seondeok was described as "generous, benevolent, wise, and smart".`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Seondeok/skill1.png'),
                 type : 'Active',
-                name : 'Khiêm tốn ',
+                name : 'Modest',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương lớn gây ra cho một mục tiêu trong khi giảm cơn thịnh nộ của mục tiêu.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400\nGiảm cơn thịnh nộ: 50/60/70/80/100'
+                about : 'Deals massive damage dealth to a single target while reducing the target\'s Rage.',
+                update : `Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400\nRage Reduction: 50 / 60 / 70 / 80 / 100`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Seondeok/skill2.png') ,
-                name : 'Sâu sắc',
+                name : 'Insightful',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ thu thập vàng; tăng tốc độ thu thập thực phẩm, gỗ và đá.',
-                update : 'Tốc độ thu thập tiền thưởng (Vàng): 5% / 10% / 15% / 20% / 30%\nTốc độ thu thập tiền thưởng (Tài nguyên khác): 3% / 6% / 10% / 15% / 20%'
+                about : 'Increases gold gathering speed; increased food, wood and stone gathering speed.',
+                update : 'Bonus Gathering Speed (Gold): 5% / 10% / 15% / 20% / 30%\n Bonus Gathering Speed (Other Resources): 3% / 6% / 10% / 15% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Seondeok/skill3.png') ,
-                name : 'Mạnh mẽ',
+                name : 'Magnanimous',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng khả năng phòng thủ và sức khỏe của các đơn vị bao vây khi tập hợp tại các điểm tài nguyên trên bản đồ.',
-                update : 'Thưởng phòng thủ đơn vị bao vây: 10% / 15% / 20% / 25% / 30%\nThưởng sức khỏe đơn vị bao vây: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases defence and health of siege units when gathering at resource points on the map.',
+                update : 'Siege Unit Defense Bonus: 10% / 15% / 20% / 25% / 30%\nSiege Unit Health Bonus: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Seondeok/skill4.png') ,
-                name : 'Minh mẫn',
+                name : 'Incisive',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội do chỉ huy này chỉ chứa các đơn vị bao vây, tất cả các cuộc tấn công thông thường có 10% cơ hội gây thêm sát thương cho mục tiêu.',
-                update : 'Hệ số thiệt hại bổ sung: 500/600/70/800/1000'
+                about : 'When the army led by this commander contains only siege units, all normal attacks have a 10% chance to deal extra damage to the target.',
+                update : 'Additional Damage Factor: 500 / 600 / 700 / 800 / 1000'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Seondeok/skill5.png') ,
-                name : 'Tôn vinh thiên đàng',
+                name : 'Honoring the Heavens',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tải trọng của các đơn vị bao vây thêm 30% và cấp thêm 10% tài nguyên khi thu thập xong.',
+                about : `Increases load of siege units by 30% and grants an additional 10% resources when gathering is complete.`,
 
             },
 
@@ -1347,7 +1493,11 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://riseofkingdomsboss.com/wp-content/uploads/2020/02/Seondeok-build-rise-of-kingdoms-768x439.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'thu gom'
     },
@@ -1356,46 +1506,46 @@ export default [
         name : 'Tomyris',
         image : require('./../../assets/images/Commander/Legendary/Tomyris/Tomyris.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Tomyris/tuongTomyris.png'),
-        about : 'Tomyris là nữ hoàng chiến binh của Massagetae. Cô được cho là đã đích thân dẫn quân của mình vào trận chiến để bảo vệ vùng đất của cô chống lại Cyrus Đại đế của Đế chế Achaemenid sau khi Cyrus bắt giữ con trai mình trong một trận chiến trước đó. Hầu hết các nhà sử học nói rằng cô đã đánh bại và giết Cyrius vào năm 530 trước Công nguyên. Để làm dịu cơn khát máu của Cyrus, cô chặt đầu anh ta và sau đó giữ đầu anh ta trong một loại rượu vang đầy máu.',
+        about : `Tomyris was the warrior queen of the Massagetae. She is said to have personally led her troops into battle to defend her lands against Cyrus the Great of the Achaemenid Empire after Cyrus captures her son in an earlier battle. Most historians say she defeated and killed Cyrius in 530 BCE. To quench Cyrus' thirst for blood, she beheaded him and thereafter kept his head in a blood-filled wineskin.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Tomyris/skill1.png'),
                 type : 'Active',
-                name : 'Mũi tên báo thù',
+                name : `Arrow of Vengeance`,
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp cho một mục tiêu. Nếu mục tiêu này bị ảnh hưởng bởi chất độc, hãy loại bỏ ngay chất độc và gây sát thương độc (Tổng thiệt hại = số lần ra skill x tăng nhiễm độc). Nếu có nhiều hơn 10 ngăn xếp, tăng sát thương độc (Tổng thiệt hại = số lần ra skill x tăng nhiễm độc).',
-                update : 'Hệ số thiệt hại trực tiếp: 700/750/800/900/1000\nYếu tố độc (Ít hoặc bằng 10 ngăn xếp): 20/25/30/35/40\nYếu tố độc (Hơn 10 ngăn xếp): 40/50/60/70/80'
+                about : `Deals direct damage to a single target. If this target is affected by poison, immediately remove the poison and deal poison damage (Damage Factor = Stacks x Poison Factor). If there were more than more 10 stacks, increases poison damage (Damage Factor = Stacks x increased Poison Factor).`,
+                update : `Direct Damage Factor: 700 / 750 / 800 / 900 / 1000\nPoison Factor (Less or equal to 10 stacks): 20 / 25 / 30 / 35 / 40\nPoison Factor (More than 10 stacks): 40 / 50 / 60 / 70 / 80`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Tomyris/skill2.png') ,
-                name : 'Hoàn vốn',
+                name : 'Payback',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công các thành phố, tăng sát thương tấn công bình thường và giảm 10% sát thương phản công.',
-                update : 'Thưởng sát thương tấn công thông thường: 10% / 15% / 20% / 25% / 30%'
+                about : 'When attacking cities, increases normal attack damage and decreases counterattack damage by 10%.',
+                update : 'Normal Attack Damage Bonus: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Tomyris/skill3.png') ,
-                name : 'Cho mặt trời',
+                name : 'For the Sun',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng khả năng tấn công của các đơn vị cung thủ và cho tất cả các cuộc tấn công 10% cơ hội để giảm khả năng phòng thủ của một mục tiêu trong 3 giây.',
-                update : 'Thưởng Tấn công cung thủ: 10% / 15% / 20% / 25% / 30%\nGiảm phòng thủ: 10% / 15% / 20% / 25% / 30%'
+                about : `Increases attack of archer units and gives all attacks a 10% chance to decrease the defence of a single target for 3 seconds.`,
+                update : `Archer Attack Bonus: 10% / 15% / 20% / 25% / 30%\nDefense Reduction: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Tomyris/skill4.png') ,
-                name : 'Cuộc phản công của Massagetae',
+                name : 'Massagetae\'s Counterattack',
                 type : 'Passive',
                 rage : '',
-                about : 'Cung cấp cho tất cả các cơ hội tấn công thường xuyên để đầu độc một mục tiêu trong 5 giây (xếp tối đa 15 lần). Thời gian nhiễm độc được làm mới mỗi lần thêm ngăn xếp. Các mục tiêu bị đầu độc sẽ nhận thêm 3% sát thương kỹ năng cho mỗi stack.',
-                update : 'Xác suất: 50% / 60% / 70% / 80% / 100%'
+                about : `Gives all regular attacks chance to poison a single target for 5 seconds (stacks up to 15 times). The poisoned duration is refreshed each time a stack is added. Poisoned targets will take an additional 3% skill damage per stack.`,
+                update : 'Probability: 50% / 60% / 70% / 80% / 100%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Tomyris/skill5.png') ,
-                name : 'Túi máu',
+                name : 'Pouch of Blood',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công bình thường và sát thương phản công thêm 10%. Khi bị tấn công, giảm 10% tấn công của các đơn vị kỵ binh tấn công.',
+                about : `Increases normal attack and counterattack damage by 10%. When attacked, reduces attack of the attacker's cavalry units by 10%.`,
 
             },
 
@@ -1407,7 +1557,12 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Tomyris-1024x576.jpg'
+            },
+           
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -1416,46 +1571,46 @@ export default [
         name : 'Wu Zetian',
         image : require('./../../assets/images/Commander/Legendary/WuZetian/WuZetian.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/WuZetian/tuongWuZetian.png'),
-        about : 'Võ Tắc Thiên là Hoàng hậu đầu tiên của Trung Quốc tự mình cai trị đất nước. Được cha giáo dục tốt, cô bắt đầu với tư cách là một người phối ngẫu với Hoàng đế, và dần dần tìm đến Hoàng hậu. Cô thực sự trở thành người cai trị thực sự khi Hoàng đế bị đột quỵ. Khi chồng bà qua đời, bà đã giết hoặc đày hầu hết các con trai của mình, bảo vệ ngai vàng cho đứa con út, dễ kiểm soát nhất. Cuối cùng, con trai bà đã từ bỏ danh hiệu Hoàng đế và cuối cùng là Võ Tắc Thiên, cũng trở thành người thống trị tối cao. Cô trở nên nổi tiếng vì sự tàn nhẫn, tạo ra một lực lượng cảnh sát bí mật đã loại bỏ nhiều quan chức và kẻ âm mưu tham nhũng muốn có một trong những đứa con trai của cô lên ngai vàng. Trong khi nhiều nhà sử học nhớ đến cô là tàn nhẫn, cô cũng được nhớ đến khi mở rộng các lãnh thổ của Trung Quốc, và để biến Phật giáo thành quốc giáo mới đối với Đạo giáo. Cô nổi tiếng để trống bia mộ, nói rằng lịch sử sẽ quyết định di sản thực sự của cô.',
+        about : `Wu Zetian was the first Empress of China to rule the country herself. Given a good education by her father, she started as a consort to the Emperor, and slowly worked her way up to Empress. She effectively became the actual ruler when the Emperor had a stroke. When her husband died, she either killed or exiled most of her sons, preserving the throne for her youngest, most easily-controlled child. Eventually, her son gave up the title of Emperor, and Wu Zetian, at last, became supreme ruler in name as well. She became known for her ruthlessness, creating a secret police force which eliminated many corrupt officials and conspirators who wanted one of her sons on the throne. While many historians remember her as cruel, she is also to be remembered for major expansions of China' s territories, and for making Buddhism the new state religion over Daoism. She famously left her tombstone blank, saying that history would decide her true legacy.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/WuZetian/skill1.png'),
                 type : 'Active',
-                name : 'Thiên mệnh',
+                name : 'Mandate of Heaven',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp vào một mục tiêu và chữa lành một phần quân bị thương của bạn.',
-                update : 'Hệ số thiệt hại trực tiếp: 500/600/70/800/1000\nHệ số chữa lành: 100/200/300/400/500'
+                about : 'Deal direct damage to a single target and heal a portion of your amry\'s wounded troops.',
+                update : 'Direct Damage Factor: 500 / 600 / 700 / 800 / 1000\nHealing Factor: 100 / 200 / 300 / 400 / 500'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/WuZetian/skill2.png') ,
-                name : 'Kị sĩ sư tử',
+                name : 'Lion Rider',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi chỉ huy đồn trú, tất cả thiệt hại của quân đồn trú được tăng lên, và thiệt hại gây ra các cuộc tấn công tập hợp được tăng lên.',
-                update : 'Thưởng thiệt hại: 2% / 4% / 6% / 8% / 10%\nThiệt hại cho quân đội tập hợp tăng: 2% / 4% / 6% / 8% / 10%'
+                about : `When commanding the garrison, all garrison troops' damage is increased, and the damage caused rally attacks is increased.`,
+                update : 'Damage Bonus: 2% / 4% / 6% / 8% / 10%\nDamage to Rallied Armies Increased: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/WuZetian/skill3.png') ,
-                name : 'Huyết lệ',
+                name : 'Tears of Blood',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng HP và Phòng thủ của quân đội dưới sự chỉ huy của bạn. Các cuộc tấn công của quân đội của bạn có 10% cơ hội để bịt miệng mục tiêu trong 2 giây.',
-                update : 'Thưởng phòng thủ: 2% / 4% / 6% / 8% / 10%Tăng sức khỏe quân đội: 2% / 4% / 6% / 8% / 10%'
+                about : 'Increase the HP and Defence of troops under your command. Your troops\' attacks have a 10% chance to silence their target for 2 seconds.',
+                update : 'Defense Bonus: 2% / 4% / 6% / 8% / 10%\nTroop Health: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/WuZetian/skill4.png') ,
-                name : 'Di sản',
+                name : 'Legacy',
                 type : 'Passive',
                 rage : '',
-                about : 'Khi chỉ huy đồn trú, sát thương kỹ năng đến sẽ giảm. Quân đội của bạn có 50% cơ hội để tăng Phòng thủ trong 3 giây khi họ nhận sát thương kỹ năng.',
-                update : 'Giảm sát thương kỹ năng: 3% / 5% / 8% / 11% / 15%\nThưởng phòng thủ: 5% / 8% / 11% / 15% / 20%'
+                about : 'When commanding the garrison, incoming skill damage is reduced. Your troops have a 50% chance to increase their Defense for 3 seconds when they take skill damage.',
+                update : 'Skill Damage Taken Reduction: 3% / 5% / 8% / 11% / 15%\nDefense Bonus: 5% / 8% / 11% / 15% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/WuZetian/skill5.png') ,
-                name : 'Bầu trời sáng nhất',
+                name : 'Brightest Sky',
                 type : 'Passive',
                 rage : '',
-                about : 'Sát thương phản công + 20%. Các đòn tấn công sắp tới có 10% cơ hội gây sát thương cho kẻ tấn công (Xác thương trực tiếp 500).',
+                about : 'Counterattack damage +20%. Incoming attacks have a 10% chance to deal damage to the attacker (Damage Factor 500).',
 
             },
 
@@ -1467,7 +1622,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/wu-zetian-counter-attila-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/10/wu-zetian-talent-tree-1024x739.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/10/wu-zetian-talent-tree-open-field-1024x650.jpg'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -1476,46 +1641,46 @@ export default [
         name : 'Yi Seong-Gye',
         image : require('./../../assets/images/Commander/Legendary/Yi/Yi.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Yi/tuongYi.png'),
-        about : 'Taejo của Joseon, sinh ra Yi Seong-Gye, là người sáng lập và là vị vua đầu tiên của triều đại Joseon của Hàn Quốc và là nhân vật chính trong việc lật đổ triều đại Goryeo. Yi Seong-Gye gia nhập quân đội Goryeo và có được sức mạnh và sự tôn trọng trong những năm cuối thập niên 1370 và đầu thập niên 1380 bằng cách đẩy tàn quân Mông Cổ ra khỏi bán đảo và cũng bằng cách đẩy lùi những tên cướp biển Nhật Bản có tổ chức tốt trong một loạt các cuộc giao chiến thành công. Ông đã tuyên bố một triều đại mới vào năm 1392-1393 dưới tên Joseon, do đó, hồi sinh và nhà nước cũ hơn, còn được gọi là Joseon, nghĩa là, được thành lập một cách hợp pháp gần ba ngàn năm trước và đổi tên thành quận Vương quốc của Vương quốc Jose Jose. Yi Seong-Gye thoái vị vào năm 1308 trong cuộc xung đột giữa con trai ông và qua đời vào ngày 23 tháng 5 năm 1408 Cung điện I Changdeok.',
+        about : 'Taejo of Joseon, born Yi Seong-Gye, was the founder and the first king of the Joseon Dynasty of Korea and the main figure in overthrowing the Goryeo Dynasty. Yi Seong-Gye joined the Goryeo army and gained power and respect during the late 1370s and early 1380s by pushing Mongol remnants off the peninsula and also by repelling well-organized Japanese pirates in a serios of successful engagements. He declared a new dynasty in 1392-1393 under the name of Joseon, thereby reviving and older state, also known as Joseon, that was, legendarily, established nearly three thousand years previously and renamed the county the “Kingdom of Great Joseon”. Yi Seong-Gye abdicated in 1308 during the strife between his son and died on May 23, 1408 I Changdeok Palace.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Yi/skill1.png'),
                 type : 'Active',
-                name : 'Mưa mũi tên',
+                name : 'Rain of Arrows',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương trực tiếp lên kẻ thù trong khu vực hình quạt. Có thể sát thương tối đa 5 mục tiêu.',
-                update : 'Hệ số thiệt hại trực tiếp: 600/800/1000/1200/1400'
+                about : `Deals direct damage to the enemy in a fan-shaped area. Can damage at most 5 targets.`,
+                update : 'Direct Damage Factor: 600 / 800 / 1000 / 1200 / 1400'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Yi/skill2.png') ,
-                name : 'Nghệ thuật bắn cung ',
+                name : 'Art of Archery',
                 type : 'Passive',
                 rage : '',
-                about : 'Các cuộc tấn công thông thường của quân lính có 10% cơ hội để tăng thêm cơn thịnh nộ và tăng sức tấn công của các đơn vị cung thủ trong 3 giây tiếp theo.',
-                update : 'Cơn thịnh nộ được khôi phục: 50/60/70/80/100\nThưởng Tấn công cung thủ: 50% / 60% / 70% / 80% / 100%'
+                about : `Troops' normal attacks have a 10% chance to grant additional rage and increase the attack of archer units for the next 3 seconds.`,
+                update : 'Rage Restored: 50 / 60 / 70 / 80 / 100\nArcher Attack Bonus: 50% / 60 % / 70% / 80% / 100%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Yi/skill3.png') ,
-                name : 'Triều đại Joseon',
+                name : 'Joseon Dynasty',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của đồn trú và tháp canh khi chỉ huy này đang phục vụ như là chỉ huy đồn trú.',
-                update : 'Thưởng tấn công đồn trú / Tháp canh: 1% / 2% / 3% / 4% / 5%'
+                about : 'Increases the attack of the garrison and watchtower when this commander is serving as garrison commander.',
+                update : 'Garrison/Watchtower Attack Bonus: 1% / 2% / 3% / 4% / 5%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Yi/skill4.png') ,
-                name : 'Định mệnh',
+                name : 'Destiny',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương kỹ năng.',
-                update : 'Phần thưởng sát thương kỹ năng: 20% / 25% / 30% / 40% / 50%'
+                about : 'Increases active skill damage.',
+                update : 'Skill Damage Bonus: 20% / 25% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Yi/skill5.png') ,
-                name : 'Bão tên',
+                name : 'Arrow Storm',
                 type : 'Update skill  1',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Sát thương trực tiếp 1700) cho kẻ địch trong một khu vực hình tròn. Có thể sát thương tối đa 5 mục tiêu.',
+                about : 'Deals direct damage (Damage Factor 1700) to the enemy in a circular area. Can damage at most 5 targets.',
 
             },
 
@@ -1527,7 +1692,14 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Yi_Seong-Gye_Garrison-1024x576.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Yi_Seong-Gye-1024x576.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -1536,46 +1708,46 @@ export default [
         name : 'Æthelflæd',
         image : require('./../../assets/images/Commander/Legendary/Athe/Athe.png'),
         tuongImage: require('./../../assets/images/Commander/Legendary/Athe/tuongAthe.png'),
-        about : 'Æthelflæd, Lady of the Mercian, cai trị Mercia ở vùng trung du nước Anh từ năm 911 cho đến khi bà qua đời. Sinh ra ở đỉnh cao của cuộc xâm lược Viking của Anh, cô lớn lên ở một vùng đất chiến tranh, chiến đấu một trận thua trước những kẻ chinh phạt Đan Mạch. Người ta nói rằng thelflæd cai trị ở vị trí của chồng trong một thập kỷ sau khi anh ta bị bệnh. Khi ông qua đời vào năm 911, Æthelflæd trở thành Myrcna hlædige, ‘Lady of the Mercian". Trước khi chết, bà đã lấy lại một phần lớn nước Anh và sẵn sàng đầu hàng.',
+        about : `Æthelflæd, Lady of the Mercians, ruled Mercia in the English Midlands from 911 until her death. Born at the height of the Viking Invasions of England, she grew up in a land at war, fighting a losing battle against Danish conquerors. It is said that Æthelflæd ruled In her husband's place for a decade after he became ill. When he died in 911, Æthelflæd became Myrcna hlædige, ‘Lady of the Mercians". Before her death, she had taken back a large part of England and had more ready to surrender.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill1.png'),
                 type : 'Active',
-                name : 'Mũi tên sắt',
+                name : 'Arrow of Iron',
                 rage : 'Rage Requirement: 1000',
-                about : 'Gây sát thương lên tới 5 kẻ địch trong khu vực hình quạt hướng về phía trước, giảm đòn tấn công, phòng thủ và máu của chúng trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 400/500/600/700/800\nGiảm Tấn công, phòng thủ và giảm sức khỏe: 10% / 15% / 20% / 25% / 30%0'
+                about : `Deals damage to up to 5 enemies in a forward-facing fan-shaped area, reducing their attack, defence and health for the next 2 seconds.`,
+                update : `Direct Damage Factor: 400 / 500 / 600 / 700 / 800\nAttack, Defense, and Health Reduction: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill2.png') ,
-                name : 'Lực lượng sấm sét',
+                name : 'Thunderous Force',
                 type : 'Passive',
                 rage : '',
-                about : 'Thiệt hại phản công chống lại quân đội của bạn được giảm. Khi Active tấn công, bạn có 10% cơ hội để giảm tốc độ di chuyển của kỵ binh địch và tốc độ di chuyển của các đội quân khác. Hiệu ứng chậm 3 giây.',
-                update : 'Giảm sát thương phản công: 5% / 8% / 11% / 15% / 20%\nGiảm tốc độ hành quân kỵ binh: 20% / 25% / 30% / 40% / 50%\nĐơn vị khác Giảm tốc độ hành quân: 10% / 15% / 20% / 25% / 30%'
+                about : 'Counterattack damage against your troops is reduced. When actively attacking, you have a 10% chance to reduce the movement speed of enemy cavalry and movement speed of other troops. The slow effect last 3 seconds.',
+                update : 'Counterattack Damage Taken Reduction: 5% / 8% / 11% / 15% / 20%\nCavalry March Speed Reduction: 20% / 25% / 30% / 40% / 50%\nOther Unit March Speed Reduction: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill3.png') ,
-                name : 'Sức mạnh tổng hợp',
+                name : 'Synergy',
                 type : 'Passive',
                 rage : '',
-                about : 'Tất cả quân đội dưới quyền chỉ huy của bạn đều có được cuộc tấn công chống lại người Barbari và các đơn vị trung lập khác và tất cả các chỉ huy đều nhận thêm EXP.',
-                update : 'Thưởng thiệt hại cho người man rợ: 5% / 10% / 17% / 25% / 35%\nThưởng kinh nghiệm: 5% / 10% / 17% / 25% / 35%'
+                about : 'All troops under your commander gain attack against Barbarians and other neutral units and all commanders get extra EXP.',
+                update : 'Bonus Damage to Barbarians: 5% / 10% / 17% / 25% / 35%\nExperience Bonus: 5% / 10% / 17% / 25% / 35%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill4.png') ,
-                name : 'Định mệnh',
+                name : 'Fortress of Mercia',
                 type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương kỹ năng.',
-                update : 'Phần thưởng sát thương kỹ năng: 20% / 25% / 30% / 40% / 50%'
+                about : `When this commander leads a rally attack, all armies joining the rally have a higher troop limit. When this commander is leading at least 3 different troop types, their damage is increased.`,
+                update : `Rallied Army Capacity Bonus: 2% / 4% / 6% / 8% / 10%\nBonus Damage (3 Unit Types): 5% / 8% / 11% / 15% / 20%`
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill5.png') ,
-                name : 'Pháo đài Mercia',
+                name : 'Warrior Queen',
                 type : 'Passive',
                 rage : '',
-                about : 'Gây thêm 20% sát thương cho kẻ địch đã bị làm chậm.',
+                about : 'Deals an extra 20% damage to enemies who have been slowed.',
 
             },
 

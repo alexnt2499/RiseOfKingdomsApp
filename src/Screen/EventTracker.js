@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component, useState,useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image,FlatList } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image,FlatList,SafeAreaView } from 'react-native';
 import {colors,fonts} from './../theme/theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Header from './../Components/Header/Header';
@@ -10,6 +10,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import AddModal from './../Components/Modal/AddEventMdoal';
 import EditModal from './../Components/Modal/EditEventModal';
 import PushNotification from 'react-native-push-notification';
+import BannerAds from './../Components/AdsMob/BannerAds';
 
 import {LocalizationContext} from './../../App';
 import getRealm from './../services/realm';
@@ -90,7 +91,7 @@ const EventTracker = ({navigation}) => {
 
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Header checkBack={true} title={'event_check'} navigation={navigation}></Header>
             <View style={styles.headerCard}>
                 <View style={{flexDirection : 'row', width : '100%', marginHorizontal : 15, marginTop : 20}}>
@@ -120,10 +121,12 @@ const EventTracker = ({navigation}) => {
                 </View>
             </View>
 
-            <View style={{width : '100%', alignItems : 'center', marginTop : 10, marginBottom : 10}}>
-                <Text style={[styles.textStyle]}>{t('list_shedule')}</Text>
-            </View>
-            {
+            <ScrollView>
+                <View style={{width : '100%', alignItems : 'center', marginTop : 10, marginBottom : 10}}>
+                    <Text style={[styles.textStyle]}>{t('list_shedule')}</Text>
+                </View>
+                <View style={{marginBottom : 90}}>
+                {
                 listShedule.length == 0 ? <View style={{alignItems : 'center'}}><Text style={[styles.textStyle,{fontFamily : fonts.light, fontSize : 13}]}>{t('hien_tai_ko')}</Text></View> : <FlatList
                 showsVerticalScrollIndicator={false}
                 data={listShedule}
@@ -139,9 +142,15 @@ const EventTracker = ({navigation}) => {
 
             </FlatList>
             
+            
             }
+            </View>
+
+            </ScrollView>
+            
 
        
+        <View style={{bottom : 0,position : 'absolute'}}><BannerAds></BannerAds></View>
 
             <AddModal ref={addModalRef} getList={refeshList}></AddModal>
             <EditModal ref={editModalRef} item={itemProps} refreshingDatas={refreshingDatas} getList={refeshList}></EditModal>
@@ -151,7 +160,8 @@ const EventTracker = ({navigation}) => {
             }}>
                 <Icon name={'calendar-plus'} size={30}></Icon>
             </TouchableOpacity>
-        </View>
+
+        </SafeAreaView>
     );
 };
 

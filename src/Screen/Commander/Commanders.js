@@ -1,11 +1,11 @@
 //import liraries
 import React, { Component, useState, useEffect } from 'react';
-import { View, Text, StyleSheet,ScrollView, Picker,FlatList} from 'react-native';
+import { View, SafeAreaView, StyleSheet,ScrollView, Picker,FlatList} from 'react-native';
 import {colors , fonts} from './../../theme/theme';
 import HeaderSearch from './../../Components/Header/HeaderSearch';
 import ListCommanderVi from './../../database/ListCommander';
 import ListCommanderEpicVi from './../../database/ListCommanderEpic';
-
+import BannerAd from './../../Components/AdsMob/BannerAds';
 import ListCommanderEn from './../../database/ListCommanderEn';
 import ListCommanderEpicEn from './../../database/ListCommanderEpicEn';
 import {LocalizationContext} from './../../../App';
@@ -79,7 +79,7 @@ const Commanders = ({navigation}) => {
     }
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <HeaderSearch value={keyword} onChangeText={onChangeKeyword}></HeaderSearch>
             <Picker
                 mode={'dropdown'}
@@ -142,8 +142,10 @@ const Commanders = ({navigation}) => {
                 >
 
                 </FlatList>}
+
+                <BannerAd></BannerAd>
                 
-        </View>
+        </SafeAreaView>
     );
 };
 

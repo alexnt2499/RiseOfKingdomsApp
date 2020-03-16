@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component,useState,useEffect,useRef } from 'react';
-import { View, Text, StyleSheet, Image,Animated, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Image,Animated, TouchableOpacity, ScrollView, Dimensions,SafeAreaView } from 'react-native';
 import {colors, fonts} from './../../theme/theme';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -116,7 +116,7 @@ const CommanderDetails = ({route,navigation}) => {
 
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <LinearGradient colors={colorg} style={styles.cardHeader}>
                 <TouchableOpacity
                     onPress={() => {navigation.goBack()}}
@@ -217,7 +217,7 @@ const CommanderDetails = ({route,navigation}) => {
             </ScrollView>
             
             
-        </View>
+        </SafeAreaView>
     );
 };
 

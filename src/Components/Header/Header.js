@@ -22,7 +22,9 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack }) =
         }else if(checkLang == true) {
             return  <IconFa name={'language'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
         }else if(checkBack == true) {
-            return  <IconFa name={'calendar'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
+            if(checkEquiq) {
+                return  <IconFa name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
+            }else return  <IconFa name={'calendar'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
         }
         else {
             return  <TouchableOpacity onPress={() => {navigation.navigate('CommanderTab')}}><IconA name={'search1'} color='#FFF' size={25} style={{marginRight : 15}}></IconA></TouchableOpacity> 

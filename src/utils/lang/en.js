@@ -58,7 +58,30 @@ export default {
     "ban_co_muon_xoa" : "Are you sure you want to delete this shedule ?",
     "hien_tai_ko" : "There are currently no schedules",
     "time_in_game" : "Time in game (UTC)",
-    "time_out_game" : "Time of device"
+    "time_out_game" : "Time of device",
+    "build_trang_bi" : "BUILD EQUIPMENT",
+    "vu_khi" : "Weapons",
+    "giay" : "Boots",
+    "quan" : "Legs",
+    "giap" : "Chests",
+    "mu" : "Helms",
+    "trang_suc" : "Accessories",
+    "gang" : "Gloves",
+    "xem_full" : "See power",
+    "tanCongKyBinh" : "Cavalry Attack" ,
+    "phongThuKyBinh" : "Cavalry Defense",
+    "sucKhoeKyBinh" : "Cavalry Health",
+    "tanCongCungThu" : "Archer  Attack",
+    "phongThuCungThu" : "Archer Defense",
+    "sucKhoeCungThu" : "Archer Health",
+    "tanCongBoBinh" : "Infantry Attack",
+    "phongThuBoBinh" : "Infantry Defense",
+    "sucKhoeBoBinh" : "Infantry Health",
+    "tocDoDieuHanh" : "March Speed",
+    "tocDoThuGom" : "Gathering Speed",
+    "kinhNghiemChiHuy" : "Commander EXP Gain (EXP)",
+    "satThuongManRo" : "Damage to Barbarians"
+    
 
 
 

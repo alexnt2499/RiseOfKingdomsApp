@@ -84,7 +84,7 @@ export default [
                 name : 'Lừa dối ',
                 rage : 'Sức mạnh phi thường: 1000',
                 about : 'Giảm 10% tấn công mục tiêu và 10% phòng thủ trong 2 giây tiếp theo, sau đó gây sát thương lớn (Damage Factor 150) cho mục tiêu ở lượt tiếp theo.',
-                update : 'Giảm tấn công: 10% / 15% / 20% / 25% / 30%\nGiảm phòng thủ: 10% / 15% / 20% / 25% / 30%\nHệ số thiệt hại trực tiếp: 150/210/270/360450'
+                update : 'Giảm tấn công: 10% / 15% / 20% / 25% / 30%\nGiảm phòng thủ: 10% / 15% / 20% / 25% / 30%\nHệ số thiệt hại trực tiếp: 150/210/270/360/450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill2.png') ,
@@ -334,17 +334,19 @@ export default [
                 about : 'Trong 2 giây tiếp theo, Joan of Arc cấp cho quân đội của chính cô và lực lượng thân thiện gần đó một lực lượng mạnh mẽ giúp tăng sức khỏe cho các đơn vị bộ binh, tăng khả năng phòng thủ của các đơn vị kỵ binh, tăng sức tấn công của các đơn vị cung thủ và tăng thêm cơn thịnh nộ mỗi giây.',
                 update : 'Thưởng cho sức khỏe bộ binh: 10% / 15% / 20% / 25% / 30%\nThưởng phòng thủ kỵ binh: 10% / 15% / 20% / 25% / 30%\nPhần thưởng Tấn công cung thủ: 10% / 15% / 20% / 25% / 30%\nCơn thịnh nộ được khôi phục: 15/20/25/30/40'
             },
+           
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill2.png') ,
-                name : 'Thiên tài quân sự',
+                name : 'Người hầu gái của thành phố Orleans',
                 type : 'Bị động',
                 rage : '',
                 about : 'Tăng tốc độ tập hợp của quân đội và tăng tải quân đội.',
                 update : 'Phần thưởng tốc độ thu thập: 5% / 10% / 15% / 20% / 25%\nPhần thưởng tải quân đội: 5% / 10% / 15% / 20% / 25%'
+            
             },
-           {
-                image : require('./../../assets/images/Commander/Epic/Joan/skill3.png') ,
-                name : 'Người hầu gái của thành phố Orleans',
+            {
+                image : require('./../../assets/images/Commander/Epic/Joan/skill2.png') ,
+                name : 'Nơi ẩn náu',
                 type : 'Bị động',
                 rage : '',
                 about : 'Đòn tấn công thông thường của quân lính có 10% cơ hội chữa lành một số đơn vị bị thương nhẹ. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây.',
@@ -355,8 +357,8 @@ export default [
                 name : 'Thánh',
                 type : 'Bị động',
                 rage : '',
-                about : 'Tăng sát thương tấn công bình thường.',
-                update : 'Thưởng sát thương tấn công thông thường: 10% / 13% / 16% / 20% / 25%'
+                about : 'Tăng tấn công thông thường',
+                update : 'Phần thưởng sát thương tấn công thông thường: 10% / 13% / 16% / 20% / 25%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill5.png') ,
@@ -375,7 +377,11 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/joan-of-arc-gathering-build-1024x578.jpg'
+            }
+        ],
         partner : [],
         trangBi : ''
     },

@@ -1,7 +1,6 @@
 //import liraries
 import React, { Component, useEffect, useState } from 'react';
-import { View, Text, StyleSheet,Dimensions, FlatList } from 'react-native';
-import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
+import { View, Text, StyleSheet,Dimensions, FlatList,SafeAreaView } from 'react-native';
 
 import {fonts,colors} from './../theme/theme';
 import Header from './../Components/Header/Header';
@@ -17,9 +16,10 @@ import AppText from './../Components/AppText';
 import {LocalizationContext} from './../../App';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconFA5 from 'react-native-vector-icons/FontAwesome5';
+import { RewardedAd, TestIds,RewardedAdEventType } from '@react-native-firebase/admob';
 
 import ListCommanderEn from '../database/ListCommanderEn';
-import { firebase } from '@react-native-firebase/admob';
+import BannerAds2 from './../Components/AdsMob/BannerAds';
 
 const imagess =  [
     require("./../../assets/images/events/event2.jpg"),
@@ -30,11 +30,13 @@ const imagess =  [
   ]
 
 const {width} = Dimensions.get('window');
+
 // create a component
 const HomeScreen = ({ navigation }) => {
     const {t,locale, setLocale} = React.useContext(LocalizationContext);
     const [listCommander,setListCommander] = useState([]);
     const [listCommanderEpic,setListCommanderEpic] = useState([]);
+ 
 
     useEffect(() => {
         changeDrop();
@@ -50,9 +52,13 @@ const HomeScreen = ({ navigation }) => {
 
         }
     }
+    
+
+
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
            <Header navigation={navigation} ></Header>
+               
                 <ScrollView style={{width : '100%'}}>
                 <View style={{height : 200}}>
                     <SliderBox images={imagess} 
@@ -121,28 +127,15 @@ const HomeScreen = ({ navigation }) => {
                 </View>
                 </View>
 
-                <BannerAd
-                    unitId='ca-app-pub-7033028927124341/5474292886'
-                    size={BannerAdSize.FULL_BANNER}
-                    requestOptions={{
-                        requestNonPersonalizedAdsOnly: true,
-                    }}
-                    onAdLoaded={() => {
-                        console.log('Advert loaded');
-                    }}
-                    onAdFailedToLoad={(error) => {
-                       console.log(error);
-                                               
-                    }}
-                    />
                 
+              
+
                 </ScrollView>
-                
-               
+                <BannerAds2></BannerAds2>
 
         
             
-        </View>
+        </SafeAreaView>
     );
 };
 

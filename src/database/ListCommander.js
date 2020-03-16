@@ -512,7 +512,15 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/Constantine-1024x577.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/Constantine_2-1024x577.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/constantine-garrison-tree-2-1024x577.png'
+        }],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -572,7 +580,19 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/edward-rally-attack-tree-1024x576.png',
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-2-1024x576.png',
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-1-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-3-1024x576.png'
+        }
+],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -632,7 +652,12 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/el-cid-archer-build-1024x558.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/el-cid-skill-tree-1024x558.jpg'
+        }],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -692,7 +717,15 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/Fredrick-Field-Battle-tree-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/frederick-1-skilled-leadership.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/uncle-fred-ultimate-build-1024x677.jpg'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -752,7 +785,12 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [  {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/ghenghis-khan-talent-tree-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/genghis-khan-talent-tree-1024x576.png'
+        },],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -812,7 +850,9 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/Guan-Yu-Field-Battle-1024x684.jpg'
+        },],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -872,7 +912,12 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/hannibal-barca-field-battles-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/hannibal-barca-rally-attack-tree-1024x576.png'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -932,7 +977,9 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://riseofkingdomsguides.com/wp-content/uploads/2020/01/Ishida-Mitsunari-.jpg'
+        }],
         partner : [],
         trangBi : 'thu gom'
     },
@@ -992,7 +1039,15 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-3-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-2-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-1-1024x576.png'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -1052,7 +1107,9 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Defense,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/Leonidas-Field-Battle-1024x576.jpg'
+        }],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -1112,7 +1169,12 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [  {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/mehmed-ii-pvp-buildings-build-1024x570.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/mehmed-ii-pvp-map-build-1024x570.jpg'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -1144,8 +1206,8 @@ export default [
                 name : 'Bậc thầy của Kendo',
                 type : 'Bị động',
                 rage : '',
-                about : 'Thiệt hại tiền thưởng cho người man rợ: 10% / 20% / 30% / 40% / 50%',
-                update : 'Hệ số thiệt hại bổ sung: 500/600/70/800/1000'
+                about : 'Gây thiệt hại thêm cho người man rợ',
+                update : 'Thiệt hại tiền thưởng cho người man rợ: 10% / 20% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Minamoto/skill4.png') ,
@@ -1172,7 +1234,9 @@ export default [
             TalentIcon.Peacekeeping,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/minamoto-no-yoshitsune-talent-1024x576.png'
+        }],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -1232,7 +1296,15 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Defense,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-flag-defense-talent-build-1024x498.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-i-garrison-talent-1024x570.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-i-infantry-talent-1024x570.jpg'
+        }],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -1292,9 +1364,11 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/06/saladin-talent-tree-1024x576.png'
+        },],
         partner : [],
-        trangBi : 'bộ binh'
+        trangBi : 'kỵ binh'
     },
     {
         id: 21,
@@ -1352,7 +1426,9 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://riseofkingdomsboss.com/wp-content/uploads/2020/02/Seondeok-build-rise-of-kingdoms-768x439.jpg'
+        }],
         partner : [],
         trangBi : 'thu gom'
     },
@@ -1412,7 +1488,9 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/09/Tomyris-1024x576.jpg'
+        },],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -1472,7 +1550,15 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [{
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/wu-zetian-counter-attila-1024x576.png'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/10/wu-zetian-talent-tree-1024x739.jpg'
+        },
+        {
+            uri : 'https://rok.guide/wp-content/uploads/2019/10/wu-zetian-talent-tree-open-field-1024x650.jpg'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -1532,7 +1618,14 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Yi_Seong-Gye_Garrison-1024x576.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/Yi_Seong-Gye-1024x576.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -1549,7 +1642,7 @@ export default [
                 name : 'Mũi tên sắt',
                 rage : 'Sức mạnh phi thường: 1000',
                 about : 'Gây sát thương lên tới 5 kẻ địch trong khu vực hình quạt hướng về phía trước, giảm đòn tấn công, phòng thủ và máu của chúng trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 400/500/600/700/800\nGiảm Tấn công, phòng thủ và giảm sức khỏe: 10% / 15% / 20% / 25% / 30%0'
+                update : 'Hệ số thiệt hại trực tiếp: 400/500/600/700/800\nGiảm Tấn công, phòng thủ và giảm sức khỏe: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill2.png') ,
@@ -1569,15 +1662,16 @@ export default [
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill4.png') ,
-                name : 'Định mệnh',
+                name : 'Pháo đài Mercia',
                 type : 'Bị động',
                 rage : '',
-                about : 'Tăng sát thương kỹ năng.',
-                update : 'Phần thưởng sát thương kỹ năng: 20% / 25% / 30% / 40% / 50%'
+                about : 'Khi chỉ huy này dẫn đầu một cuộc tấn công tập hợp, tất cả các đội quân tham gia cuộc biểu tình có giới hạn quân đội cao hơn. Khi chỉ huy này đang lãnh đạo ít nhất 3 loại quân khác nhau, sát thương của chúng sẽ tăng lên.',
+                update : 'Thưởng quân đội tập hợp tăng: 2% / 4% / 6% / 8% / 10%\nThiệt hại tiền thưởng (3 loại đơn vị): 5% / 8% / 11% / 15% / 20%'
+
             },
            {
                 image : require('./../../assets/images/Commander/Legendary/Athe/skill5.png') ,
-                name : 'Pháo đài Mercia',
+                name : 'Nữ hoàng chiến binh',
                 type : 'Bị động',
                 rage : '',
                 about : 'Gây thêm 20% sát thương cho kẻ địch đã bị làm chậm.',

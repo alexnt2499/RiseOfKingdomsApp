@@ -11,7 +11,7 @@ import PushNotification  from "react-native-push-notification"
 
 // create a component
 const AddEventModal = forwardRef((props,ref) => {
-    const {t} = React.useContext(LocalizationContext);
+    const {t,locale} = React.useContext(LocalizationContext);
     const [isModalVisible,setIsModalVisible] = useState(false);
     const [date,setDate] = useState(new Date());
     const [time,setTime] = useState(new Date());
@@ -148,15 +148,23 @@ const AddEventModal = forwardRef((props,ref) => {
                     props.refreshingDatas();
                     close();
                 })
-                console.log();
+                let title = '';
+                if(locale == 'vi') {
+                    title = 'Thông báo sự kiện';
+                }else {
+                    title = 'Notification event'
+                }
                 
                
                     PushNotification.cancelLocalNotifications({id: `${id}`});
 
                     PushNotification.localNotificationSchedule({
                         id : `${id}`,
+                        title : title,
+                        largeIcon: "ic_launcher",
                         message: note, 
-                        date: getDate // in 60 secs
+                        date: getDate,
+                        vibration: 5000 
                     });     
                       
                 console.log('Oke');

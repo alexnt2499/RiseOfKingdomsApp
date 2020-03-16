@@ -58,7 +58,31 @@ export default {
     "ban_co_muon_xoa" : "Bạn có chắc muốn xóa lịch hẹn này?",
     "hien_tai_ko" : "Hiện tại không có lịch trình nào",
     "time_in_game" : "Thời gian game",
-    "time_out_game" : "Thời gian thiết bị"
+    "time_out_game" : "Thời gian thiết bị",
+    "build_trang_bi" : "PHỐI ĐỒ",
+    "vu_khi" : "Vũ khí",
+    "giay" : "Giày",
+    "quan" : "Quần",
+    "giap" : "Giáp",
+    "mu" : "Mũ",
+    "trang_suc" : "Trang sức",
+    "gang" : "Găng",
+    "xem_full" : "Xem chỉ số",
+    "tanCongKyBinh" : "Tấn công kỵ binh" ,
+    "phongThuKyBinh" : "Phòng thủ kỵ binh",
+    "sucKhoeKyBinh" : "Sức khỏe kỵ binh",
+    "tanCongCungThu" : "Tấn công cung thủ",
+    "phongThuCungThu" : "Phòng thủ cung thủ",
+    "sucKhoeCungThu" : "Sức khỏe cung thủ",
+    "tanCongBoBinh" : "Tấn công bộ binh",
+    "phongThuBoBinh" : "Phòng thủ bộ binh",
+    "sucKhoeBoBinh" : "Sức khỏe bộ binh",
+    "tocDoDieuHanh" : "Tốc đội diễu hành",
+    "tocDoThuGom" : "Tốc độ thu gom",
+    "kinhNghiemChiHuy" : "Kinh nghệm chỉ huy",
+    "satThuongManRo" : "Sát thương man rợ"
+
+
 
 
 

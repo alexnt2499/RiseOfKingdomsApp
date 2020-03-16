@@ -1,13 +1,13 @@
 //import liraries
 import React, { Component, useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView,Picker,Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView,Picker,Image,SafeAreaView } from 'react-native';
 import {fonts,colors} from './../../theme/theme';
 import ListTrangBi from './../../database/Equipment';
 import ListTrangBiEng from './../../database/EquipmentEng';
 import {LocalizationContext} from './../../../App';
 import equipVi from './../../utils/langDrop/equipmentVi';
 import equipEn from './../../utils/langDrop/equipmentEn';
-
+import BannerAds from './../../Components/AdsMob/BannerAds';
 import Header from './../../Components/Header/Header';
 import AsyncStorage from '@react-native-community/async-storage';
 const Equipment = ({navigation}) => {
@@ -40,20 +40,22 @@ const Equipment = ({navigation}) => {
     }
 
     return (
-        <ScrollView style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Header title='TRANG BỊ' checkEquiq={true} navigation={navigation}></Header>
-                <Picker
-                mode={'dropdown'}
-                selectedValue={value}
-                style={{height: 50, width: 200, marginLeft : 10, color : '#FFF'}}
-                onValueChange={(itemValue, itemIndex) =>{
-                    setValue(itemValue); renderEquipment(itemValue);
-                } }>
-                    {ListDrop.map((value) => {
-                        return (<Picker.Item label={value.label} value={value.value} />)
-                    })}
-                </Picker>
-            <View style={{width : '100%', justifyContent : 'center', alignItems :'center'}}>
+            <Picker
+                    mode={'dropdown'}
+                    selectedValue={value}
+                    style={{height: 50, width: 200, marginLeft : 10, color : '#FFF'}}
+                    onValueChange={(itemValue, itemIndex) =>{
+                        setValue(itemValue); renderEquipment(itemValue);
+                    } }>
+                        {ListDrop.map((value) => {
+                            return (<Picker.Item label={value.label} value={value.value} />)
+                        })}
+                    </Picker>
+            <ScrollView style={{width : '100%'}}>
+                <View style={{justifyContent : 'center', alignItems : 'center'}}>
+                
                 {ListValue.map((value,index) => {
                     
                   
@@ -73,9 +75,10 @@ const Equipment = ({navigation}) => {
                     
                     
                 })}
-
-            </View>
-        </ScrollView>
+                </View>
+            </ScrollView>
+            <BannerAds></BannerAds>
+        </SafeAreaView>
     );
 };
 

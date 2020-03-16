@@ -1,17 +1,21 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView,SafeAreaView } from 'react-native';
 import {fonts,colors} from './../../theme/theme';
 import Header from './../../Components/Header/Header';
 import Button from './../../Components/Buttons/Button';
 import AppText from './../../Components/AppText';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import BannerAds from './../../Components/AdsMob/BannerAds';
 
 // create a component
 const ToolsIndex = ({navigation}) => {
     return (
-        <ScrollView style={styles.container}>
+        <SafeAreaView style={styles.container}>
+
             <Header title={'TOOLS'} navigation={navigation} checkTool={true}></Header>
+            <BannerAds></BannerAds>
+            <ScrollView>
             <View style={{width : '100%', justifyContent : 'center', alignItems : 'center', marginTop : 20, marginBottom : 10, flexDirection : 'row'}}>
                 <Icon name={'calendar-edit'} size={20} color={'#FFF'} style={{marginRight : 10}}></Icon>
                 <AppText style={styles.textStyle} i18nKey={'eventTrack'}></AppText>
@@ -25,7 +29,7 @@ const ToolsIndex = ({navigation}) => {
                 <AppText style={styles.textStyle} i18nKey={'toolTrangBi'}></AppText>
             </View>
             <View style={styles.container2}>
-                <Button text={'toolTrangBi'} onclick={() => {navigation.navigate('EventTool')}} icon={'armor'}></Button>
+                <Button text={'toolTrangBi'} onclick={() => {navigation.navigate('EquipmentS')}} icon={'armor'}></Button>
             </View>
 
 
@@ -44,7 +48,8 @@ const ToolsIndex = ({navigation}) => {
             <View style={styles.container2}>
                 <Button text={'cal_Material'} onclick={() => {navigation.navigate('MaterialTool')}} icon={'material'}></Button>
             </View>
-        </ScrollView>
+            </ScrollView>
+        </SafeAreaView>
     );
 };
 

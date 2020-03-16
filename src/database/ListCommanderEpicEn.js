@@ -6,46 +6,46 @@ export default [
         name : 'Baibars',
         image : require('./../../assets/images/Commander/Epic/Baibars/Baibars.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Baibars/tuongBaibars.png'),
-        about : 'Baibars là Quốc vương Ai Cập và Syria thứ tư trong triều đại Mamluk. Vào tháng 9 năm 1260, ông đánh bại quân đội Mông Cổ xâm lược tại Trận Ain Jalut - đây là thất bại lớn đầu tiên mà quân Mông Cổ phải gánh chịu. Trong trận chiến, Baibars đã thực hiện chiến lược tấn công và chạy trốn, khiến cho lực lượng Mông Cổ rơi vào một cuộc phục kích tàn khốc. Baibars nổi tiếng cả về những chiến thắng của ông chống lại quân Mông Cổ và Thập tự quân, và cho những cải cách hành chính mà ông đã thực hiện trong thời kỳ sultanate. Một nhà lãnh đạo quân sự đầy tham vọng, Baibars đã tổ chức một đội quân và tái cấu trúc lực lượng hải quân hiện có. Ông đã quyên góp rất nhiều cho các công trình công cộng, bao gồm xây dựng đường sá, nhà thờ Hồi giáo, trường học và bưu điện, cũng như các dự án thủy lợi để tăng sản lượng ngũ cốc của đất nước. Triều đại của Baibars đã đẩy quân Thập tự chinh ra khỏi lãnh thổ Mamluk một lần và mãi mãi, và bắt đầu một thời đại mới của quyền lực tối cao Mamluk ở Đông Địa Trung Hải.',
+        about : 'Baibars was the forth Sultan of Egypt and Syria during the Mamluk dynasty. In September 1260, he routed the invading Mongol army at the Battle of Ain Jalut - this was the first major defeat ever suffered by the Mongols. During the battle, Baibars implemented a strategy of hit-and-run tactics, which baited the Mongol forces into an devastating ambush. Baibars is renowned both for his victories against the Mongols and Crusaders, and for the administrative reforms he implemented within the sultanate. An ambitious military leader, Baibars organized an army and restructured the existing navy. He donated heavily to public works, including building roads, mosques, schools, and post offices, as well as irrigation projects to increase the country\'s grain production. Baibars\' reign pushed the Crusader\'s out of Mamluk territory once and for all, and began a new age of Mamluk supremacy in the Eastern Mediterranean.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Baibars/skill1.png'),
-                type : 'Chủ động',
-                name : 'Bão cát',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương lớn (Damage Factor 300) cho kẻ địch trong khu vực hình quạt hướng về phía trước (tối đa 3 mục tiêu) và giảm 30% tốc độ diễu hành của mục tiêu hiện tại trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 300/375/450/600/750\nGiảm tốc độ hành quân: 10% / 15% / 20% / 25% / 30%'
+                type : 'Active',
+                name : 'Sandstorm',
+                rage : 'Rage Requirement: 1000',
+                about : `Deals massive damage (Damage Factor 300) to enemies in a forward-facing fan-shaped area (maximum 3 targets) and reduces current target's march speed by 30% for the next 2 seconds`,
+                update : `Direct Damage Factor: 300 / 375 / 450 / 600 / 750\nMarch Speed Reduction: 10% / 15% / 20% / 25% / 30%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Baibars/skill2.png') ,
-                name : 'Hiệp sĩ Ả Rập',
-                type : 'Bị động',
+                name : 'Arabian Knights',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng 8% tấn công của các đơn vị kỵ binh. ',
-                update : 'Thưởng tấn công cho Kỵ binh: 8% / 10% / 12% / 16% / 20%'
+                about : 'Increases attack of cavalry units by 8%.',
+                update : 'Cavalry Attack Bonus: 8% / 10% / 12% / 16% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Baibars/skill3.png') ,
-                name : 'Không lối thoát',
-                type : 'Bị động',
+                name : 'No Escape',
+                type : 'Passive',
                 rage : '',
-                about : 'Khi tấn công các thành phố, các cuộc tấn công thông thường có 100% cơ hội giảm 1% tấn công đồn trú và phòng thủ 1%.',
-                update : 'Giảm tấn công: 1% / 2% / 3% / 5% / 7%\nGiảm phòng thủ: 1% / 2% / 3% / 5% / 7%'
+                about : `When attacking cities, normal attacks have a 100% chance to decrease garrison attack by 1% and defense by 1%.`,
+                update : 'Attack Reduction: 1% / 2% / 3% / 5% / 7%\nDefense Reduction: 1% / 2% / 3% / 5% / 7%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Baibars/skill4.png') ,
-                name : 'Chúa tể',
-                type : 'Bị động',
+                name : 'Lord Panther',
+                type : 'Passive',
                 rage : '',
-                about : 'Khi rời khỏi trận chiến (Nhưng không phải khi được định tuyến), chữa lành một phần các đơn vị bị thương nhẹ (Yếu tố chữa bệnh 75) và tăng tốc độ diễu hành thêm 20% trong 10 giây tiếp theo.',
-                update : 'Hệ số chữa lành: 75/100/125/150/200\nThưởng tốc độ hành quân: 20% / 25% / 30% / 40% / 50%'
+                about : 'Upon leaving battle (But not when routed), heals a portion of slightly wounded units (Healing Factor 75) and increases march speed by 20% for the next 10 seconds.',
+                update : 'Healing Factor: 75 / 100 / 125 / 150 / 200\nMarch Speed Bonus: 20% / 25% / 30% / 40% / 50%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Baibars/skill5.png') ,
-                name : 'Làm mờ mặt trời',
-                type : 'Tăng skill 1',
+                name : 'Blot Out The Sun',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Gây sát thương lớn (Hệ số sát thương 1000) cho kẻ địch trong khu vực hình quạt hướng về phía trước (tối đa 5 mục tiêu) và giảm 50% tốc độ diễu hành của mục tiêu hiện tại trong 2 giây tiếp theo.',
+                about : 'Deals massive damage (Damage Factor 1000) to enemies in a forward- facing fan-shaped area (maximum 5 targets) and reduces current target\'s march speed by 50% for the next 2 seconds.',
 
             },
 
@@ -76,46 +76,46 @@ export default [
         name : 'Belisarius',
         image : require('./../../assets/images/Commander/Epic/Belisarius/Belisarius.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Belisarius/tuongBelisarius.png'),
-        about : 'Flavius ​​Belisarius là một vị tướng Byzantine sống trong thế kỷ thứ 6 sau Công nguyên. Ông thường được coi là một trong những vị tướng vĩ đại nhất của Đế quốc Byzantine. Belisarius được biết đến là một trong những người cuối cùng của người La Mã, một trong những cá nhân cuối cùng thể hiện những đức tính của Đế chế La Mã. Flavius ​​đóng một vai trò quan trọng trong kế hoạch của Hoàng đế Justinian, nhằm chiếm lại lãnh thổ Địa Trung Hải trước đây do Đế quốc La Mã phương Tây kiểm soát, lãnh đạo quân đội đế quốc chống lại đế chế Sasanian (Ba Tư), vương quốc Vandal của Bắc Phi, xâm chiếm Constantinople. Ban đầu là một thành viên trong đội cận vệ của Justinian, Flavius ​​đã sớm được hoàng đế chú ý và được ban cho mệnh lệnh đầu tiên ở tuổi 25. Không biết nhiều về cuộc sống cá nhân của Belisarius, nhưng hai người chính tôi đã hướng dẫn hành động của mình: trung thành với Hoàng đế và tình yêu dành cho vợ, Antonia. Bất chấp sự đối xử không nhất quán mà anh ta nhận được từ Justinian, lòng trung thành của Belisarius, không bao giờ bị dao động, và lòng trung thành của anh ta đã đi vào lịch sử như một trong những yếu tố cao quý nhất của kỷ nguyên Justinian.',
+        about : 'Flavius Belisarius was a Byzantine general who lived during the 6th century AD. He is often regarded as one of the greatest generals of the Byzantine Empire. Belisarius is know for being one of the “last of the Romans” – one of the last individuals who embodied the virtues of the Roman Empire. Flavius played a key role in Emperor Justinian’s plan to reconquer the Mediterranean territory formerly controlled by the Western Roman Empire, leading imperial armies against the Sasanian empire (Persia), the Vandal kingdom of the North Africa, encroaching upon Constantinople. Originally a member of Justinian’s bodyguard, Flavius came to the emperor’s attention early on, and was given his first command at the age of 25. Not much is known about Belisarius’ personal life, but two primary I pulses guided his actions: loyalty to the Emperor and love for his wife, Antonia. Despite the inconsistent treatment he received from Justinian, Belisarius’ faithfulness never wavered, and his loyalty has gone down in history as one of the noblest elements of Justinian’s era.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill1.png'),
-                type : 'Chủ động',
-                name : 'Lừa dối ',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Giảm 10% tấn công mục tiêu và 10% phòng thủ trong 2 giây tiếp theo, sau đó gây sát thương lớn (Damage Factor 150) cho mục tiêu ở lượt tiếp theo.',
-                update : 'Giảm tấn công: 10% / 15% / 20% / 25% / 30%\nGiảm phòng thủ: 10% / 15% / 20% / 25% / 30%\nHệ số thiệt hại trực tiếp: 150/210/270/360450'
+                type : 'Active',
+                name : 'Deception',
+                rage : 'Rage Requirement: 1000',
+                about : 'Decreases target attack by 10% and defense by 10% for the next 2 seconds, then deals massive damage (Damage Factor 150) to the target on the next turn.',
+                update : 'Attack Reduction: 10% / 15% / 20% / 25% / 30%\nDefense Reduction: 10% / 15% / 20% / 25% / 30%\nDirect Damage Factor: 150 / 210 / 270 / 360 / 450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill2.png') ,
-                name : 'Không thể cưỡng lại',
-                type : 'Bị động',
+                name : 'Irresistible',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương gây ra cho những kẻ man rợ và các đơn vị trung lập khác thêm 5%.',
-                update : 'Thiệt hại cho người man rợ: 5% / 10% / 17% / 25% / 35%'
+                about : 'Increases damage dealt to barbarians and other neutral units by 5%.',
+                update : 'Bonus Damage to Barbarians: 5% / 10% / 17% / 25% / 35%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill3.png') ,
                 name : 'Bucellarii',
-                type : 'Bị động',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng phòng thủ cho các đơn vị kỵ binh thêm 5%. Tăng tốc độ diễu hành thêm 10% trong 10 giây sau khi rời trận chiến.',
-                update : 'Thưởng phòng thủ kỵ binh: 10% / 15% / 20% / 25% / 30%\nTiền thưởng tốc độ tháng 3: 10% / 15% / 20% / 25% / 30%'
+                about : 'Increases defense of cavalry units by 5%. Increases march speed by 10% for 10 seconds after leaving battle.',
+                update : 'Cavalry Defense Bonus : 10% / 15% / 20% / 25% / 30%\nMarch Speed Bonus: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill4.png') ,
-                name : 'Chiến thuật xiên',
-                type : 'Bị động',
+                name : 'Oblique Tactics',
+                type : 'Passive',
                 rage : '',
-                about : 'Khi quân đội mục tiêu đã giảm xuống dưới 50% sức mạnh, tăng 10% lực sát thương gây ra cho mục tiêu của quân đội Belisarius.',
+                about : 'When target army has been reduced to less than 50% strength, increases damage dealt to target by Belisarius’ army by 10 %.',
                 update : 'Phần thưởng thiệt hại: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Belisarius/skill5.png') ,
                 name : 'Bloodthristy Bucellarii',
-                type : 'Bị động',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng 30% phòng thủ cho các đơn vị kỵ binh. Tăng tốc độ diễu hành thêm 50% trong 10 giây sau khi rời trận chiến.',
+                about : 'Increases defense of cavalry units by 30%. Increases march speed by 50% for 10 seconds after leaving battle.',
 
             },
 
@@ -140,46 +140,46 @@ export default [
         name : 'Boudica',
         image : require('./../../assets/images/Commander/Epic/Boudica/Boudica.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Boudica/tuongBoudica.png'),
-        about : 'Boudica là một nữ hoàng của bộ tộc Celtic Iceni của Anh, người đã lãnh đạo một cuộc nổi dậy chống lại các lực lượng chiếm đóng của Đế chế La Mã vào năm 60 hoặc 61. Tuy nhiên, thống đốc La Mã Gaius Suetonius Paulinus, chiến thắng cuối cùng của Boudica đã khẳng định sự kiểm soát của La Mã đối với tỉnh này. Boudica sau đó tự sát để tránh bị bắt hoặc chết vì bệnh. Sự quan tâm đến những sự kiện này đã hồi sinh trong thời Phục hưng Anh và dẫn đến sự nổi tiếng của Boudica trong thời đại Victoria. Boudica vẫn là một biểu tượng văn hóa quan trọng ở Vương quốc Anh. Sự vắng mặt của văn học Anh bản địa trong phần đầu của thiên niên kỷ thứ nhất có nghĩa là kiến ​​thức về cuộc nổi loạn của Boudica chỉ xuất hiện trong các tác phẩm của người La Mã.',
+        about : 'Boudica was a queen of the British Celtic Iceni tribe who led an uprising against the occupying forces of the Roman Empire in AD 60 or 61. However, the Roman governor Gaius Suetonius Paulinus’ eventual victory over Boudica confirmed Roman control of the province. Boudica then either killed herself to avoid capture or died of illness. Interest in these events revived in the English Renaissance and led to Boudica´s fame in the Victorian era. Boudica has remained an important cultural symbol in the United Kingdom. The absence of the native British literature during the early part of the first millennium means that knowledge of Boudica´s rebellion comes solely form the writings of the Romans.',
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Boudica/skill1.png'),
-                type : 'Chủ động',
-                name : 'Than thở của phe nổi dậy',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương lớn cho mục tiêu và giảm cơn thịnh nộ của nó. Giảm tấn công quân đội của mục tiêu trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 225/300/375/450/600\nGiảm tấn công: 10% / 13% / 16% / 20% / 25%\nGiảm cơn thịnh nộ: 50/60/70/80/100'
+                type : 'Active',
+                name : 'Lament of the Insurgent',
+                rage : 'Rage Requirement: 1000',
+                about : 'Deals massive damage to the target and reduces its rage. Decreases attack of target\'s troops for the next 2 seconds.',
+                update : 'Direct Damage Factor: 225 / 300 / 375 / 450 / 600\nAttack Reduction: 10% / 13% / 16% / 20% / 25%\nRage Reduction: 50 / 60 / 70 / 80 / 100'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Boudica/skill2.png') ,
-                name : 'Trận chiến nhóm',
-                type : 'Bị động',
+                name : 'Group Battle',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương gây ra cho những kẻ man rợ và các đơn vị trung lập khác bởi quân đội do chỉ huy này lãnh đạo và tăng 20% ​​kinh nghiệm chỉ huy thu được từ các mục tiêu này.',
-                update : 'Thiệt hại cho người man rợ: 5% / 10% / 15% / 20% / 25%'
+                about : `Increases damage dealt to barbarians and other neutral units by troops led by this commander and increases commander experience obtained from these targets by 20%.`,
+                update : 'Bonus Damage to Barbarians: 5% / 10 % / 15 % / 20% / 25%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Boudica/skill3.png') ,
-                name : 'Dòng máu Celtic',
-                type : 'Bị động',
+                name : 'Celtic Blood',
+                type : 'Passive',
                 rage : '',
-                about : 'Boudica phục hồi cơn thịnh nộ và chữa lành một số đơn vị bị thương nhẹ trong quân đội của cô bất cứ khi nào cô sử dụng một kỹ năng.',
-                update : 'Cơn thịnh nộ được khôi phục: 10/20/30/40/50\nYếu tố chữa lành: 150/200/250/300/400'
+                about : 'Boudica restores rage and heals some of the slightly wounded units in her army whenever she uses a skill.',
+                update : 'Rage Restored: 10 / 20 / 30 / 40 / 50\nHealing Factor: 150 / 200 / 250 / 300 / 400'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Boudica/skill4.png') ,
-                name : 'Nữ hoàng của xứ Wales',
-                type : 'Bị động',
+                name : 'Queen of the Iceni',
+                type : 'Passive',
                 rage : '',
-                about : 'Quân đội tấn công bình thường có cơ hội tăng sát thương gây ra cho kẻ thù.',
-                update : 'Thưởng thiệt hại (Cơ hội 5%): 10% / 20% / 30% / 40% / 50%\nThưởng thiệt hại (Cơ hội 3%): 20% / 40% / 60% / 80% / 100%\nThưởng thiệt hại (Cơ hội 2%): 30% / 60% / 90% / 120% / 150%'
+                about : 'Troops normal attacks have a chance to increase the damage dealt to enemy.',
+                update : 'Bonus Damage (5% Chance): 10% / 20% / 30% / 40% / 50%\nBonus Damage (3% Chance): 20% / 40% / 60% / 80% / 100%\nBonus Damage (2% Chance): 30% / 60% / 90% / 120% / 150%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Boudica/skill5.png') ,
-                name : 'Tiếng gầm của quân nổi dậy',
-                type : 'Tăng skill 1',
+                name : 'Roar of the Insurgent',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Gây sát thương lớn (Hệ số sát thương 1000) cho mục tiêu và giảm cơn thịnh nộ của nó xuống 100. Giảm 25% đòn tấn công của quân mục tiêu trong 2 giây tiếp theo.',
+                about : 'Deals massive damage (Damage Factor 1000) to the target and reduces its rage by 100. Decreases attack of target\'s troops by 25% for the next 2 seconds.',
 
             },
 
@@ -204,46 +204,46 @@ export default [
         name : 'Eulji Mundeok',
         image : require('./../../assets/images/Commander/Epic/Mundeok/Mundeok.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Mundeok/tuongMundeok.png'),
-        about : 'Boudica là một nữ hoàng của bộ tộc Celtic Iceni của Anh, người đã lãnh đạo một cuộc nổi dậy chống lại các lực lượng chiếm đóng của Đế chế La Mã vào năm 60 hoặc 61. Tuy nhiên, thống đốc La Mã Gaius Suetonius Paulinus, chiến thắng cuối cùng của Boudica đã khẳng định sự kiểm soát của La Mã đối với tỉnh này. Boudica sau đó tự sát để tránh bị bắt hoặc chết vì bệnh. Sự quan tâm đến những sự kiện này đã hồi sinh trong thời Phục hưng Anh và dẫn đến sự nổi tiếng của Boudica trong thời đại Victoria. Boudica vẫn là một biểu tượng văn hóa quan trọng ở Vương quốc Anh. Sự vắng mặt của văn học Anh bản địa trong phần đầu của thiên niên kỷ thứ nhất có nghĩa là kiến ​​thức về cuộc nổi loạn của Boudica chỉ xuất hiện trong các tác phẩm của người La Mã.',
+        about : `Eulji Mundeok was born in the mid-6th century and died sometime after 618. As one of the most distinguished military leaders of the Goguryeo period, Eulji Mundeok's leadership and tactical acumen were the decisive factors in defeating the Sui invasion. Facing numerically superior forces, he developed a strategy that allowed him to secure a decisive victory. Such brilliant tactical success earned him a permanent place among Korea's most famous leaders. Kim Bu-sik, the author of the Samguk Sagi, also attributed the victory over Sui to Eulji Mundeok. Nowadays in Korea, Eulji Mundeok is recognized as one of the greatest figures in its national history.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Mundeok/skill1.png'),
-                type : 'Chủ động',
-                name : 'Trận tấn công nước',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Tấn công mục tiêu và gây sát thương lớn. Giảm phòng thủ của mục tiêu trong 2 giây.',
-                update : 'Hệ số thiệt hại trực tiếp: 300/375/450/600/750\nGiảm phòng thủ: 10% / 15% / 20% / 25% / 30%'
+                type : 'Active',
+                name : 'Water Attack',
+                rage : 'Rage Requirement: 1000',
+                about : 'Attacks the target and deals massive damage. Decreases defense of the target for 2 seconds.',
+                update : 'Direct Damage Factor: 300 / 375 / 450 / 600 / 750\nDefense Reduction: 10% / 15% / 20% / 25% / 30%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Mundeok/skill2.png') ,
-                name : 'Địch không còn cơ hội',
-                type : 'Bị động',
+                name : 'Cold Welcome',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng phòng thủ đồn trú khi chỉ huy này phục vụ với tư cách chỉ huy đồn trú.',
-                update : 'Thưởng phòng thủ: 1% / 2% / 3% / 4% / 5%'
+                about : 'Increases garrison defense when this commander is service as garrison commander.',
+                update : `Defense Bonus: 1% / 2% / 3% / 4% / 5% `
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Mundeok/skill3.png') ,
-                name : 'Trận chiến Salsu',
-                type : 'Bị động',
+                name : 'Battle of Salsu',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của các đơn vị bộ binh và phòng thủ các đơn vị bộ binh.',
-                update : 'Thưởng tấn công bộ binh: 4% / 5% / 6% / 8% / 10%\nThưởng phòng thủ cho Bộ binh: 4% / 5% / 6% / 8% / 10%'
+                about : 'Increases the attack of infantry units and defense of infantry units.',
+                update : 'Infantry Attack Bonus: 4% / 5% / 6% / 8% / 10%\nInfantry Defense Bonus: 4% / 5% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Mundeok/skill4.png') ,
-                name : 'Phản công ',
-                type : 'Bị động',
+                name : 'Strike Back',
+                type : 'Passive',
                 rage : '',
-                about : 'Khi bị tấn công, Eulji Mundeok có 10% cơ hội tăng sát thương cho quân đội của mình ở lượt tiếp theo.',
-                update : 'Thưởng thiệt hại: 20% / 40% / 60% / 80% / 100%'
+                about : 'When attacked, Eulji Mundeok has a 10% chance to increase his own troops\' damage on the next turn.',
+                update : 'Damage Bonus: 20% / 40% / 60% / 80% / 100%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Mundeok/skill5.png') ,
-                name : 'Chiến tranh và hòa bình',
-                type : 'Tăng skill 1',
+                name : 'War and Peace',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Tăng 15% tấn công của các đơn vị bộ binh và phòng thủ 15% cho các đơn vị bộ binh.',
+                about : 'Increases the attack of infantry units by 15% and defense of infantry units by 15%.',
 
             },
 
@@ -255,7 +255,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/eulji-mundeok-minex-troops-talent-tree-1024x584.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/eulji-field-flad-fight-talent-tree-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/eulji-mundeok-garrison-talent-tree-1024x584.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'bộ binh'
     },
@@ -264,46 +274,46 @@ export default [
         name : 'Hermann',
         image : require('./../../assets/images/Commander/Epic/Hermann/Hermann.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Hermann/tuongHermann.png'),
-        about : 'Arminius, được biết đến với tên tiếng Đức Hermann, là một thủ lĩnh của bộ tộc Cherusci người Đức, người nổi tiếng đã dẫn dắt một liên minh các bộ lạc Đức đến chiến thắng quyết định chống lại ba quân đoàn La Mã trong Trận chiến rừng Teutoburg năm 9 sau Công nguyên. Một trung úy phụ tá của tướng quân La Mã Publius Quincilius Varus, Arminius đã sử dụng kiến ​​thức về chiến thuật của La Mã để ambus và tiêu diệt các quân đoàn. Thất bại tại Teutoburg sẽ kết thúc cuộc rút quân chiến lược vĩnh viễn của Đế chế La Mã khỏi Magna Germania, và người La Mã không còn nỗ lực phối hợp nào để chinh phục và giữ Germania bên kia sông Rhine. Các nhà sử học hiện đại đã coi chiến thắng của Arminius là "thất bại lớn nhất của Rome" và là một trong những trận chiến quyết định nhất trong lịch sử.',
+        about : `Arminius, known as his German name Hermann, was a chieftain of the Germanic Cherusci tribe who famously led an allied coalition of Germanic tribes to a decisive victory against three Roman legions in the Battle of the Teutoburg Forest in 9 AD. An auxiliary lieutenant to the Roman general Publius Quinctilius Varus, Arminius used his knowledge of Roman tactics to ambus and destroy the legions. The defeat at Teutoburg would precipitate the Roman Empire's permanent strategic withdrawal from Magna Germania, and the Romans made no more concerted attempts to conquer and hold Germania beyond the Rhine river. Modern historians have regarded Arminius' victory as "Rome's greatest defeat" and one of the most decisive battles in history.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Hermann/skill1.png'),
-                type : 'Chủ động',
-                name : 'Phục kích',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương lớn cho mục tiêu, giảm cơn thịnh nộ của mục tiêu và làm câm lặng mục tiêu trong 2 giây.',
-                update : 'Hệ số thiệt hại trực tiếp: 300/375/450/600/750\nGiảm cơn thịnh nộ: 50/60/70/80/100'
+                type : 'Active',
+                name : 'Ambush',
+                rage : 'Rage Requirement: 1000',
+                about : `Deals massive damage to the target, decreases target's rage, and silences the target for 2 seconds.`,
+                update : 'Direct Damage Factor: 300 / 375 / 450 / 600 / 750\nRage Reduction: 50 / 60 / 70 / 80 / 100'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Hermann/skill2.png') ,
-                name : 'Thiên tài quân sự',
-                type : 'Bị động',
+                name : 'Military Genius',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ tấn công và diễu hành của các đơn vị cung thủ.',
-                update : 'Phần thưởng Tấn công cung thủ: 3% / 4,5% / 6% / 8% / 10% \nPhần thưởng tốc độ hành quân cung thủ: 1,5% / 3% / 5% / 7% / 10%'
+                about : 'Increases archer units\' attack and march speed.',
+                update : `Archer Attack Bonus: 3% / 4.5% / 6% / 8% / 10%\nArcher March Speed Bonus: 1.5% / 3% / 5% / 7% / 10%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Hermann/skill3.png') ,
-                name : 'Truyền thuyết về Teutoburger',
-                type : 'Bị động',
+                name : 'Legend of Teutoburger',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng tấn công đồn trú và canh gác khi chỉ huy này đang phục vụ như là chỉ huy đồn trú.',
-                update : 'Thưởng tấn công Đồn trú / Tháp canh: 1% / 2% / 3% / 5% / 7%'
+                about : `Increases garrison and watchtower attack when this commander is serving as garrison commander.`,
+                update : 'Garrison/Watchtower Attack Bonus: 1% / 2% / 3% / 5% / 7%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Hermann/skill4.png') ,
-                name : 'Anh hùng dân tộc',
-                type : 'Bị động',
+                name : 'National Hero',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương tấn công bình thường của quân đội. Tấn công có cơ hội cấp thêm 100 cơn thịnh nộ.',
-                update : 'Phần thưởng sát thương tấn công thông thường: 3% / 4,5% / 6% / 8% / 10%\nCơ hội kích hoạt: 2% / 4% / 6% / 8% / 10%'
+                about : 'Increases normal attack damage of troops. Attacks have a chance to grant an additional 100 rage.',
+                update : 'Normal Attack Damage Bonus: 3% / 4.5% / 6% / 8% / 10%\nTrigger Chance: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Hermann/skill5.png') ,
-                name : 'Đường cùng',
-                type : 'Tăng skill 1',
+                name : 'Dead End',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Gây sát thương lớn (Hệ số sát thương 1150) cho mục tiêu, giảm 100 cơn thịnh nộ của mục tiêu và làm câm lặng mục tiêu trong 2 giây.',
+                about : `Deals massive damage (Damage Factor 1150) to the target, decreases target's rage by 100, and silences the target for 2 seconds.`,
 
             },
 
@@ -315,7 +325,20 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/hermann-talents-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-archer-build-1024x570.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-garrison-build-1024x570.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/09/hermann-skill-build-1024x570.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -324,46 +347,46 @@ export default [
         name : 'Joan of Arc',
         image : require('./../../assets/images/Commander/Epic/Joan/Joan.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Joan/tuongJoan.png'),
-        about : 'Joan of Arc được coi là một nữ anh hùng của Pháp vì vai trò của cô trong giai đoạn Lancastrian trong Chiến tranh Trăm năm, và được phong thánh thành một vị thánh Công giáo La Mã. Vào ngày 23 tháng 5 năm 1430, cô bị bắt tại Compiègne và sau đó bị đưa ra xét xử. Sau khi Đức Giám mục Pierre Cauchon tuyên bố có tội, cô đã bị thiêu tại cọc vào ngày 30 tháng 5 năm 1431, chết vào khoảng mười chín tuổi. Năm 1456, một tòa án điều tra đã kiểm tra phiên tòa, gỡ bỏ các cáo buộc chống lại cô, tuyên bố cô vô tội và tuyên bố cô là một người tử vì đạo. Vào thế kỷ 16, cô đã trở thành một biểu tượng của Liên minh Công giáo, và vào năm 1803, cô được tuyên bố là một biểu tượng quốc gia của Pháp theo quyết định của Napoleon Bonaparte.',
+        about : `Joan of Arc is considered a heroine of France for her role during the Lancastrian phase of the Hundred Years' War, and was canonized as a Roman Catholic saint. On 23 May 1430, she was captured at Compiègne and later put on trial. After the Bishop Pierre Cauchon declared her guilty she was burned at the stake on 30 May 1431, dying at about nineteen years of age. In 1456, an inquisitorial court examined the trial, debunked the charges against her, pronounced her innocent, and declared her a martyr. In the 16th century she became a symbol of the Catholic League, and in 1803 she was declared a national symbol of France by the decision of Napoleon Bonaparte.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill1.png'),
-                type : 'Chủ động',
-                name : 'Khải huyền',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Trong 2 giây tiếp theo, Joan of Arc cấp cho quân đội của chính cô và lực lượng thân thiện gần đó một lực lượng mạnh mẽ giúp tăng sức khỏe cho các đơn vị bộ binh, tăng khả năng phòng thủ của các đơn vị kỵ binh, tăng sức tấn công của các đơn vị cung thủ và tăng thêm cơn thịnh nộ mỗi giây.',
-                update : 'Thưởng cho sức khỏe bộ binh: 10% / 15% / 20% / 25% / 30%\nThưởng phòng thủ kỵ binh: 10% / 15% / 20% / 25% / 30%\nPhần thưởng Tấn công cung thủ: 10% / 15% / 20% / 25% / 30%\nCơn thịnh nộ được khôi phục: 15/20/25/30/40'
+                type : 'Active',
+                name : 'Divine Revelation',
+                rage : 'Rage Requirement: 1000',
+                about : `In the next 2 seconds, Joan of Arc grants her own troops and nearby friendly forces a powerful buff that increases infantry units' health, increases cavalry units' defences, increases archer units' attack, and grants additional rage per second.`,
+                update : 'Infantry Health Bonus: 10% / 15% / 20% / 25% / 30%\nCavalry Defense Bonus: 10% / 15% / 20% / 25% / 30%\nArcher Attack Bonus: 10% / 15% / 20% / 25% / 30%\nRage Restored: 15 / 20 / 25 / 30 / 40'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill2.png') ,
-                name : 'Thiên tài quân sự',
-                type : 'Bị động',
+                name : 'The Maid of Orléans',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng tốc độ tập hợp của quân đội và tăng tải quân đội.',
-                update : 'Phần thưởng tốc độ thu thập: 5% / 10% / 15% / 20% / 25%\nPhần thưởng tải quân đội: 5% / 10% / 15% / 20% / 25%'
+                about : 'Increase troops\' gathering speed and increase troops\' load.',
+                update : `Gathering Speed Bonus: 5% / 10% / 15% / 20% / 25%\nTroop Load Bonus: 5% / 10% / 15% / 20% / 25%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill3.png') ,
-                name : 'Người hầu gái của thành phố Orleans',
-                type : 'Bị động',
+                name : 'Holy Refuge',
+                type : 'Passive',
                 rage : '',
-                about : 'Đòn tấn công thông thường của quân lính có 10% cơ hội chữa lành một số đơn vị bị thương nhẹ. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây.',
-                update : 'Hệ số chữa lành: 150/200/250/350/450'
+                about : `Troops' normal attack has a 10% chance to heal some of the slightly wounded units. Effect can only trigger once every 5 seconds.`,
+                update : 'Healing Factor: 150 / 200 / 250 / 350 / 450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill4.png') ,
-                name : 'Thánh',
-                type : 'Bị động',
+                name : 'Saint',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương tấn công bình thường.',
-                update : 'Thưởng sát thương tấn công thông thường: 10% / 13% / 16% / 20% / 25%'
+                about : 'Increases normal attack damage.',
+                update : `Normal Attack Damage Bonus: 10% / 13% / 16% / 20% / 25%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Joan/skill5.png') ,
-                name : 'Hậu duệ của nữ thần',
-                type : 'Tăng skill 1',
+                name : 'Descent of the Goddess',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Trong 4 giây tiếp theo, Joan of Arc cấp cho quân đội của chính cô và lực lượng thân thiện gần đó một lực lượng mạnh mẽ tăng 30% sức khỏe của các đơn vị bộ binh, tăng 30% phòng thủ của các đơn vị kỵ binh tăng 30% tấn công của các đơn vị cung thủ, và tăng 30% thêm 50 cơn thịnh nộ mỗi giây.',
+                about : `In the next 4 seconds, Joan of Arc grants her own troops and nearby friendly forces a powerful buff that increases infantry units' health by 30%, increases cavalry units' defense by 30% increases archer units' attack by 30%, and grants an additional 50 rage per second.`,
 
             },
 
@@ -375,7 +398,9 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [ {
+            uri : 'https://rok.guide/wp-content/uploads/2019/03/joan-of-arc-gathering-build-1024x578.jpg'
+        }],
         partner : [],
         trangBi : ''
     },
@@ -384,46 +409,46 @@ export default [
         name : 'Kusunoki Masashige',
         image : require('./../../assets/images/Commander/Epic/Kusunoki/Kusunoki.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Kusunoki/tuongKusunoki.png'),
-        about : 'Kusunoki Masashige là một samurai thế kỷ 14, người đã chiến đấu cho Hoàng đế Go-Daigo trong Chiến tranh Genkō, nỗ lực giành quyền cai trị Nhật Bản khỏi Mạc phủ Kamakura và được nhớ đến là lý tưởng của lòng trung thành của samurai. Nguồn gốc của ông chưa được xác thực và chỉ sáu năm kể từ khi bắt đầu chiến dịch quân sự vào năm 1331 và sự sụp đổ của ông vào năm 1336. Ông đã nhận được sự trang trí cao nhất từ ​​chính phủ Meiji của Nhật Bản vào năm 1880. Truyền thuyết kể rằng Hoàng đế Go-Daigo đã có một giấc mơ trong đó anh ta đang trú ẩn dưới gốc cây long não ("kusunoki"), và giấc mơ này đã đưa anh ta đến họ của chiến binh sẽ hỗ trợ anh ta. Kusunoki Masashige là một anh hùng bởi vì anh ta "đứng trong lịch sử của đất nước mình như một nhân vật lý tưởng của một chiến binh, nhỏ gọn trong các đức tính dân sự và quân sự ở một mức độ cao."',
+        about : `Kusunoki Masashige was a 14th-century samurai who fought for Emperor Go-Daigo in the Genkō War, the attempt to wrest rulership of Japan away from the Kamakura shogunate and is remembered as the ideal of samurai loyalty. His origin has not been validated and it was merely six years between the start of his military campaign in 1331 and his demise in 1336. He received the highest decoration from the Meiji government of Japan in 1880. Legend has it that Emperor Go-Daigo had a dream in which he was sheltering under a camphor tree ("kusunoki"), and that this dream led him to the surname of the warrior who would support him. Kusunoki Masashige is a hero because he "stands in the history of his country as the ideal figure of a warrior, compact of civil and military virtues in a high degree."`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Kusunoki/skill1.png'),
-                type : 'Chủ động',
+                type : 'Active',
                 name : 'Shichisei Hōkoku',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Loại bỏ tất cả các hiệu ứng tiêu cực và kiểm soát khỏi quân đội của Kusunoki Masashige. Ngoài ra, gây sát thương trực tiếp lên tối đa 3 mục tiêu trong khu vực hình quạt, sau đó gây thêm sát thương cho mục tiêu mỗi giây trong 2 giây tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 150/180/210/250/300\nHệ số thiệt hại bổ sung: 100/130/160/200/250'
+                rage : 'Rage Requirement: 1000',
+                about : `Removes all negative and control effects from Kusunoki Masashige's troops. In addition, deals direct damage to a maximum of 3 targets in a fan-shaped area, then deals additional damage to targets each second for the next 2 seconds.`,
+                update : `Direct Damage Factor: 150 / 180 / 210 / 250 / 300\nAdditional Damage Factor: 100 / 130 / 160 / 200 / 250`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Kusunoki/skill2.png') ,
-                name : 'Những người đàn ông xứng đáng',
-                type : 'Bị động',
+                name : 'The Worthy Men',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương phản công đồn trú khi chỉ huy này phục vụ với tư cách chỉ huy đồn trú.',
-                update : 'Thưởng sát thương phản công của đồn trú: 1% / 2% / 3% / 5% / 7%'
+                about : 'Increases garrison counterattack damage when this commander is service as garrison commander.',
+                update : 'Garrison Counterattack Damage Bonus: 1% / 2% / 3% / 5% / 7%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Kusunoki/skill3.png') ,
-                name : 'Dũng cảm và Trí tuệ',
-                type : 'Bị động',
+                name : 'Bravery and Wisdom',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của các đơn vị cung thủ và phòng thủ của các đơn vị cung thủ.',
-                update : ' Thưởng Tấn công cung thủ: 4% / 5% / 6% / 8% / 10%\nThưởng phòng thủ cung thủ: 4% / 5% / 6% / 8% / 10%'
+                about : 'Increases the attack of archer units and defense of archer units.',
+                update : 'Archer Attack Bonus: 4% / 5% / 6% / 8% / 10%\nArcher Defense Bonus: 4% / 5% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Kusunoki/skill4.png') ,
-                name : 'Bi kịch kết thúc',
-                type : 'Bị động',
+                name : 'Tragedy\'s End',
+                type : 'Passive',
                 rage : '',
-                about : 'Các cuộc tấn công thông thường của quân đội có một sự thay đổi để gây thêm sát thương mỗi giây cho mục tiêu trong 2 giây.',
-                update : 'Hệ số sát thương bổ sung: 150/200/250/350/450'
+                about : 'Normal attacks of troops have a change to deal additional damage each second to the target for 2 seconds.',
+                update : 'Additional damage factor: 150 / 200 / 250 / 350 / 450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Kusunoki/skill5.png') ,
-                name : 'Linh hồn của Samurai',
-                type : 'Tăng skill 1',
+                name : 'Soul of the Samurai',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Tăng sức tấn công của các đơn vị cung thủ thêm 15% và phòng thủ của các đơn vị cung thủ thêm 15%.',
+                about : 'Increases the attack of archer units by 15% and defense of archer units by 15%.',
 
             },
 
@@ -435,7 +460,11 @@ export default [
             TalentIcon.Gathering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/kusunoki-masashige-field-battle-1024x574.png'
+            }
+        ],
         partner : [],
         trangBi : 'cung thủ'
     },
@@ -444,46 +473,46 @@ export default [
         name : 'Lohar',
         image : require('./../../assets/images/Commander/Epic/Lohar/Lohar.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Lohar/tuongLohar.png'),
-        about : 'Lohar, sinh ra trong một pháo đài man rợ từ xa, đã cho thấy một tài năng chiến đấu tuyệt vời vượt quá tuổi của mình. Ông huấn luyện rất nghiêm ngặt như là một phần của lực lượng chính để bảo vệ pháo đài. Một tuổi thơ vất vả khiến anh chán nản trong việc luyện tập thậm chí là ghét, nhưng một khi anh trải qua một cuộc chiến tàn khốc chống lại một pháo đài khác và rơi vào một đám cháy lớn. Anh hứa rằng một ngày nào đó anh sẽ phát triển đủ mạnh để bảo vệ pháo đài của mình bất kể chi phí là bao nhiêu. Khi trở thành một nhà lãnh đạo vĩ đại, anh ta đã gặp kẻ thù đốt cháy pháo đài của mình, anh ta đã giành được chiến thắng nhưng đã không đạt được sự trả thù. Ông kết hợp hai lực lượng một cách thân thiện và biến lực lượng này thành một thế lực mạnh mẽ trên vùng đất của mình.',
+        about : `Lohar, born in a remote barbarian fort, showed a great fighting talent that was beyond his age. He training was very strict as part of the main force for protecting the fort. A hard childhood made him so bored at training even hate, but once he experienced a cruel fight against another fort and fell in a huge fire. He promised that one day he would grow strong enough to protect his fort no matter the cost. When he became a great leader, he met the enemy that burned his fort, he claimed the victory but didn’t achieve his revenge. He combined the two forces in a friendly way and made the force a strong power in his land.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Lohar/skill1.png'),
-                type : 'Chủ động',
-                name : 'Lực lượng áp đảo',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương trực tiếp vào một mục tiêu duy nhất và chữa lành một phần các đơn vị bị thương nhẹ của quân đội bạn.',
-                update : 'Hệ số thiệt hại trực tiếp: 150/200/250/350/450\nHệ số chữa lành: 150/200/250/350/450'
+                type : 'Active',
+                name : 'Overwhelming Force',
+                rage : 'Rage Requirement: 1000',
+                about : `Deals direct damage to a single target and heals a portion of your army's slightly wounded units.`,
+                update : 'Direct Damage Factor: 150 / 200 / 250 / 350 / 450\nHealing Factor: 150 / 200 / 250 / 350 / 450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Lohar/skill2.png') ,
-                name : 'Phê chuẩn',
-                type : 'Bị động',
+                name : 'Sanction',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương gây ra cho mọi rợ và các đơn vị trung lập khác.',
-                update : 'Thưởng Thiệt hại người man rợ: 5% / 10% / 17% / 25% / 35%'
+                about : 'Increases damage dealt to barbarians and other neutral units.',
+                update : 'Bonus Damage to Barbarians: 5% / 10% / 17% / 25% / 35%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Lohar/skill3.png') ,
-                name : 'Phiên tòa của Lohar',
-                type : 'Bị động',
+                name : 'Lohar\'s Trial',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng kinh nghiệm nhận được bởi tất cả các chỉ huy trong quân đội hiện tại.',
-                update : 'Thưởng kinh nghiệm: 10% / 20% / 30% / 50% / 70%'
+                about : 'Increases experience received by all commanders in the current army.',
+                update : `Experience Bonus: 10% / 20% / 30% / 50% / 70%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Lohar/skill4.png') ,
-                name : 'Máu bất chính',
-                type : 'Bị động',
+                name : 'Unruly Blood',
+                type : 'Passive',
                 rage : '',
-                about : 'Chữa lành một số đơn vị bị thương nhẹ khi rời khỏi một trận chiến.',
-                update : 'Hệ số chữa lành: 500/600/700/800/1000'
+                about : 'Heals some slightly wounded units upon leaving a battle.',
+                update : 'Healing Factor: 500 / 600 / 700 / 800 / 1000'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Lohar/skill5.png') ,
-                name : 'Tinh thần bất khuất',
-                type : 'Tăng skill 1',
+                name : 'Unyielding Spirit',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Chữa lành một số đơn vị bị thương nhẹ (Hệ số chữa lành 2000) khi rời khỏi trận chiến.',
+                about : 'Heals some slightly wounded units (Healing Factor 2000) upon leaving a battle.',
 
             },
 
@@ -495,7 +524,11 @@ export default [
             TalentIcon.Peacekeeping,
             TalentIcon.Support,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/11/lohar-talent-tree-1024x578.png'
+            }
+        ],
         partner : [],
         trangBi : 'man rợ'
     },
@@ -504,46 +537,46 @@ export default [
         name : 'Osman I',
         image : require('./../../assets/images/Commander/Epic/Osman/Osman.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Osman/tuongOsman.png'),
-        about : 'Osman Gazi, còn được gọi là Osman I, là người lãnh đạo của Thổ Nhĩ Kỳ Ottoman và người sáng lập vương triều đã thành lập và cai trị Đế chế Ottoman. Sau cái chết của cha mình vào năm 1281, lúc đó Osman mới 23 tuổi, ông đã nắm quyền lãnh đạo của tộc Kayi. Ngay sau đó, những người lính đánh thuê từ khắp nơi trên thế giới Hồi giáo bắt đầu đi vào vương quốc của anh ta để tham gia cuộc chiến chống lại Đế chế Chính thống. Năm 1301, Osman đã đánh bại thành công một lực lượng Byzantine lớn và bắt đầu gây áp lực lên các khu vực do Byzantine kiểm soát. Điều này đã báo động Byzantines, những người nhanh chóng chạy trốn khỏi vùng nông thôn Anatilian. Các nhà lãnh đạo của Byzantium đã quyết tâm ngăn Osman vượt qua châu Âu và cố gắng kiểm tra sự bành trướng về phía tây của anh ta. Osman tiếp tục nhấn vào, tuy nhiên, và sớm chiếm được thành phố Ephesus của Byzantine. Điều này đã đưa một dòng người di cư, chiến binh và nhà thám hiểm khổng lồ khác vào lãnh thổ Ottoman. Osman vừa là một chỉ huy lành nghề vừa là một quản trị viên có khả năng. Ông mở rộng lãnh địa của mình thông qua các chính sách khoan dung và hợp tác với các Kitô hữu Hy Lạp. Người Hy Lạp hoan nghênh trật tự, sự ổn định và an ninh mà sự cai trị của Osman mang lại, vào thời điểm chính quyền trung ương ở Constantinople đang dần rơi vào tình trạng hỗn loạn. Không có sự can thiệp của chính phủ, người Hy Lạp và Thổ Nhĩ Kỳ bắt đầu kết hôn và tạo dựng gia đình, và cuối cùng, một số lượng lớn Kitô hữu đã chấp nhận đức tin Hồi giáo. Lòng khoan dung tôn giáo trở thành đặc điểm xác định của Đế chế Ottoman trong 600 năm tới.',
+        about : `Osman Gazi, also known as Osman I, was the leader of the Ottoman Turks and the founder of the dynasty that established and ruled the Ottoman Empire. After the death of his father in 1281, at which time Osman was just 23 years old, he took up the leadership of the Kayi Clan. Soon after, mercenaries from all over the Islamic world began streaming into his realm to join the fight against the Orthodox Empire. In 1301, Osman successfully defeated a large Byzantine force and began putting pressure on Byzantine-controlled areas. This alarmed the Byzantines, who quickly fled the Anatolian countryside. Byzantium's leaders were determined to prevent Osman from crossing into Europe and attempted to check his westward expansion. Osman continued to press on, however, and soon captured the Byzantine city of Ephesus. This brought another massive, diverse influx of migrants, warriors, and adventurers into Ottoman territory. Osman was both a skilled commander and an able administrator. He expanded his realm through policies of tolerance and cooperation with Greek Christians. The Greeks welcomed the order, stability, and security that Osman's rule brought, which came at a time when the central administration in Constantinople was slowly falling into disarray. Free from government interference, Greeks and Turks began to marry and create families, and eventually, a large number of Christians adopted the Muslim faith. Religious tolerance became the defining characteristic of the Ottoman Empire for the next 600 years.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Osman/skill1.png'),
-                type : 'Chủ động',
-                name : 'Đế chế thức tỉnh',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Chém một đòn mạnh mẽ với Sword of Osman, gây sát thương lớn cho mục tiêu.',
-                update : 'Hệ số thiệt hại trực tiếp: 400/500/600/700/850'
+                type : 'Active',
+                name : 'The Empire Awakens',
+                rage : 'Rage Requirement: 1000',
+                about : 'Strikes a powerful blow with the Sword of Osman, dealing massive damage to the target.',
+                update : 'Direct Damage Factor: 400 / 500 / 600 / 700 / 850'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Osman/skill2.png') ,
-                name : 'Rạng rỡ của Bursa',
-                type : 'Bị động',
+                name : 'Radiance of Bursa',
+                type : 'Passive',
                 rage : '',
-                about : 'Sau khi tấn công một thành phố trong hơn 30 giây, tăng tấn công quân trong thời gian 120 giây.',
-                update : 'Thưởng tấn công: 5% / 7% / 9% / 12% / 15%'
+                about : 'After attacking a city for than 30 seconds, increases troop attack for a duration of 120 seconds.',
+                update : 'Attack Bonus: 5% / 7% / 9% / 12% / 15%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Osman/skill3.png') ,
-                name : 'Thanh kiếm của Osman',
-                type : 'Bị động',
+                name : 'Sword of Osman',
+                type : 'Passive',
                 rage : '',
-                about : 'Sau khi sử dụng một kỹ năng chủ động, gây thêm sát thương cho mục tiêu ở lượt tiếp theo.',
-                update : 'Hệ số thiệt hại trực tiếp: 150/200/250/300/400'
+                about : 'After an active skill is used, deals additional damage to the target on the next turn.',
+                update : 'Direct Damage Factor: 150 / 200 / 250 / 300 / 400'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Osman/skill4.png') ,
-                name : 'Vinh quang của vua',
-                type : 'Bị động',
+                name : 'Sultan\'s Glory',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng năng lực đoàn quân.',
-                update : 'Tăng tối đa quân đội: 2% / 4% / 6% / 8% / 10%'
+                about : 'Increase troop capacity.',
+                update : 'Troop Capacity Bonus: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Osman/skill5.png') ,
-                name : 'Đế chế đang trỗi dậy',
-                type : 'Tăng skill 1',
+                name : 'Rising Empire',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Chém một đòn mạnh mẽ với Sword of Osman, gây sát thương lớn (Damage Factor 1100) cho mục tiêu.',
+                about : 'Strikes a powerful blow with the Sword of Osman, dealing massive damage (Damage Factor 1100) to the target.',
 
             },
 
@@ -555,7 +588,14 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/osman-talent-1-1024x576.png'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/osman-talent-2-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
@@ -564,46 +604,46 @@ export default [
         name : 'Pelagius',
         image : require('./../../assets/images/Commander/Epic/Pelagius/Pelagius.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Pelagius/tuongPelagius.png'),
-        about : 'Pelagius là một nhà quý tộc Visigothic, người đã thành lập Vương quốc Asturias, cai trị nó từ năm 718 cho đến khi ông qua đời vào năm 737. Thông qua chiến thắng tại Trận Covadonga, ông được ghi nhận là người bắt đầu Reconquista, cuộc tái chiếm Kitô giáo của bán đảo Iberia từ Moors. Ông thành lập một nhà nước Kitô giáo độc lập để chống lại quyền bá chủ của người Moor. Các nguồn chính cho cuộc đời và sự nghiệp của Pelagius là hai biên niên sử Latinh được viết vào cuối thế kỷ thứ chín tại vương quốc do ông sáng lập. Cái trước là Chronica Albeldensia, được viết tại Albelda vào năm 881, và cái sau là Chronicle of Alfonso III, đã được sửa đổi vào đầu thế kỷ.',
+        about : `Pelagius was a Visigothic nobleman who founded the Kingdom of Asturias, ruling it from 718 until his death in 737. Through his victory at the Battle of Covadonga, he is credited with beginning the Reconquista, the Christian reconquest of the Iberian peninsula from the Moors. He established an independent Christian state in opposition to Moorish hegemony. The chief sources for Pelagius's life and career are two Latin chronicles written in the late ninth century in the kingdom he founded. The former is the Chronica Albeldensia, written at Albelda towards 881, and the latter is Chronicle of Alfonso III, which was revised in the early century.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Pelagius/skill1.png'),
-                type : 'Chủ động',
-                name : 'Sạc điện',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương trực tiếp vào mục tiêu và gây thêm sát thương mỗi giây trong 2 giây tiếp theo. Phục hồi cơn thịnh nộ sau khi đúc',
-                update : 'Hệ số thiệt hại trực tiếp: 150/180/210/250/300\nHệ số thiệt hại bổ sung: 150/180/210/250/300\nCơn thịnh nộ được khôi phục: 50/60/70/80/100'
+                type : 'Active',
+                name : 'Charge',
+                rage : 'Rage Requirement: 1000',
+                about : 'Deals direct damge to the target, and deals additional damage per second in the next 2 seconds. Restores rage after casting',
+                update : 'Direct Damage Factor: 150 / 180 / 210 / 250 / 300\nAdditional Damage Factor: 150 / 180/ 210 / 250 / 300\nRage Restored: 50 / 60 / 70 / 80 / 100'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Pelagius/skill2.png') ,
-                name : 'Người sáng lập Asturias',
-                type : 'Bị động',
+                name : 'Founder of Asturias',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sự tấn công của các đơn vị kỵ binh và phòng thủ của các đơn vị kỵ binh.',
-                update : 'Thưởng tấn công cho Kỵ binh: 4% / 5% / 6% / 8% / 10%\nThưởng phòng thủ kỵ binh: 4% / 5% / 6% / 8% / 10%'
+                about : 'Increases the attack of cavalry units and defense of cavalry units.',
+                update : 'Cavalry Attack Bonus: 4% / 5% / 6% / 8% / 10%\nCavalry Defense Bonus: 4% / 5% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Pelagius/skill3.png') ,
-                name : 'Lấy lại lãnh thổ đã mất',
-                type : 'Bị động',
+                name : 'Retaking Lost Territory',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng cuộc tấn công của đồn trú và tấn công tháp canh khi chỉ huy này đang phục vụ như là chỉ huy đồn trú.',
-                update : 'Thưởng tấn công đồn trú / Tháp canh: 1% / 2% / 3% / 5% / 7%'
+                about : `Increase the attack of garrison and watchtower attack when this commander is serving as the garrison commander.`,
+                update : 'Garrison/Watchtower Attack Bonus: 1% / 2% / 3% / 5% / 7%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Pelagius/skill4.png') ,
-                name : 'Người đột biến',
-                type : 'Bị động',
+                name : 'The Mutineer',
+                type : 'Passive',
                 rage : '',
-                about : 'Đòn tấn công thông thường của quân lính có 10% cơ hội chữa lành một số đơn vị bị thương nhẹ mỗi giây trong 2 giây.',
-                update : 'Hệ số chữa lành: 150/200/250/350/450'
+                about : `Troops' normal attack has a 10% chance to heal some slightly wounded units every per second for 2 seconds.`,
+                update : 'Healing Factor: 150 / 200 / 250 / 350 / 450'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Pelagius/skill5.png') ,
-                name : 'Lời thề của Asseuua',
-                type : 'bị động',
+                name : 'Oath of Asseuua',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sức tấn công của các đơn vị kỵ binh thêm 15% và phòng thủ của các đơn vị kỵ binh thêm 15%.',
+                about : 'Increases the attack of cavalry units by 15% and defense of cavalry units by 15%.',
 
             },
 
@@ -615,7 +655,17 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-pvp-talent-tree-1-1024x578.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-pvp-talent-tree-2-1024x578.jpg'
+            },
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/03/pelagius-garrison-talent-tree-2-1024x578.jpg'
+            }
+        ],
         partner : [],
         trangBi : 'kỵ binh'
     },
@@ -624,46 +674,46 @@ export default [
         name : 'Scipio Africanus',
         image : require('./../../assets/images/Commander/Epic/Scipio/Scipio.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/Scipio/tuongScipio.png'),
-        about : 'Publius Cornelius Scipio Africanus là một vị tướng La Mã và sau đó là lãnh sự, người thường được coi là một trong những tướng lĩnh và chiến lược gia quân sự vĩ đại nhất mọi thời đại. Thành tựu chính của anh ta là trong Chiến tranh Punic lần thứ hai, nơi anh ta là người giỏi nhất trong việc đánh bại Hannibal trong trận chiến cuối cùng tại Zama năm 202 trước Công nguyên, một trong những chiến công giúp anh ta trở thành người châu Phi. Được coi là một anh hùng của người dân La Mã nói chung, chủ yếu vì những đóng góp của ông trong cuộc đấu tranh chống lại người Carthain, Scipio đã bị những người theo chủ nghĩa khác trong thời đại của ông chửi rủa. Trong những năm cuối đời, anh ta bị xét xử vì tội nhận hối lộ và phản quốc, những cáo buộc vô căn cứ chỉ nhằm mục đích làm mất uy tín của anh ta trước công chúng. Thất vọng vì sự tài tình của đồng nghiệp, Scipio rời Rome và rút lui khỏi cuộc sống công cộng.',
+        about : `Publius Cornelius Scipio Africanus was a Roman general and later consul who is often regarded as one of the greatest generals and military strategists of all time. His main achievements were during the Second Punic War where he is best kn own for defeating Hannibal at the final battle at Zama in 202 BC, one of the feats that earned him the agnomen Africanus. Althrough considered a hero by the general Roman populace, primarily for his contributions in the struggle against the Carthainians, Scipio was reviled by other patricians of his day. In his later years, he was tried for bribery and treason, unfounded charges that were only meant to discredit him before the public. Disillusioned by the ingratitude of his peers, Scipio left Rome and withdrew from public life.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/Scipio/skill1.png'),
-                type : 'Chủ động',
-                name : 'Quộc sống quân ngũ',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Giảm sát thương của quân đội và tăng sát thương phản công của quân trong 5 giây.',
-                update : 'Thiệt hại phải nhận giảm: 10% / 13% / 16% / 20% / 25%\nThưởng sát thương phản công: 10% / 13% / 16% / 20% / 25%'
+                type : 'Active',
+                name : 'Military Life',
+                rage : 'Rage Requirement: 1000',
+                about : 'Reduces damage taken by troops and increases troop\'s counterattack damage for 5 seconds.',
+                update : `Damage Taken Reduced By: 10% / 13% / 16% / 20% / 25%\nCounterattack Damage Bonus: 10% / 13% / 16% / 20% / 25%`
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Scipio/skill2.png') ,
-                name : 'Chiến binh bệnh nhân',
-                type : 'Bị động',
+                name : 'Patient Warrior',
+                type : 'Passive',
                 rage : '',
-                about : 'Khi bị tấn công, Scipio có 10% cơ hội để tăng sức tấn công của quân đội trong 1 giây tiếp theo. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây. Scipio có 10% cơ hội chữa lành một lọ thuốc cho các đơn vị bị thương nhẹ của mình khi quân đội của anh ta còn ít hơn 40% số đơn vị còn lại.',
-                update : 'Thưởng tấn công: 30% / 40% / 60% / 80% / 100%\nHệ số chữa lành: 150/200/250/350/450'
+                about : 'When attacked, Scipio has a 10% chance to increase his troops\' attack for the next 1 seconds. Effect can only trigger once every 5 seconds. Scipio has a 10% chance to heal a potion of his slightly wounded units when his army has less than 40% of its units remaining.',
+                update : `Attack Bonus: 30% / 40 % / 60% / 80% / 100%\nHealing Factor: 150 / 200 / 250 / 350 / 450`
             },
-           {
+            {
                 image : require('./../../assets/images/Commander/Epic/Scipio/skill3.png') ,
-                name : 'Kẻ chinh phục châu Phi',
-                type : 'Bị động',
+                name : 'Conqueror of Africa',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng tất cả thiệt hại khi tấn công các thành phố khác của Thống đốc.',
-                update : 'Tăng thiệt hại: 1% / 2% / 3% / 5% / 7%'
+                about : 'Increases all damage when attack other Governors\' cities.',
+                update : 'Damage Bonus: 1% / 2% / 3% / 5% / 7%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Scipio/skill4.png') ,
-                name : 'Quý tộc chân chính',
-                type : 'Bị động',
+                name : 'Genuine Aristocracy',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng quân đội tối đa.',
-                update : 'Tăng quân đội tối đa: 2% / 4% / 6% / 8% / 10%'
+                about : 'Increases maximum troop capacity.',
+                update : 'Troop Capacity Bonus: 2% / 4% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/Scipio/skill5.png') ,
-                name : 'Sự hủy diệt',
-                type : 'tăng skill 1',
+                name : 'Utter Annihilation',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Khi bị tấn công, Scipio có 15% cơ hội tăng 100% lực tấn công của quân mình trong 2 giây tiếp theo. Hiệu ứng chỉ có thể kích hoạt cứ sau 5 giây. Scipio có 15% cơ hội chữa lành một phần các đơn vị bị thương nhẹ (Hệ số chữa lành 500) khi quân đội của anh ta còn ít hơn 40% số đơn vị còn lại.',
+                about : 'When attacked, Scipio has a 15% chance to increase his troops attack by 100% for the next 2 seconds. Effect can only trigger once every 5 seconds. Scipio has a 15% chance to heal a portion of his slightly wounded units (Healing Factor 500) when his army has less than 40% of its units remaining.',
 
             },
 
@@ -675,55 +725,59 @@ export default [
             TalentIcon.Conquering,
             TalentIcon.Attack,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/scipio-talent-tree-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : ''
     },
     {
         id: 54,
-        name : 'Tôn tử', 
+        name : 'Sun tzu', 
         image : require('./../../assets/images/Commander/Epic/SunTzu/SunTzu.png'),
         tuongImage: require('./../../assets/images/Commander/Epic/SunTzu/tuongSunTzu.png'),
-        about : 'Tôn Tử là một tướng quân, nhà chiến lược quân sự, nhà văn và nhà triết học người Trung Quốc sống ở thời Đông Chu của Trung Quốc cổ đại. Tôn Tử theo truyền thống được coi là tác giả của Nghệ thuật chiến tranh, một tác phẩm có ảnh hưởng rộng rãi của chiến lược quân sự đã ảnh hưởng đến cả triết lý và tư duy quân sự của phương Tây và Đông Á. Tác phẩm của Tôn Tử đã được ca ngợi và sử dụng trong suốt chiến tranh Đông Á kể từ khi thành phần. Trong thế kỷ XX, Nghệ thuật chiến tranh đã trở nên phổ biến và được sử dụng thực tế trong xã hội phương Tây. Nó tiếp tục ảnh hưởng đến nhiều nỗ lực cạnh tranh ở Đông Á và Thế giới phương Tây bao gồm văn hóa, chính trị, kinh doanh và thể thao, cũng như chiến tranh hiện đại.',
+        about : `Sun Tzu was a Chinese general, military strategist, writer, and philosopher who lived in the Eastern Zhou period of ancient China. Sun Tzu is traditionally credited as the author of The Art of War, a widely influential work of military strategy that has affected both Western and East Asian philosophy and military thinking. Sun Tzu's work has been praised and employed throughout East Asian warfare since its composition. During the twentieth century, The Art of War grew in popularity and saw practical use in Western society as well. It continues to influence many competitive endeavors in East Asia and Western World including culture, politics, business, and sports, as well as modern warfare.`,
         skill : [
             {
                 image : require('./../../assets/images/Commander/Epic/SunTzu/skill1.png'),
-                type : 'Chủ động',
-                name : 'Nghệ thuật chiến tranh',
-                rage : 'Sức mạnh phi thường: 1000',
-                about : 'Gây sát thương trực tiếp lên tối đa 3 mục tiêu trong khu vực hình quạt và gây thêm sát thương cho các mục tiêu này trong lượt tiếp theo. Tôn Tử tăng thêm cơn thịnh nộ cho mỗi mục tiêu bị tấn công bởi các kỹ năng của mình.',
-                update : 'Hệ số thiệt hại trực tiếp: 150/210/270/360/450\nHệ số thiệt hại bổ sung: 50/70/90/120/150\nCơn thịnh nộ được khôi phục: 10/20/30/40/50'
+                type : 'Active',
+                name : 'Art of War',
+                rage : 'Rage Requirement: 1000',
+                about : 'Deals direct damage to a maximum of 3 targets in a fan-shaped area, and deals additional damage to these targets on the next turn. Sun Tzu gains additional rage for each target hit by his skills.',
+                update : 'Direct Damage Factor: 150 / 210 / 270 / 360 / 450\nAdditional Damage Factor: 50 / 70 / 90 / 120 / 150\nRage Restored: 10 / 20 / 30 / 40 / 50'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/SunTzu/skill2.png') ,
-                name : 'Triết lý chiến tranh',
-                type : 'Bị động',
+                name : 'Philosophy of War',
+                type : 'Passive',
                 rage : '',
-                about : 'Giảm sát thương của quân đồn trú khi chỉ huy này đang phục vụ với tư cách là chỉ huy đồn trú.',
-                update : 'Giảm sát thương cho quân lính đồn trú: 1% / 2% / 3% / 4% / 5%'
+                about : 'Reduces damage taken by the garrison when this commander is serving as the garrison commander.',
+                update : 'Garrison Troops Damage Reduction: 1% / 2% / 3% / 4% / 5%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/SunTzu/skill3.png') ,
-                name : 'Chiến lược gia',
-                type : 'Bị động',
+                name : 'Master Strategist',
+                type : 'Passive',
                 rage : '',
-                about : 'Giảm thiệt hại quân ta, tăng sức khỏe đơn vị bộ binh.',
-                update : 'Thiệt hại quân ta giảm: 4% / 5% / 6% / 8% / 10%\nThưởng cho sức khỏe bộ binh: 4% / 5% / 6% / 8% / 10%'
+                about : 'Increases troop damage reduction; increases infantry unit health.',
+                update : 'Damage Taken Reduced By: 4% / 5% / 6% / 8% / 10%\nInfantry Health Bonus:4% / 5% / 6% / 8% / 10%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/SunTzu/skill4.png') ,
-                name : 'Chiến thuật luôn thay đổi',
-                type : 'Bị động',
+                name : 'Ever-changing Tactics',
+                type : 'Passive',
                 rage : '',
-                about : 'Tăng sát thương kỹ năng.',
-                update : 'Thưởng sát thương kỹ năng: 5% / 8% / 11% / 15% / 20%'
+                about : 'Increases active skill damage.',
+                update : 'Skill Damage Bonus: 5% / 8% / 11% / 15% / 20%'
             },
            {
                 image : require('./../../assets/images/Commander/Epic/SunTzu/skill5.png') ,
-                name : 'Sách cổ',
-                type : 'tăng skill 1',
+                name : 'Book of Aeons',
+                type : 'Update skill 1',
                 rage : '',
-                about : 'Gây sát thương trực tiếp (Hế số sát thương 800) cho tối đa 5 mục tiêu trong khu vực hình quạt và gây thêm sát thương (Damage Factor 200) cho các mục tiêu này trong lượt tiếp theo. Tôn Tử tăng thêm 50 cơn thịnh nộ cho mỗi mục tiêu trúng kỹ năng này.',
+                about : 'Deals direct damage (Damage Factor 800) to a maximum of 5 targets in a fan-shaped area, and deals additional damage (Damage Factor 200) to these targets on the next turn. Sun Tzu gains additional 50 rage for each target hit by this skill.',
 
             },
 
@@ -735,7 +789,11 @@ export default [
             TalentIcon.Garrison,
             TalentIcon.Skill,
         ],
-        talentTree : [],
+        talentTree : [
+            {
+                uri : 'https://rok.guide/wp-content/uploads/2019/06/stun-tzu-talent-tree-1024x576.png'
+            }
+        ],
         partner : [],
         trangBi : 'bộ binh'
     },
