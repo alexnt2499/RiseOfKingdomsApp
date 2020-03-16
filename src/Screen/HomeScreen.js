@@ -1,10 +1,10 @@
 //import liraries
 import React, { Component, useEffect, useState } from 'react';
-import { View, Text, StyleSheet,Dimensions, FlatList,SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet,Dimensions, FlatList,SafeAreaView, Linking } from 'react-native';
 
 import {fonts,colors} from './../theme/theme';
 import Header from './../Components/Header/Header';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import { SliderBox } from "react-native-image-slider-box";
 import listCommanderVi from './../database/ListCommander';
 import ListCommanderEn from '../database/ListCommanderEn';
@@ -15,13 +15,14 @@ import AppText from './../Components/AppText';
 import {LocalizationContext} from './../../App';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconFA5 from 'react-native-vector-icons/FontAwesome5';
+import IconFon from 'react-native-vector-icons/Fontisto';
 
 import BannerAds2 from './../Components/AdsMob/BannerAds';
 import AsyncStorage from '@react-native-community/async-storage';
 
 const imagess =  [
-    require("./../../assets/images/events/event2.jpg"),
-    require("./../../assets/images/events/event1.jpg"),
+    require("./../../assets/images/Commander/Legendary/Artemisia/ArtemisiaI.png"),
+    require("./../../assets/images/Commander/Legendary/Ramesses/Ramesses.png"),
     require("./../../assets/images/events/event3.jpg"),
     require("./../../assets/images/events/event4.jpg"),
     require("./../../assets/images/events/event5.jpg")
@@ -69,8 +70,14 @@ const HomeScreen = ({ navigation }) => {
                     resizeMethod={'resize'}
                     resizeMode={'cover'} />
                 </View>
+                <View style={{justifyContent : 'center', alignItems : 'center',flexDirection : 'row', marginTop : 10}}>
+                        <TouchableOpacity style={{flexDirection : 'row'}} onPress={() => {navigation.navigate('WebViewEvent')}}>
+                            <IconFon name={'earth'} color='#FFF' size={20} style={{marginRight : 15}}></IconFon>
+                            <AppText style={{fontFamily : fonts.italic,color : '#FFF'}} i18nKey={'view_event'}></AppText>
+                        </TouchableOpacity>
+                </View>
 
-                <View style={{width : '100%', alignItems : 'flex-start', paddingHorizontal : '5%',paddingVertical : 30, flexDirection : 'row'}}>
+                <View style={{width : '100%', alignItems : 'flex-start', paddingHorizontal : '5%',paddingVertical : 10, flexDirection : 'row'}}>
                     <IconFA5 name='chess-king' size={21} color='orange' ></IconFA5>
                     <AppText i18nKey='chi_huy_huyen_thoai' style={{...styles.textStyle,color : 'orange', marginLeft : 8}}>
                       

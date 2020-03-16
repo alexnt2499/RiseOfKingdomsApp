@@ -81,7 +81,14 @@ export default {
     "tocDoThuGom" : "Gathering Speed",
     "kinhNghiemChiHuy" : "Commander EXP Gain (EXP)",
     "satThuongManRo" : "Damage to Barbarians",
-    "info" : "INFO"
+    "info" : "INFO",
+    "contact" : "CONTACT AND FEEDBACK",
+    "aboutme" : "ABOUT ME",
+    "imgandres" : "IMAGES AND RESOURCES",
+    "rokTalent" : "Build talent with roktalents.com",
+    "rok_tlent" : "roktalents.com",
+    "view_event" : "Click this to see the new event",
+    "Event_facebook" : "LATEST EVENT FB"
     
 
 

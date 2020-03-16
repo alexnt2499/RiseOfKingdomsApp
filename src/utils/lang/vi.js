@@ -81,7 +81,21 @@ export default {
     "tocDoThuGom" : "Tốc độ thu gom",
     "kinhNghiemChiHuy" : "Kinh nghệm chỉ huy",
     "satThuongManRo" : "Sát thương man rợ",
-    "info" : "GIỚI THIỆU"
+    "info" : "GIỚI THIỆU",
+    "contact" : "LIÊN HỆ VÀ GÓP Ý",
+    "aboutme" : "GIỚI THIỆU",
+    "imgandres" : "HÌNH ẢNH VÀ TÀI NGUYÊN",
+    "rokTalent" : "Xây tài năng với roktalents.com",
+    "rok_tlent" : "roktalents.com",
+    "view_event" : "Nhấn vào đây để xem sự kiện mới",
+    "Event_facebook" : "SỰ KIỆN MỚI NHẤT FB"
+
+
+
+
+
+
+
 
 
 

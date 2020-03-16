@@ -31,6 +31,9 @@ const ToolsIndex = ({navigation}) => {
             <View style={styles.container2}>
                 <Button text={'toolTrangBi'} onclick={() => {navigation.navigate('EquipmentS')}} icon={'armor'}></Button>
             </View>
+            <View style={styles.container2}>
+                <Button text={'rokTalent'} onclick={() => {navigation.navigate('WebViewTalent')}} icon={'armor'}></Button>
+            </View>
 
 
             <View style={{width : '100%', justifyContent : 'center', alignItems : 'center', marginTop : 20, marginBottom : 10, flexDirection : 'row'}}>

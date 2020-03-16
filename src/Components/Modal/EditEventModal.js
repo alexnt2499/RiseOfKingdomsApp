@@ -164,7 +164,9 @@ const AddEventModal = forwardRef((props,ref) => {
                         largeIcon: "ic_launcher",
                         message: note, 
                         date: getDate,
-                        vibration: 5000 
+                        vibration: 5000,
+                        soundName: "rush"
+
                     });     
                       
                 console.log('Oke');

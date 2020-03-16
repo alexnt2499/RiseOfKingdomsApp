@@ -29,6 +29,9 @@ import DrawerC from './../Components/DrawerContent';
 import {fonts, colors} from './../theme/theme';
 import AsyncStorage from '@react-native-community/async-storage';
 const Stack = createStackNavigator();
+import WebViewTalent from './../Screen/WebView';
+import WebViewEvent from './../Screen/WebViewEvent';
+
 
 const HomeStack = () => (
     <Stack.Navigator
@@ -57,6 +60,11 @@ const HomeStack = () => (
         <Stack.Screen 
          name='MaterialTool'
          component={MaterialTool} 
+         options={{headerShown : false}}
+        />
+        <Stack.Screen 
+         name='WebViewEvent'
+         component={WebViewEvent} 
          options={{headerShown : false}}
         />
         
@@ -95,6 +103,11 @@ const ToolStack = () => (
           <Stack.Screen 
          name='EventTool'
          component={Event} 
+         options={{headerShown : false}}
+        />
+         <Stack.Screen 
+         name='WebViewTalent'
+         component={WebViewTalent} 
          options={{headerShown : false}}
         />
 

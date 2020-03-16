@@ -6,13 +6,15 @@ import IconA from 'react-native-vector-icons/AntDesign';
 import IconIo from 'react-native-vector-icons/Ionicons';
 import IconFa5 from 'react-native-vector-icons/FontAwesome5';
 import IconFa from 'react-native-vector-icons/FontAwesome';
+import IconFon from 'react-native-vector-icons/Fontisto';
+
 import AppText from './../../Components/AppText';
 
 
 import {fonts,colors} from  './../../theme/theme';
 
 // create a component
-const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,checkPerson }) => {
+const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,checkPerson,checkWeb }) => {
     const renderBtn = () => {
         if(checkEquiq == true) {
            return   <Icon name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></Icon>
@@ -26,6 +28,8 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,chec
         }else if(checkBack == true) {
             if(checkEquiq) {
                 return  <IconFa name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
+            }else if(checkWeb == true) {
+                return  <IconFon name={'earth'} color='#FFF' size={25} style={{marginRight : 15}}></IconFon>
             }else return  <IconFa name={'calendar'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
         }
         else {
