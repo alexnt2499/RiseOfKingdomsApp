@@ -57,7 +57,9 @@ export default [
             TalentIcon.Versatility,
             TalentIcon.Mobility,
         ],
-        talentTree : [],
+        talentTree : [    {
+            uri : 'https://rok.guide/wp-content/uploads/2019/11/takeda-field-battle-1024x575.jpg'
+        }],
         partner : [],
         trangBi : 'kỵ binh'
     },

@@ -316,7 +316,9 @@ const EquipmentTool = ({navigation}) => {
 
             </View>
             </ScrollView>
+            <View style={{marginVertical : 5, justifyContent : 'center', alignItems : 'center'}}>
             <BannerAds></BannerAds>
+            </View>
 
             <Modal
                  animationIn={'zoomInDown'}

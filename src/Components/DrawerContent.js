@@ -12,7 +12,7 @@ const MyComponent = ({navigation}) => {
                     start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
                     colors={['#42275a','#734b6d']} style={styles.container}>
                <Image
-               source={require('./../../assets/images/VanMinh/China.png')}
+               source={require('./../../assets/images/VanMinh/Britain.png')}
                 style={{position : 'absolute',
                 top : 20,
                 right : 20}}

@@ -150,7 +150,9 @@ const EventTracker = ({navigation}) => {
             
 
        
-        <View style={{bottom : 0,position : 'absolute'}}><BannerAds></BannerAds></View>
+        <View style={{bottom : 0,position : 'absolute', width : '100%',justifyContent : 'center',alignItems : 'center'}}>
+            <BannerAds></BannerAds>
+        </View>
 
             <AddModal ref={addModalRef} getList={refeshList}></AddModal>
             <EditModal ref={editModalRef} item={itemProps} refreshingDatas={refreshingDatas} getList={refeshList}></EditModal>
@@ -201,7 +203,7 @@ const styles = StyleSheet.create({
         position : 'absolute',
         backgroundColor : '#FFF',
 
-        bottom : 30,
+        bottom : 80,
         right : 30,
        
 

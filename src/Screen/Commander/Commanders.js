@@ -143,7 +143,10 @@ const Commanders = ({navigation}) => {
 
                 </FlatList>}
 
-                <BannerAd></BannerAd>
+                <View style={{ marginVertical : 5, justifyContent : 'center',alignItems : 'center'}}>
+                    <BannerAd></BannerAd>
+
+                </View>
                 
         </SafeAreaView>
     );

@@ -108,6 +108,11 @@ const SpeedTool = ({navigation}) => {
             res12: {...listRes.res12,sl : 0,check : false},
             res13: {...listRes.res13,sl : 0,check : false}
         })
+        setfullDay({
+            day : 0,
+            hour: 0,
+            min : 0
+        })
         inputRes1.current.setValue();
         inputRes2.current.setValue();
         inputRes3.current.setValue();
@@ -461,7 +466,10 @@ const SpeedTool = ({navigation}) => {
                 isVisible={isVisible}
             />
         </ScrollView>
-        <BannerAds></BannerAds>
+        <View style={{ marginVertical : 5 , justifyContent : 'center',alignItems : 'center'}}>
+                    <BannerAds></BannerAds>
+
+                </View>
 
         </SafeAreaView>
     );

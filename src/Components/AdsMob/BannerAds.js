@@ -7,11 +7,11 @@ import { BannerAd, BannerAdSize, TestIds } from '@react-native-firebase/admob';
 const BannerAds = (props) => {
     return (
         <BannerAd
-                    unitId={props.id ? props.id : 'ca-app-pub-7033028927124341/5474292886'}
-                    size={BannerAdSize.FULL_BANNER}
+                    unitId={'ca-app-pub-7033028927124341/5474292886'}
                     requestOptions={{
                         requestNonPersonalizedAdsOnly: true,
                     }}
+                    size={BannerAdSize.BANNER}
                     onAdLoaded={() => {
                         console.log('Advert loaded');
                     }}

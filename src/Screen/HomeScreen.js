@@ -139,8 +139,10 @@ const HomeScreen = ({ navigation }) => {
               
 
                 </ScrollView>
-                <BannerAds2></BannerAds2>
+                <View style={{ marginBottom : 10}}>
+                    <BannerAds2></BannerAds2>
 
+                </View>
         
             
         </SafeAreaView>
@@ -155,6 +157,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
        backgroundColor : colors.MainColor,
+      
       
     },
     textStyle :{

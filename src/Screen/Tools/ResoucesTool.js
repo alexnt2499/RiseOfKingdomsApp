@@ -389,7 +389,10 @@ const ResourseTool = ({navigation}) => {
                 isVisible={isVisible}
             />
         </ScrollView>
-        <BannerAds></BannerAds>
+        <View style={{ marginVertical : 5, justifyContent : 'center',alignItems : 'center'}}>
+                    <BannerAds></BannerAds>
+
+                </View>
         </SafeAreaView>
     );
 };

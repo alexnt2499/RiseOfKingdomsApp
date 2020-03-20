@@ -14,7 +14,10 @@ const ToolsIndex = ({navigation}) => {
         <SafeAreaView style={styles.container}>
 
             <Header title={'TOOLS'} navigation={navigation} checkTool={true}></Header>
-            <BannerAds></BannerAds>
+            <View style={{ marginVertical : 5 , justifyContent : 'center',alignItems : 'center'}}>
+                    <BannerAds></BannerAds>
+
+                </View>
             <ScrollView>
             <View style={{width : '100%', justifyContent : 'center', alignItems : 'center', marginTop : 20, marginBottom : 10, flexDirection : 'row'}}>
                 <Icon name={'calendar-edit'} size={20} color={'#FFF'} style={{marginRight : 10}}></Icon>
