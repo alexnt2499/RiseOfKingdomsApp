@@ -88,6 +88,7 @@ const HomeScreen = ({ navigation }) => {
                     data={listCommanders}
                     showsHorizontalScrollIndicator={false}
                     horizontal
+                    pagingEnabled={true}
                     keyExtractor={item => item.id}
                     renderItem={({item, index, separators}) => (
                         <View
@@ -114,6 +115,7 @@ const HomeScreen = ({ navigation }) => {
                 </View>
                 <View style={{justifyContent : 'center', alignItems : 'center'}}>
                 <FlatList 
+                    pagingEnabled={true}
                     data={listCommanderEpics}
                     showsHorizontalScrollIndicator={false}
                     horizontal

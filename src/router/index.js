@@ -7,7 +7,7 @@ import {createDrawerNavigator, DrawerContent,DrawerContentScrollView,DrawerItemL
 import HomeScreen from './../Screen/HomeScreen';
 import Commander from './../Screen/Commander/Commanders';
 import CommanderDetails from './../Screen/Commander/CommandersDetails'
-import Troop from './../Screen/Troop/Troop';
+import TroopScreen from './../Screen/Troop/Troop';
 import Equipment from './../Screen/Equipment/Equipment';
 import EquipmentDetails from './../Screen/Equipment/EquipmentDetails';
 import Tools from './../Screen/Tools/index';
@@ -150,19 +150,19 @@ const CommanderStack = () => (
     </Stack.Navigator>
 )
 
-const TroopStack = () => {
+const TroopStack = () => (
     <Stack.Navigator 
         initialRouteName='Troop'
     >
         <Stack.Screen 
             name='Troop'
-            component={Troop}
+            component={TroopScreen}
             options={{headerShown : false}}
         />
 
       
     </Stack.Navigator>
-}
+)
 
 const BuildingStack = () => (
     <Stack.Navigator 
@@ -233,6 +233,16 @@ const BottomTab = () => (
                 ),
             }}
         />
+         {/* <BTab.Screen 
+            name='Troops'
+            component={TroopStack}
+            options={{
+                tabBarLabel: 'Troops',
+                tabBarIcon: ({ color, size }) => (
+                  <IconTool name="chess-knight" color={color} size={25} />
+                ),
+            }}
+        /> */}
         <BTab.Screen 
             name='ToolTab'
             component={ToolStack}

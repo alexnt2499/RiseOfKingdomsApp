@@ -8,6 +8,7 @@ import SkillComponent from './../../Components/Card/CardCommander/Skill';
 import TalentComponent from './../../Components/Card/CardCommander/Talent';
 import Equipment from './../../Components/Card/CardCommander/Equipment';
 import About from './../../Components/Card/CardCommander/About';
+import {ScrollableTabView} from '@valdio/react-native-scrollable-tabview'
 
    
 
@@ -75,39 +76,32 @@ const CommanderDetails = ({route,navigation}) => {
     const handleScroll = (event) => {
 
         let scrollX = event.nativeEvent.contentOffset.x;
+        console.log(scrollX);
+        
         let tab1 = 0;
         let tab2 = width;
         let tab3 = width*2;
-        let tab4 = width*3
-        if(scrollX > tab1 && scrollX < tab2/2){
-            refScroll.current.scrollResponderScrollTo({x : tab2})
+        let tab4 = width*3;
+        console.log('width' + width/2);
+        
+        if(scrollX == tab1){
             
-            setActive(1), handleSlide(xTab2) ; setWidthHover(75)
-        }else if(scrollX > tab2/2 && scrollX < tab2) {
-             refScroll.current.scrollResponderScrollTo({x : tab1})
-             setActive(0); handleSlide(xTab1); setWidthHover(50)
-             
-
+            setActive(0); handleSlide(xTab1); setWidthHover(50);
         }
 
-        if(scrollX > tab2 && scrollX < tab3-150){
-            refScroll.current.scrollResponderScrollTo({x : tab3})
-            setActive(2), handleSlide(xTab3) ; setWidthHover(95)
+        if(scrollX == tab2){
+            setActive(2), handleSlide(xTab2) ; setWidthHover(95)
 
-
-        }else if(scrollX > tab3-150 && scrollX < tab3) {
-             refScroll.current.scrollResponderScrollTo({x : tab2})
-             setActive(1), handleSlide(xTab2) ; setWidthHover(75)
 
         }
 
         
-        if(scrollX > tab3 && scrollX < tab4-150){
-            refScroll.current.scrollResponderScrollTo({x : tab4})
+        if(scrollX == tab3){
+            setActive(3), handleSlide(xTab3); setWidthHover(60)
+        }
+
+        if(scrollX == tab4){
             setActive(3), handleSlide(xTab4); setWidthHover(60)
-        }else if(scrollX > tab4-150 && scrollX < tab4) {
-             refScroll.current.scrollResponderScrollTo({x : tab3})
-             setActive(2), handleSlide(xTab3) ; setWidthHover(95)
         }
 
        
@@ -135,7 +129,7 @@ const CommanderDetails = ({route,navigation}) => {
                         ))}
                     </View>
             </LinearGradient>
-            <View style={styles.containerTab}>
+            {/* <View style={styles.containerTab}>
                 <View
                 
                     onLayout={event => setXTab1(event.nativeEvent.layout.x-param)}
@@ -186,14 +180,41 @@ const CommanderDetails = ({route,navigation}) => {
                     
                     }}></View>
 
-            </Animated.View>
+            </Animated.View> */}
 
-            <ScrollView 
+            <ScrollableTabView
+                tabBarActiveTextColor={'#FFF'}
+                tabBarInactiveTextColor={'#707070'}
+                tabBarUnderlineStyle={{backgroundColor : colors.HoverColor, borderColor : colors.MainColor}}
+                tabBarTextStyle={{fontFamily : fonts.black,fontSize : 15}}
+            >
+                   
+                       <SkillComponent tabLabel="SKILL" items={items} checkEpic={checkEpic}></SkillComponent>
+                    
+                   
+
+                  
+                    
+                        <TalentComponent tabLabel="TALENTS" navigation={navigation} items={items}></TalentComponent>
+                   
+
+                    
+                        <Equipment tabLabel="EQUIPMENT" items={items}></Equipment>
+            
+
+                   
+                        <About tabLabel="ABOUT" items={items}></About>
+                    
+            </ScrollableTabView>
+       
+
+            {/* <ScrollView 
                 horizontal={true}
                 showsVerticalScrollIndicator={false}
                 showsHorizontalScrollIndicator={false}
-                onScroll={handleScroll}
+                onScrollEndDrag={handleScroll}
                 ref={refScroll}
+                pagingEnabled={true}
             >
                     
                     <View style={{width : width}}>
@@ -214,7 +235,7 @@ const CommanderDetails = ({route,navigation}) => {
                         <About items={items}></About>
                     </View>
             
-            </ScrollView>
+            </ScrollView> */}
             
             
         </SafeAreaView>

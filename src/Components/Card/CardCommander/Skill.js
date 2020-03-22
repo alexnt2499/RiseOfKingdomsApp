@@ -68,7 +68,7 @@ const Skill = ({items,checkEpic}) => {
     
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView style={[styles.container]}>
                 <View style={{justifyContent : 'center' , alignItems : 'center', width : '100%'}}>
                     <View style={{...styles.containerInner,marginTop : 10}}>
                         <View style={{flexDirection : 'row', justifyContent : 'space-between', paddingHorizontal : 20, paddingTop : 20}}>
@@ -149,8 +149,9 @@ const Skill = ({items,checkEpic}) => {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        width : '100%',
         backgroundColor: colors.MainColor,
+        height : 600
     },
     containerInner : {
         width : '95%',  
