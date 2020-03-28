@@ -7,9 +7,21 @@ import Button from './../../Components/Buttons/Button';
 import AppText from './../../Components/AppText';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import BannerAds from './../../Components/AdsMob/BannerAds';
+import { InterstitialAd,AdEventType  } from '@react-native-firebase/admob';
 
 // create a component
 const ToolsIndex = ({navigation}) => {
+    const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-7033028927124341/6324920687', {
+        requestNonPersonalizedAdsOnly: true,
+    });
+
+    interstitial.onAdEvent((type) => {
+        if (type === AdEventType.LOADED) {
+          interstitial.show();
+        }
+    });
+
+
     return (
         <SafeAreaView style={styles.container}>
 
@@ -24,7 +36,7 @@ const ToolsIndex = ({navigation}) => {
                 <AppText style={styles.textStyle} i18nKey={'eventTrack'}></AppText>
             </View>
             <View style={styles.container2}>
-                <Button text={'eventTrack'} onclick={() => {navigation.navigate('EventTool')}} icon={'calendar'}></Button>
+                <Button text={'eventTrack'} onclick={() => {navigation.navigate('EventTool');interstitial.load();}} icon={'calendar'}></Button>
             </View>
 
             <View style={{width : '100%', justifyContent : 'center', alignItems : 'center', marginTop : 20, marginBottom : 10, flexDirection : 'row'}}>
@@ -32,10 +44,10 @@ const ToolsIndex = ({navigation}) => {
                 <AppText style={styles.textStyle} i18nKey={'toolTrangBi'}></AppText>
             </View>
             <View style={styles.container2}>
-                <Button text={'toolTrangBi'} onclick={() => {navigation.navigate('EquipmentS')}} icon={'armor'}></Button>
+                <Button text={'toolTrangBi'} onclick={() => {navigation.navigate('EquipmentS');interstitial.load();}} icon={'armor'}></Button>
             </View>
             <View style={styles.container2}>
-                <Button text={'rokTalent'} onclick={() => {navigation.navigate('WebViewTalent')}} icon={'armor'}></Button>
+                <Button text={'rokTalent'} onclick={() => {navigation.navigate('WebViewTalent');interstitial.load();}} icon={'armor'}></Button>
             </View>
 
 
@@ -44,15 +56,15 @@ const ToolsIndex = ({navigation}) => {
                 <AppText style={styles.textStyle} i18nKey={'mayTinh'}></AppText>
             </View>
             <View style={styles.container2}>
-                <Button text={'cal_Res'} onclick={() => {navigation.navigate('RTool')}} icon={'resourse'}></Button>
+                <Button text={'cal_Res'} onclick={() => {navigation.navigate('RTool');interstitial.load();}} icon={'resourse'}></Button>
             </View>
 
             <View style={styles.container2}>
-                <Button text={'cal_Speed'} onclick={() => {navigation.navigate('STool')}} icon={'speed'}></Button>
+                <Button text={'cal_Speed'} onclick={() => {navigation.navigate('STool');interstitial.load();}} icon={'speed'}></Button>
             </View>
 
             <View style={styles.container2}>
-                <Button text={'cal_Material'} onclick={() => {navigation.navigate('MaterialTool')}} icon={'material'}></Button>
+                <Button text={'cal_Material'} onclick={() => {navigation.navigate('MaterialTool');interstitial.load();}} icon={'material'}></Button>
             </View>
             </ScrollView>
         </SafeAreaView>

@@ -88,7 +88,28 @@ export default {
     "rokTalent" : "Build talent with roktalents.com",
     "rok_tlent" : "roktalents.com",
     "view_event" : "Click this to see the new event",
-    "Event_facebook" : "LATEST EVENT FB"
+    "Event_facebook" : "LATEST EVENT FB",
+    "build" : "BUILD",
+    "saved" : "SAVED",
+    "save" : "SAVE",
+    "luu_tai_nang" : "SAVE TALENT",
+    "title" : "TITLE",
+    "yes" : "YES",
+    "no" : "NO",
+    "ban_co_muon_xoa_talent" : "Are you sure you want to delete this talent ?",
+    "xoa_tai_nang" : "DELETE TALENT",
+    "them_thanh_cong" : "Save Successful",
+    "xoa_thanh_cong" : "Delete Successful",
+    "not_data" : "Not data yet",
+    "ban_vui_long_cap_quyen" : "Please grant access to the image directory for the application.",
+    "posts" : "POSTS",
+    "tin_moi_nhat" : "HOT POSTS",
+    "tat_ca_bai_dang" : "ALL POST",
+    "view" : "views"
+
+    
+
+
     
 
 

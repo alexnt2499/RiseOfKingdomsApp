@@ -1,5 +1,5 @@
 import React from 'react';
-import {TouchableOpacity,Alert} from 'react-native';
+import {TouchableOpacity,Alert,Linking} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import {NavigationContainer } from '@react-navigation/native';
@@ -31,6 +31,8 @@ import AsyncStorage from '@react-native-community/async-storage';
 const Stack = createStackNavigator();
 import WebViewTalent from './../Screen/WebView';
 import WebViewEvent from './../Screen/WebViewEvent';
+import NewsScreen from './../Screen/News/index';
+import NewsDetails from './../Screen/News/NewsDetails';
 
 
 const HomeStack = () => (
@@ -68,6 +70,20 @@ const HomeStack = () => (
          options={{headerShown : false}}
         />
         
+    </Stack.Navigator>
+)
+
+const NewsStack = () => (
+    <Stack.Navigator
+    initialRouteName='News'
+
+    >
+        <Stack.Screen 
+         name='News'
+         component={NewsScreen} 
+         options={{headerShown : false}}
+         />
+          
     </Stack.Navigator>
 )
 
@@ -243,6 +259,16 @@ const BottomTab = () => (
                 ),
             }}
         /> */}
+         <BTab.Screen 
+            name='NewTab'
+            component={NewsStack}
+            options={{
+                tabBarLabel: 'Posts',
+                tabBarIcon: ({ color, size }) => (
+                  <IconTool name="book-dead" color={color} size={25} />
+                ),
+            }}
+        />
         <BTab.Screen 
             name='ToolTab'
             component={ToolStack}
@@ -339,7 +365,19 @@ function CustomDrawerContent(props) {
             label={'Version no ads'}
             style={{color : '#FFF'}}
             onPress={() => { 
-             
+                Linking.openURL('market://details?id=com.rokappntd.pro')
+            }}
+            labelStyle={{color : '#FFF' , fontFamily : fonts.regular}}
+        />
+
+        <DrawerItem
+            icon={({focused, color, size}) => (
+                <Icon color={'#FFF'} size={size} name={'android-auto'} />
+            )}
+            label={'Update new version'}
+            style={{color : '#FFF'}}
+            onPress={() => { 
+                Linking.openURL('market://details?id=com.rokappntd')
             }}
             labelStyle={{color : '#FFF' , fontFamily : fonts.regular}}
         />

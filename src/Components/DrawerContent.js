@@ -23,7 +23,7 @@ const MyComponent = ({navigation}) => {
                     source={require('./../../assets/images/Commander/Epic/Boudica/Boudica.png')}></Image>
             </LinearGradient>
             <View style={{marginHorizontal : 10, marginVertical : 20}}>
-                <Text style={styles.textStyle}>Version 1.0.0</Text>
+                <Text style={styles.textStyle}>Version 1.0.3</Text>
             </View>
        </View>
     );

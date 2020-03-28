@@ -1,12 +1,12 @@
 //import liraries
-import React, { Component, useState,useEffect } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity,Image,Alert } from 'react-native';
 import {colors, fonts} from './../../theme/theme';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {LocalizationContext} from './../../../App';
 import moment from 'moment';
-import getRealm from './../../services/realm';
-import PushNotification from 'react-native-push-notification';
+import ConfirmModal from './../Modal/ConfirmModal';
+
 const ListTopic = {
     t1 : {check : true,id : 1,image : require('./../../../assets/images/events/attack.png')},
     t2 : {check : false,id : 2,image : require('./../../../assets/images/events/babaria.png')},
@@ -53,20 +53,9 @@ const EventItems = ({item,listRemove}) => {
     }
   
    const deleteEvent = () => {
-    Alert.alert(
-        t('xac_nhan'),
-        t('ban_co_muon_xoa'),
-        [
-          {
-            text: 'No',
-            onPress: () => console.log('Cancel Pressed'),
-            style: 'cancel',
-          },
-          {text: 'Yes', onPress: () => {listRemove()}},
-        ],
-        {cancelable: false},
-      );
+        ConfirmModalRef.current.open();
    }
+   const ConfirmModalRef = useRef();
 
 
    
@@ -104,7 +93,12 @@ const EventItems = ({item,listRemove}) => {
                    
 
                 </View>
-                
+                <ConfirmModal
+                    ref={ConfirmModalRef}
+                    title={t('xac_nhan')}
+                    body={t('ban_co_muon_xoa')}
+                    onConfirm={() => {listRemove()}}
+                ></ConfirmModal>
             </View>
         </View>
     );

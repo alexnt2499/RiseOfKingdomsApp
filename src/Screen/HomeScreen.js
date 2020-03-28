@@ -19,6 +19,7 @@ import IconFon from 'react-native-vector-icons/Fontisto';
 
 import BannerAds2 from './../Components/AdsMob/BannerAds';
 import AsyncStorage from '@react-native-community/async-storage';
+import { InterstitialAd,AdEventType  } from '@react-native-firebase/admob';
 
 const imagess =  [
     require("./../../assets/images/Commander/Legendary/Artemisia/ArtemisiaI.png"),
@@ -36,6 +37,7 @@ const HomeScreen = ({ navigation }) => {
     const [listCommanders,setListCommander] = useState([]);
     const [listCommanderEpics,setListCommanderEpic] = useState([]);
     const [lang,setLang] = useState('vi');
+    const [dem,setDem] = useState(0);
 
     useEffect(() => {
         changeDrop(locale);
@@ -54,6 +56,32 @@ const HomeScreen = ({ navigation }) => {
 
         }
     }
+
+    const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-7033028927124341/6324920687', {
+        requestNonPersonalizedAdsOnly: true,
+    });
+
+    interstitial.onAdEvent((type) => {
+        if (type === AdEventType.LOADED) {
+          interstitial.show();
+        }
+    });
+
+    const showAd = () => {
+        if(dem == 2) {
+            setDem(0);
+            interstitial.load();
+            
+        }else{
+            console.log(dem);
+        
+        setDem(dem + 1);
+        }
+        
+        
+
+    }
+
     
 
 
@@ -93,7 +121,7 @@ const HomeScreen = ({ navigation }) => {
                     renderItem={({item, index, separators}) => (
                         <View
                         style={{width : width}}
-                            onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item})}}
+                            onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item});showAd()}}
                           >
                               <CardCommanders items={item}></CardCommanders>
                         </View>
@@ -123,7 +151,7 @@ const HomeScreen = ({ navigation }) => {
                     renderItem={({item, index, separators}) => (
                         <View
                         style={{width : width}}
-                            onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item,checkEpic : true})}}
+                            onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item,checkEpic : true});showAd()}}
                           >
                               <CardCommanders items={item} checkEpic={true}></CardCommanders>
                         </View>

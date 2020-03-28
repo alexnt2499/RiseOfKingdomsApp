@@ -129,63 +129,12 @@ const CommanderDetails = ({route,navigation}) => {
                         ))}
                     </View>
             </LinearGradient>
-            {/* <View style={styles.containerTab}>
-                <View
-                
-                    onLayout={event => setXTab1(event.nativeEvent.layout.x-param)}
-                    
-                >
-                    <Text style={{...styles.tabText, color : active == 0 ? '#FFF' : '#707070'}}>SKILL</Text>
-                </View>
-
-                <View
-                
-                    onLayout={event => setXTab2(event.nativeEvent.layout.x -param)}
-                   
-                >
-                    <Text  style={{...styles.tabText, color : active == 1 ? '#FFF' : '#707070'}}>TALENTS</Text>
-                </View>
-
-                <View
-                    onLayout={event => setXTab3(event.nativeEvent.layout.x-param)}
-                   
-
-                >
-                    <Text  style={{...styles.tabText, color : active == 2 ? '#FFF' : '#707070'}}>EQUIPMENT</Text>
-                </View>
-
-                <View
-                    onLayout={event => setXTab4(event.nativeEvent.layout.x-param)}
-                   
-
-                >
-                    <Text  style={{...styles.tabText, color : active == 3 ? '#FFF' : '#707070'}}>ABOUT</Text>
-                </View>
-                
-            </View>
-
-            <Animated.View style={[
-                {
-                    marginBottom : 10,
-                    width : '100%',
-                    paddingHorizontal : 25,
-                    transform : [{
-                        translateX : translateX
-                    }]
-                }
-            ]}>
-                <View style={{ borderBottomWidth : 4,
-                    borderColor : colors.HoverColor, 
-                    width : widthHover ? widthHover : 60,
-                    
-                    }}></View>
-
-            </Animated.View> */}
+           
 
             <ScrollableTabView
                 tabBarActiveTextColor={'#FFF'}
                 tabBarInactiveTextColor={'#707070'}
-                tabBarUnderlineStyle={{backgroundColor : colors.HoverColor, borderColor : colors.MainColor}}
+                tabBarUnderlineStyle={{backgroundColor : '#FFF', borderColor : colors.MainColor}}
                 tabBarTextStyle={{fontFamily : fonts.black,fontSize : 15}}
             >
                    

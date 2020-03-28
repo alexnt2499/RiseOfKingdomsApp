@@ -1,13 +1,11 @@
 //import liraries
 import React, { Component, useState, useEffect,forwardRef,useImperativeHandle } from 'react';
-import { View, Text, StyleSheet,Button,TouchableOpacity,TextInput,Image } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity,TextInput,Image } from 'react-native';
 import Modal from "react-native-modal";
 import {colors,fonts} from './../../theme/theme';
 import {LocalizationContext} from './../../../App';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import DatePicker from 'react-native-datepicker'
-import Buttons from './../Buttons/Button';
-import { createIconSetFromFontello } from 'react-native-vector-icons';
 import getRealm from './../../services/realm';
 import PushNotification  from "react-native-push-notification"
 

@@ -11,6 +11,8 @@ import ListCommanderEpicEn from './../../database/ListCommanderEpicEn';
 import {LocalizationContext} from './../../../App';
 import Cardcommander2 from './../../Components/Items/CardCommander2';
 import AsyncStorage from '@react-native-community/async-storage';
+import { InterstitialAd,AdEventType  } from '@react-native-firebase/admob';
+
 // create a component
 const Commanders = ({navigation}) => {
     const {t, locale} = React.useContext(LocalizationContext);
@@ -21,6 +23,7 @@ const Commanders = ({navigation}) => {
     const [ListCommander,setListCommander] = useState([]);
 
     const [ListCommanderOri,setListCommanderOri] = useState([]);
+    const [dem,setDem] = useState(0);
 
     const [value,setValue] = useState('huyenThoai');
     const onChangeKeyword = (e) => {
@@ -46,6 +49,31 @@ const Commanders = ({navigation}) => {
     useEffect(() => {
         getListData()
     },[])
+
+    const interstitial = InterstitialAd.createForAdRequest('ca-app-pub-7033028927124341/6324920687', {
+        requestNonPersonalizedAdsOnly: true,
+    });
+
+    interstitial.onAdEvent((type) => {
+        if (type === AdEventType.LOADED) {
+          interstitial.show();
+        }
+    });
+
+    const showAd = () => {
+        if(dem == 2) {
+            setDem(0);
+            interstitial.load();
+            
+        }else{
+            console.log(dem);
+        
+        setDem(dem + 1);
+        }
+        
+        
+
+    }
 
 
     const getListData = async () => {
@@ -118,7 +146,7 @@ const Commanders = ({navigation}) => {
                     showsVerticalScrollIndicator={false}
                     renderItem={({item}) => {
                       
-                           return  (<View style={{marginVertical : 10}}  onTouchEndCapture={() => {console.log(item.id);navigation.navigate('CommanderD',{items : item})}}>
+                           return  (<View style={{marginVertical : 10}}  onTouchEndCapture={() => {console.log(item.id);navigation.navigate('CommanderD',{items : item});showAd();}}>
                                  <Cardcommander2 items={item} checkEpic={false} />
                             </View>)
                         
@@ -133,7 +161,7 @@ const Commanders = ({navigation}) => {
                     showsVerticalScrollIndicator={false}
                     renderItem={({item}) => {
                         
-                            return (<View style={{marginVertical : 10}}  onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item , checkEpic:  true })}}>
+                            return (<View style={{marginVertical : 10}}  onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item , checkEpic:  true });showAd()}}>
                              <Cardcommander2 items={item} checkEpic={true} />
                          </View>)
                         

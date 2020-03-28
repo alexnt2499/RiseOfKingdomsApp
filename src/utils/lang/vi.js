@@ -88,7 +88,32 @@ export default {
     "rokTalent" : "Xây tài năng với roktalents.com",
     "rok_tlent" : "roktalents.com",
     "view_event" : "Nhấn vào đây để xem sự kiện mới",
-    "Event_facebook" : "SỰ KIỆN MỚI NHẤT FB"
+    "Event_facebook" : "SỰ KIỆN MỚI NHẤT FB",
+    "build" : "XÂY DỰNG",
+    "saved" : "Đã Lưu",
+    "save" : "LƯU",
+    "luu_tai_nang" : "LƯU TÀI NĂNG",
+    "title" : "TIÊU ĐỀ",
+    "yes" : "CÓ",
+    "no" : "KHÔNG",
+    "ban_co_muon_xoa_talent" : "Bạn có chắc muốn xóa tài năng này ?",
+    "xoa_tai_nang" : "Xóa tài năng",
+    "them_thanh_cong" : "Thêm thành công",
+    "xoa_thanh_cong" : "Xóa thành công",
+    "not_data" : "Chưa có dữ liệu",
+    "ban_vui_long_cap_quyen" : "Bạn vui lòng cấp quyền truy cập thư mục hình ảnh cho ứng dụng.",
+    "posts" : "BÀI VIẾT",
+    "tin_moi_nhat" : "bài đăng đáng chú ý",
+    "tat_ca_bai_dang" : "tất cả bài đăng",
+    "view" : "lượt xem"
+
+
+
+
+
+
+   
+
 
 
 

@@ -9,8 +9,8 @@ const WelcomeScreen = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-            <Image style={{width : 100, height : 100}} source={require('./../../assets/images/logo.png')}></Image>
-            <ActivityIndicator size={30} style={{marginTop : 5}} color='orange'></ActivityIndicator>
+            <Image style={{width : 80, height : 80, borderRadius : 10}} source={require('./../../assets/images/logo.png')}></Image>
+            <ActivityIndicator size={25} style={{marginTop : 5}} color='orange'></ActivityIndicator>
 
         </View> 
     );

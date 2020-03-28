@@ -14,7 +14,8 @@ export const colors = {
   CardColor: '#242F38',
   BottomColor: '#0C141B',
   HoverColor : '#0483D3',
-  unColor : '#5B646E'
+  unColor : '#5B646E',
+  barColor : '#51B5ED'
   
   
  

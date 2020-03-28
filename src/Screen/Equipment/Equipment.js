@@ -82,6 +82,7 @@ const Equipment = ({navigation}) => {
 
                 </View>
         </SafeAreaView>
+      
     );
 };
 
