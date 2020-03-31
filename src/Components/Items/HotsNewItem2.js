@@ -20,9 +20,9 @@ const HotsNewItem = ({item}) => {
         dateS.setUTCFullYear(dateB.getFullYear());
         dateS.setUTCHours(dateB.getHours());
         dateS.setUTCMinutes(dateB.getMinutes());
-        console.log(dateS);
+ 
         
-        return dateS;
+        return dateB.getDate() + '/' + (dateB.getMonth()+1) + '/' + dateB.getFullYear() + ' ' + dateB.getHours() + ":" + dateB.getMinutes();
     }
     return (
         <View style={styles.container}>
@@ -46,8 +46,12 @@ const HotsNewItem = ({item}) => {
                             <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 8, marginLeft : 5}}>({item.author.level})</Text>
                         </View>
 
-                        <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>
-                            {moment(seTtimess()).fromNow()}
+                       
+                </View>
+                <View>
+                <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>
+                        {seTtimess()}
+
                         </Text>
                 </View>
 

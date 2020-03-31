@@ -16,8 +16,9 @@ const HeaderSearch = (props) => {
                 <View style={{borderBottomWidth : 0.5, marginBottom : 10, width : '100%', height : 40, borderColor : '#FFF'}}>
                 <TextInput 
                 value={props.value}
-                onChangeText={props.onChangeText}
-                placeholder={t('nhap_ten_chi_huy')}
+                onChangeText={props.checkEnd ? null :props.onChangeText}
+                placeholder={props.placeholder ? t(props.placeholder) : t('nhap_ten_chi_huy')}
+                onEndEditing={props.checkEnd ? props.onChangeText:null}
                 placeholderTextColor={colors.unColor}
                 style={{color : '#FFF', fontSize :13, fontFamily : fonts.light, width : '100%'}}
                 ></TextInput>
@@ -36,7 +37,7 @@ const HeaderSearch = (props) => {
 // define your styles
 const styles = StyleSheet.create({
     container: {
-       height : 50,
+       height : 60,
        width : '100%',
        flexDirection : 'row',
        justifyContent : 'center',

@@ -20,6 +20,9 @@ const News = ({navigation}) => {
     const [refresh,setRefresh] = useState(false);
     const [listHotNews,setListHotNews] = useState([]);
     const [listNews,setListNews] = useState([]);
+    const [isLoadingRender,setIsLoadingRender] = useState(false);
+    const [page,setPage] = useState(0);
+    const [topicSelect, setTopicSelect] = useState('5e7b7c6b6861760c70b41f13');
     const [items,setItems] = useState({
         author : {avatar : ''}
     });
@@ -28,11 +31,20 @@ const News = ({navigation}) => {
     const ModalRef = React.useRef();
 
     useEffect(() => {
-        getData(true);
+       
+    
+        getNews(true);
         getHotNew(true);
-        getNews(true)
-    },[])
+        
+    },[topicSelect])
 
+    useEffect(() => {
+
+        getData(true);
+        getNews(true);
+        getHotNew(true);
+        setPage(0)
+    },[])
     function wait(timeout) {
         return new Promise(resolve => {
           setTimeout(resolve, timeout);
@@ -45,76 +57,114 @@ const News = ({navigation}) => {
          if(loads) setIsLoading(true);
         let getTopic = await Axios.get(`${BASE_URL}/api/topics/getAllTopic`);
         if(getTopic.data.status == 200) {
-            console.log(getTopic.data.data);
             
             setListTopic(getTopic.data.data);
         }
         if(loads) setIsLoading(false);
     }
 
-    const getHotNew = async (load) =>{
+    const getHotNew = async (load,topic) =>{
         if(load) setIsLoading2(true);
 
-        let getPosts = await Axios.get(`${BASE_URL}/api/posts/getAllPost`);
+        let getPosts = await Axios.get(`${BASE_URL}/api/posts/getByView?page=${0}&lang=${locale}&topic=${topicSelect ? topicSelect : '5e7b7c6b6861760c70b41f13'}`);
         if(getPosts.data.status == 200) {
-            console.log(getPosts.data.data);
             
-            setListHotNews(getPosts.data.data.reverse());
+            setListHotNews(getPosts.data.data);
         }
         if(load) setIsLoading2(false);
     }
 
-    const getNews = async (load) =>{
+   
+
+    const getNews = async (load,topic) =>{
         if(load) setIsLoading3(true);
 
-        let getPosts = await Axios.get(`${BASE_URL}/api/posts/getAllPost`);
+        let getPosts = await Axios.get(`${BASE_URL}/api/posts/getAllPostByTopic?page=${0}&lang=${locale}&topic=${topicSelect ? topicSelect : '5e7b7c6b6861760c70b41f13'}`);
         if(getPosts.data.status == 200) {
-            console.log(getPosts.data.data);
             
-            setListNews(getPosts.data.data.reverse());
+           
+                setListNews(getPosts.data.data.reverse());
+           
         }
+        
         if(load) setIsLoading3(false);
 
     }
 
-    const onRefresh = React.useCallback(() => {
+    const getNews2 = async (load) =>{
+        if(load) setIsLoadingRender(true);
+        
+        let pageGain = page;
+        console.log(page);
+
+        let getPosts = await Axios.get(`${BASE_URL}/api/posts/getAllPostByTopic?page=${pageGain + 1}&lang=${locale}&topic=${topicSelect ? topicSelect : '5e7b7c6b6861760c70b41f13'}`);
+        if(getPosts.data.status == 200) {
+            if(getPosts.data.data.length != 0) {
+                let datanew = listNews.concat(getPosts.data.data.reverse());
+                setListNews(datanew);
+                setPage(pageGain + 1);
+
+               
+            }
+        }
+      
+        
+        if(load) setIsLoadingRender(false);
+
+    }
+    
+ 
+
+    const onRefresh = () => {
+      
         setRefresh(true);
         
-        wait(1500).then(() => {
-            getData(false);
-            getNews(false);
-            getHotNew(false);
+         wait(1500).then(() =>{
+            getData(false,topicSelect);
+            getNews(false,topicSelect);
+            getHotNew(false,topicSelect);
             setRefresh(false);
+         })
+     
+      };
 
-        });
-      }, [refresh]);
+    const handleLoadMore = () => {
+        
+        getNews2(true);
+        
+      
+    }
 
     return (
         <SafeAreaView style={styles.container}>
-            <Header title='posts' navigation={navigation} ></Header>
+            <Header title='posts' navigation={navigation} checkAction={true} onSearchScreen={() =>{navigation.navigate('SearchNew')}}>;
+            }}></Header>
             
             <View style={{marginVertical : 20}}>
             {isLoading ? <View style={{marginVertical : 20}}><ActivityIndicator size={25} color={colors.HoverColor}></ActivityIndicator></View> :
+                
                 <FlatList
-                    horizontal={true}
-                    data={listTopic}
-                    showsHorizontalScrollIndicator={false}
+                horizontal={true}
+                data={listTopic}
+                showsHorizontalScrollIndicator={false}
 
-                    keyExtractor={item => item.id}
-                    renderItem={({item}) => (
-                         <TouchableOpacity style={styles.tabStyle}>
-                            <Text style={styles.textTabStyle}>{locale == 'vi' ? item.name : item.nameEn}</Text>
-                        </TouchableOpacity>
-                    )}
-                >
+                keyExtractor={item => item.id}
+                renderItem={({item}) => (
+                     <TouchableOpacity onPress={() => {setTopicSelect(item._id);setPage(0)}} 
+                     style={[styles.tabStyle,{backgroundColor : topicSelect == item._id ? colors.HoverColor : null, borderWidth : topicSelect == item._id ?0 : 1 }]}>
+                        <Text style={styles.textTabStyle}>{locale == 'vi' ? item.name : item.nameEn}</Text>
+                    </TouchableOpacity>
+                )}
+            >
 
-                </FlatList>
+            </FlatList>
             }
             </View>
             <ScrollView
                  refreshControl={
                     <RefreshControl refreshing={refresh} onRefresh={onRefresh} />
                 }
+                showsVerticalScrollIndicator={false}
             >
             <View style={{marginLeft : '5%', marginBottom : 20, flexDirection : 'row'}}>
                 <View style={styles.tabBar}></View>
@@ -124,13 +174,13 @@ const News = ({navigation}) => {
             </View>
             <View>
             {isLoading2 ? <View><ActivityIndicator size={25} color={colors.HoverColor}></ActivityIndicator></View> :
-             <FlatList
+             listHotNews.length == 0 ? <Text style={{color : '#FFF',fontFamily : fonts.light, textAlign : 'center'}}>{t('chua_co_bai_viet')}</Text> : <FlatList
                     horizontal={true}
                     data={listHotNews}
                     pagingEnabled={true}
                     showsHorizontalScrollIndicator={false}
                     renderItem={({item}) => (
-                        <TouchableOpacity onPress={() => { setItems(item)  ;ModalRef.current.open()}} style={{justifyContent : 'center',width : width, alignItems : 'center'}}>
+                        <TouchableOpacity onPress={() => { setItems(item)  ;navigation.navigate('NewD',{item})}} style={{justifyContent : 'center',width : width, alignItems : 'center'}}>
                             <HotNewItem item={item}/>
                         </TouchableOpacity>
                             
@@ -147,19 +197,29 @@ const News = ({navigation}) => {
                 </Text>
             </View>
             <View>
-            {isLoading3 ? <View><ActivityIndicator size={25} color={colors.HoverColor}></ActivityIndicator></View> : <FlatList
-                    data={listHotNews}
+            {isLoading3 ? <View><ActivityIndicator size={25} color={colors.HoverColor}></ActivityIndicator></View> : 
+            listNews.length == 0 ? <Text style={{color : '#FFF',fontFamily : fonts.light, textAlign : 'center'}}>{t('chua_co_bai_viet')}</Text> : <FlatList
+                    data={listNews}
+  
+
+                    ListFooterComponent={() => 
+                       (isLoadingRender ?  <View><ActivityIndicator size={20} color={colors.HoverColor}></ActivityIndicator></View>  : 
+                        <TouchableOpacity style={{marginBottom : 10}} onPress={() => {handleLoadMore()}}>
+                            <Text style={{fontFamily : fonts.light,color : colors.HoverColor, textAlign : 'center'}}>{t('xem_them')}</Text>
+                        </TouchableOpacity>
+                        )
+                    }
                     renderItem={({item}) => (
-                        <TouchableOpacity  onPress={() => {setItems(item)  ;ModalRef.current.open()}} style={{justifyContent : 'center', alignItems : 'center', marginVertical : 10}}>
+                        <TouchableOpacity  onPress={() => {setItems(item)  ;navigation.navigate('NewD',{item})}} style={{justifyContent : 'center', alignItems : 'center', marginVertical : 10}}>
                             <HotNewItem2 item={item}/>
                         </TouchableOpacity>
                             
                     
                     )}
+                    
                 >
 
-            </FlatList>
-}
+            </FlatList>}
            
 
                 

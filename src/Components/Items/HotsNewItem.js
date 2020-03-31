@@ -19,8 +19,9 @@ const HotsNewItem = ({item}) => {
         dateS.setUTCFullYear(dateB.getFullYear());
         dateS.setUTCHours(dateB.getHours());
         dateS.setUTCMinutes(dateB.getMinutes());
+  
         
-        return dateS;
+        return dateB.getDate() + '/' + (dateB.getMonth()+1) + '/' + dateB.getFullYear() + ' ' + dateB.getHours() + ":" + dateB.getMinutes();
     }
     return (
         <View style={styles.container}>
@@ -36,15 +37,23 @@ const HotsNewItem = ({item}) => {
                      borderRadius : 5, 
                      opacity : 0.7, 
                      paddingVertical : 6,
+                     paddingHorizontal : 12, position : 'absolute'}}>
+
+                </View>
+                <View style={{
+                    width : '100%',
+                    height : 90,
+                     borderRadius : 5, 
+                     paddingVertical : 6,
                      paddingHorizontal : 12, position : 'relative'}}>
                     <Text style={{fontFamily : fonts.bold, color : '#FFF',fontSize : 13}}>{item.title}</Text>
 
                     <View style={{width : '100%', position : 'absolute', bottom : 0, left : 10, bottom : 10, flexDirection : 'row' ,justifyContent :'flex-start',alignItems : 'center'}}>
                         <Image style={{width : 26, height : 26, borderRadius : 13 }} source={{uri : item.author.avatar}}/>
-                       <View>
-                       <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>{item.author.fullname}</Text>
+                    <View>
+                    <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>{item.author.fullname}</Text>
                         <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 8, marginLeft : 5}}>({item.author.level})</Text>
-                       </View>
+                    </View>
 
                         <Icon name='eye' style={{marginLeft : 20}} size={20} color={colors.HoverColor}></Icon> 
                         <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>{item.view}</Text>
@@ -52,12 +61,11 @@ const HotsNewItem = ({item}) => {
 
                     <View style={{position : 'absolute', bottom : 15, right : 20}}>
                         <Text style={{fontFamily : fonts.light, color : '#FFF',fontSize : 11, marginLeft : 5}}>
-                            {moment(seTtimess()).fromNow()}
+                       {seTtimess()}
+
                         </Text>
 
                     </View>
-
-                    
                 </View>
             </ImageBackground>
 

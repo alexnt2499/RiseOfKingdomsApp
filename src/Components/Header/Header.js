@@ -14,7 +14,7 @@ import AppText from './../../Components/AppText';
 import {fonts,colors} from  './../../theme/theme';
 
 // create a component
-const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,checkPerson,checkWeb }) => {
+const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,onSearchScreen,checkBack,checkPerson,checkWeb,checkAction }) => {
     const renderBtn = () => {
         if(checkEquiq == true) {
            return   <Icon name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></Icon>
@@ -33,7 +33,14 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,chec
             }else return  <IconFa name={'calendar'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
         }
         else {
-            return  <TouchableOpacity onPress={() => {navigation.navigate('CommanderTab')}}><IconA name={'search1'} color='#FFF' size={25} style={{marginRight : 15}}></IconA></TouchableOpacity> 
+            return  <TouchableOpacity onPress={() => {
+                if(checkAction) {
+                    onSearchScreen()
+                }else {
+                    navigation.navigate('CommanderTab')}
+                }
+                }
+                ><IconA name={'search1'} color='#FFF' size={25} style={{marginRight : 15}}></IconA></TouchableOpacity> 
         }
     }
     return (
@@ -59,7 +66,7 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,checkBack,chec
 // define your styles
 const styles = StyleSheet.create({
     container: {
-       height : 50,
+       height : 55,
        width : '100%',
        flexDirection : 'row',
        justifyContent : 'center',

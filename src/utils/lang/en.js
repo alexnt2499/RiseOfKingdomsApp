@@ -105,7 +105,12 @@ export default {
     "posts" : "POSTS",
     "tin_moi_nhat" : "HOT POSTS",
     "tat_ca_bai_dang" : "ALL POST",
-    "view" : "views"
+    "view" : "views",
+    "input_keyword" : "Input keyword",
+    "chua_co_bai_viet" : "There are no posts on this topic yet",
+    "khong_tim_thay_ket_qua" : "No matching results were found",
+    "ket_qua_tim_duoc" : "results found",
+    "xem_them" : "view more"
 
     
 

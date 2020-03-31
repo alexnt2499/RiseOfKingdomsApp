@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component,forwardRef,useImperativeHandle, useState,useEffect } from 'react';
-import { View, Text, StyleSheet,TouchableOpacity, Dimensions,Image,ScrollView,Alert  } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity, Dimensions,Image,ScrollView  } from 'react-native';
 import Modal from "react-native-modal";
 import {colors,fonts} from './../../theme/theme';
 import {LocalizationContext} from './../../../App';
@@ -9,12 +9,17 @@ const {width, height} = Dimensions.get('window');
 import moment from 'moment'
 import BASE_URL from '../../utils/BASE_URL';
 import IconA from 'react-native-vector-icons/AntDesign';
+import ImageView from 'react-native-image-view';
 
 // create a component
 const NewModal = forwardRef((props,ref) => {
     const {t,locale} = React.useContext(LocalizationContext);
     const [isModalVisible,setIsModalVisible] = useState(false);
     const [time,setTime] = useState();
+    const [listImage,setListImage] = useState([]);
+    const [index,setIndex] = useState(0);
+    const [isImageViewVisible,setIsImageViewVisible] = useState(false);
+
     const close = () => {
         setIsModalVisible(false);
     }
@@ -29,9 +34,44 @@ const NewModal = forwardRef((props,ref) => {
         }
     });
 
-    useEffect(() => {
-    },[])
+  
 
+    useEffect(() => {
+        
+        getImage();
+    },[props])
+
+
+    const getImage = () => {
+        let list = [{
+            source: {
+                uri: props.item.thumnail,
+            },
+            width : '100%',
+            height : 200
+        }];
+
+        if(props.content) {
+            for (let i = 0; i < props.content.length; i++) {
+                const element = props.content[i];
+                if(element.type == 'image') {
+                    list.push({
+                        source: {
+                                     uri: element.value
+                                },
+                                width : '100%',
+                                height : 200
+                    ,})
+                }
+                
+            }
+        }
+
+        setListImage(list);
+        
+
+
+    }
    
     const seTtimess = () => {
         let dateS = new Date();
@@ -101,11 +141,11 @@ const NewModal = forwardRef((props,ref) => {
                             </Text>)
                         }
                         else if(value.type == 'image') {
-                            return(<View style={{marginVertical : 20}}>
-                                <Image resizeMode='center' source={{uri : value.value}} style={{width : '100%', borderRadius : 20 ,height : 150}}>
+                            return(<TouchableOpacity onPress={() => {setIsImageViewVisible(true)}} style={{marginVertical : 20}}>
+                                <Image resizeMode='cover' source={{uri : value.value}} style={{width : '100%', borderRadius : 20 ,height : 200}}>
                                 
                                 </Image>
-                            </View>)
+                            </TouchableOpacity>)
                         }else if(value.type == 'title') {
                             return(<Text style={{fontFamily : fonts.bold, color : colors.HoverColor,fontSize : 15, marginLeft : 5, marginVertical : 5}}>
                             {value.value}
@@ -115,7 +155,13 @@ const NewModal = forwardRef((props,ref) => {
                 </View>
                
               
-             
+                <ImageView
+                    images={listImage}
+                    onClose={() => {setIsImageViewVisible(false)}}
+                    imageIndex={index}
+                    isVisible={isImageViewVisible}
+                    renderFooter={(currentImage) => (<View><Text>My footer</Text></View>)}
+                />
              </ScrollView>
 
         </Modal>

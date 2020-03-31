@@ -8,10 +8,13 @@ import {name as appName} from './app.json';
 
 import PushNotification  from "react-native-push-notification"
 import AsyncStorage from '@react-native-community/async-storage';
+import Axios from 'axios';
+import BASE_URL from './src/utils/BASE_URL';
 
 
 
 AppRegistry.registerComponent(appName, () => {
+    Axios.get(`${BASE_URL}`)
     const getLang = async () => {
       
       let lang = await AsyncStorage.getItem('@lang');
@@ -24,6 +27,7 @@ AppRegistry.registerComponent(appName, () => {
      
     }
     getLang();
+    PushNotification.subscribeToTopic('news');
     PushNotification.configure({
         // (optional) Called when Token is generated (iOS and Android)
         onRegister: function(token) {
@@ -41,7 +45,7 @@ AppRegistry.registerComponent(appName, () => {
         },
       
         // ANDROID ONLY: GCM or FCM Sender ID (product_number) (optional - not required for local notifications, but is need to receive remote push notifications)
-        senderID: "YOUR GCM (OR FCM) SENDER ID",
+        senderID: "525868055299",
       
         // IOS ONLY (optional): default: all - Permissions to register.
         permissions: {

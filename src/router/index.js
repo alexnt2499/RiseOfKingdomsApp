@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity,Alert,Linking} from 'react-native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createStackNavigator,CardStyleInterpolators,TransitionSpecs } from '@react-navigation/stack';
 import {createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import {NavigationContainer } from '@react-navigation/native';
 import {createDrawerNavigator, DrawerContent,DrawerContentScrollView,DrawerItemList, DrawerItem} from '@react-navigation/drawer';
@@ -33,7 +33,7 @@ import WebViewTalent from './../Screen/WebView';
 import WebViewEvent from './../Screen/WebViewEvent';
 import NewsScreen from './../Screen/News/index';
 import NewsDetails from './../Screen/News/NewsDetails';
-
+import SearchNews from './../Screen/News/SearchNews';
 
 const HomeStack = () => (
     <Stack.Navigator
@@ -83,6 +83,9 @@ const NewsStack = () => (
          component={NewsScreen} 
          options={{headerShown : false}}
          />
+        
+
+     
           
     </Stack.Navigator>
 )
@@ -281,6 +284,18 @@ const BottomTab = () => (
         />
     </BTab.Navigator>
 )
+
+const config = {
+  animation: 'spring',
+  config: {
+    stiffness: 1000,
+    damping: 500,
+    mass: 3,
+    overshootClamping: true,
+    restDisplacementThreshold: 0.01,
+    restSpeedThreshold: 0.01,
+  },
+};
 const Drawer = createDrawerNavigator();
 const DrawerMenu = () => (
     <Drawer.Navigator
@@ -312,6 +327,9 @@ const DrawerMenu = () => (
             component={About}
             
         />
+        
+
+        
         
     </Drawer.Navigator>
 )
@@ -415,18 +433,74 @@ function CustomDrawerContent(props) {
       rewardedAd.load();
   }
   
+  const config2 = {
+    animation: 'spring',
+    gestureDirection : 'horizontal',
+    config: {
+      stiffness: 1000,
+      damping: 500,
+      mass: 3,
+      overshootClamping: true,
+      restDisplacementThreshold: 0.01,
+      restSpeedThreshold: 0.01,
+      
+    },
+  };
 
 
-export const AppContainer = () => (
-    <NavigationContainer>
-       
-    </NavigationContainer>
-)
 
 export const AppContainer2 = () => (
     <NavigationContainer>
-   
-            <DrawerMenu></DrawerMenu>
+            <Stack.Navigator>
+                <Stack.Screen
+                    name='HomDraw'
+                    component={DrawerMenu}
+                    headerShown={false}
+                    options={{
+                        headerShown : false,
+                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                        transitionSpec: {
+                          open: TransitionSpecs.TransitionIOSSpec,
+                          close: TransitionSpecs.TransitionIOSSpec,
+                        },
+                      }}
+                >
+
+                </Stack.Screen>
+                <Stack.Screen
+                    name='NewD'
+                    component={NewsDetails}
+                    headerShown={false}
+                    options={{
+                        headerShown : false,
+                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                        transitionSpec: {
+                            open: TransitionSpecs.TransitionIOSSpec,
+                            close: TransitionSpecs.TransitionIOSSpec,
+                          },
+                    }}
+                    
+                >
+
+                </Stack.Screen>
+
+                <Stack.Screen
+                    name='SearchNew'
+                    component={SearchNews}
+                    headerShown={false}
+                    options={{
+                        headerShown : false,
+                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                        transitionSpec: {
+                            open: TransitionSpecs.TransitionIOSSpec,
+                            close: TransitionSpecs.TransitionIOSSpec,
+                          },
+                    }}
+                    
+                >
+
+                </Stack.Screen>
+            </Stack.Navigator>
         
     </NavigationContainer>
 )

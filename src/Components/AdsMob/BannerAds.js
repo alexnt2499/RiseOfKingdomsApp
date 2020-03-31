@@ -11,7 +11,7 @@ const BannerAds = (props) => {
                     requestOptions={{
                         requestNonPersonalizedAdsOnly: true,
                     }}
-                    size={BannerAdSize.BANNER}
+                    size={BannerAdSize.SMART_BANNER}
                     onAdLoaded={() => {
                         console.log('Advert loaded');
                     }}

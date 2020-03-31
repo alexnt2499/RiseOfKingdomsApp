@@ -99,7 +99,7 @@ const HomeScreen = ({ navigation }) => {
                     resizeMode={'cover'} />
                 </View>
                 <View style={{justifyContent : 'center', alignItems : 'center',flexDirection : 'row', marginTop : 10}}>
-                        <TouchableOpacity style={{flexDirection : 'row'}} onPress={() => {navigation.navigate('WebViewEvent')}}>
+                        <TouchableOpacity style={{flexDirection : 'row'}} onPress={() => {navigation.navigate('NewTab')}}>
                             <IconFon name={'earth'} color='#FFF' size={20} style={{marginRight : 15}}></IconFon>
                             <AppText style={{fontFamily : fonts.italic,color : '#FFF'}} i18nKey={'view_event'}></AppText>
                         </TouchableOpacity>

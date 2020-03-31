@@ -105,7 +105,17 @@ export default {
     "posts" : "BÀI VIẾT",
     "tin_moi_nhat" : "bài đăng đáng chú ý",
     "tat_ca_bai_dang" : "tất cả bài đăng",
-    "view" : "lượt xem"
+    "view" : "lượt xem",
+    "input_keyword" : "Nhập từ khóa",
+    "chua_co_bai_viet" : "Chưa có bài viết nào từ chủ đề này",
+    "khong_tim_thay_ket_qua" : "Không tìm thấy kết quả phù hợp",
+    "ket_qua_tim_duoc" : "Kết quả tìm được",
+    "xem_them" : "xem thêm"
+
+
+
+
+
 
 
 
