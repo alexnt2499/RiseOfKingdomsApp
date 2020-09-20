@@ -6,20 +6,25 @@ import ListComander from './../../../database/ListCommander';
 import CardCommanders from './../../Items/CardCommander2';
 import ImageView from 'react-native-image-view';
 import {LocalizationContext} from './../../../../App';
+import ListCommanderEpic from '../../../database/ListCommanderEpic';
 
 // create a component
 const Talent = ({items, navigation}) => {
     const { t, locale, setLocale } = React.useContext(LocalizationContext);
     const [ListComanderU, setListCommanderU] = useState([]);
+    const [ListComanderUEpic, setListCommanderUEpic] = useState([]);
+
     const [listImage,setListImage] = useState([]);
     const [index,setIndex] = useState(0);
     const [isImageViewVisible,setIsImageViewVisible] = useState(false);
     useEffect(() => {
+       
         getData()
     },[items]);
 
     const getData = () => {
         let list = [];
+        let list2 = [];
         for (let index = 0; index < items.partner.length; index++) {
             const element = items.partner[index];
             for (let j = 0; j < ListComander.length; j++) {
@@ -34,9 +39,39 @@ const Talent = ({items, navigation}) => {
             }
             
         }
+
+  
+        
+       
+            if(items.partnerEpic) {
+                console.log(items.partnerEpic);
+
+                for (let index = 0; index < items.partnerEpic.length; index++) {
+                    const element = items.partnerEpic[index];
+                    for (let j = 0; j < ListCommanderEpic.length; j++) {
+                        const value = ListCommanderEpic[j];
+                        
+                        if(value.id == element) {
+                            console.log(value.id,element);
+        
+                            list2.push(value);
+                        }
+                        
+                    }
+                    
+                }
+            }
+    
+
+        console.log(list2,'hello');
+        
+        setListCommanderUEpic(list2);
+
         
         setListCommanderU(list);
     }
+
+   
    
     return (
         <ScrollView style={styles.container}>
@@ -69,7 +104,7 @@ const Talent = ({items, navigation}) => {
                 
                
             </View>
-            <FlatList 
+                <FlatList 
                     data={ListComanderU}
                     showsHorizontalScrollIndicator={false}
                   
@@ -77,9 +112,25 @@ const Talent = ({items, navigation}) => {
                     renderItem={({item, index, separators}) => (
                         <View
                             style={{marginVertical : 20}}
-                            onTouchEndCapture={() => {navigation.navigate('CommanderD',{items : item})}}
+                            onTouchEndCapture={() => {navigation.navigate('CommanderDPair',{items : item})}}
                           >
                               <CardCommanders items={item}></CardCommanders>
+                        </View>
+                      )}
+                >
+
+                </FlatList>
+                <FlatList 
+                    data={ListComanderUEpic}
+                    showsHorizontalScrollIndicator={false}
+                  
+                    keyExtractor={item => item.id}
+                    renderItem={({item, index, separators}) => (
+                        <View
+                            style={{marginVertical : 20}}
+                            onTouchEndCapture={() => {navigation.navigate('CommanderDPair',{items : item,checkEpic : true})}}
+                          >
+                              <CardCommanders checkEpic={true} items={item}></CardCommanders>
                         </View>
                       )}
                 >

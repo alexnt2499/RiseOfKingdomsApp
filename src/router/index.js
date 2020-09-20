@@ -34,6 +34,8 @@ import WebViewEvent from './../Screen/WebViewEvent';
 import NewsScreen from './../Screen/News/index';
 import NewsDetails from './../Screen/News/NewsDetails';
 import SearchNews from './../Screen/News/SearchNews';
+import TroopDetails from '../Screen/Troop/TroopDetails';
+import TroopCaculator from './../Screen/Tools/TroopCaculator';
 
 const HomeStack = () => (
     <Stack.Navigator
@@ -129,6 +131,11 @@ const ToolStack = () => (
          component={WebViewTalent} 
          options={{headerShown : false}}
         />
+         <Stack.Screen 
+         name='TroopTool'
+         component={TroopCaculator} 
+         options={{headerShown : false}}
+        />
 
 
     </Stack.Navigator>
@@ -176,8 +183,29 @@ const TroopStack = () => (
         <Stack.Screen 
             name='Troop'
             component={TroopScreen}
-            options={{headerShown : false}}
+            options={{
+                headerShown : false,
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                transitionSpec: {
+                  open: TransitionSpecs.TransitionIOSSpec,
+                  close: TransitionSpecs.TransitionIOSSpec,
+                },
+              }}
         />
+
+        <Stack.Screen 
+            name='TroopD'
+            component={TroopDetails}
+            options={{
+                headerShown : false,
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                transitionSpec: {
+                  open: TransitionSpecs.TransitionIOSSpec,
+                  close: TransitionSpecs.TransitionIOSSpec,
+                },
+              }}
+        />
+
 
       
     </Stack.Navigator>
@@ -500,6 +528,49 @@ export const AppContainer2 = () => (
                 >
 
                 </Stack.Screen>
+
+                <Stack.Screen
+                    name='TroopIndex'
+                    component={TroopStack}
+                    headerShown={false}
+                    options={{
+                        headerShown : false,
+                        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                        transitionSpec: {
+                            open: TransitionSpecs.TransitionIOSSpec,
+                            close: TransitionSpecs.TransitionIOSSpec,
+                          },
+                    }}
+                    
+                >
+
+                </Stack.Screen>
+
+                <Stack.Screen 
+                name='TroopToolHome'
+                component={TroopCaculator} 
+                options={{
+                    headerShown : false,
+                    cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+                    transitionSpec: {
+                        open: TransitionSpecs.TransitionIOSSpec,
+                        close: TransitionSpecs.TransitionIOSSpec,
+                      },
+                }}
+                />
+
+        <Stack.Screen 
+         name='CommanderDPair'
+         component={CommanderDetails} 
+         options={{
+            headerShown : false,
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            transitionSpec: {
+                open: TransitionSpecs.TransitionIOSSpec,
+                close: TransitionSpecs.TransitionIOSSpec,
+              },
+        }}
+        />
             </Stack.Navigator>
         
     </NavigationContainer>

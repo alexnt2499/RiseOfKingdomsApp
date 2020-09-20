@@ -14,8 +14,10 @@ import AppText from './../../Components/AppText';
 import {fonts,colors} from  './../../theme/theme';
 
 // create a component
-const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,onSearchScreen,checkBack,checkPerson,checkWeb,checkAction }) => {
+const Header = ({ navigation,nameIcon,checkCustom,title,checkEquiq,checkTool,checkLang,onSearchScreen,checkBack,checkPerson,checkWeb,checkAction }) => {
     const renderBtn = () => {
+        console.log(nameIcon);
+        
         if(checkEquiq == true) {
            return   <Icon name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></Icon>
 
@@ -30,7 +32,10 @@ const Header = ({ navigation,title,checkEquiq,checkTool,checkLang,onSearchScreen
                 return  <IconFa name={'shield-plus'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
             }else if(checkWeb == true) {
                 return  <IconFon name={'earth'} color='#FFF' size={25} style={{marginRight : 15}}></IconFon>
+            }else if(checkCustom == true) {
+                return <Icon name={nameIcon} color='#FFF' size={25} style={{marginRight : 15}}></Icon>
             }else return  <IconFa name={'calendar'} color='#FFF' size={25} style={{marginRight : 15}}></IconFa>
+            
         }
         else {
             return  <TouchableOpacity onPress={() => {

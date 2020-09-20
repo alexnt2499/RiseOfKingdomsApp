@@ -108,7 +108,8 @@ const CommanderDetails = ({route,navigation}) => {
         
     }
 
-
+    console.log(checkEpic);
+    
     return (
         <SafeAreaView style={styles.container}>
             <LinearGradient colors={colorg} style={styles.cardHeader}>

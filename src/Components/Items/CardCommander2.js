@@ -44,6 +44,8 @@ const MyComponent = ({items,checkEpic}) => {
     }
 
     const setColor = () => {
+        console.log(checkEpic);
+        
         if(checkEpic == true) {
             console.log(checkEpic + items.name)
 

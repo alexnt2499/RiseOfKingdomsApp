@@ -110,7 +110,28 @@ export default {
     "chua_co_bai_viet" : "Chưa có bài viết nào từ chủ đề này",
     "khong_tim_thay_ket_qua" : "Không tìm thấy kết quả phù hợp",
     "ket_qua_tim_duoc" : "Kết quả tìm được",
-    "xem_them" : "xem thêm"
+    "xem_them" : "xem thêm",
+    "troop" : "LÍNH",
+    "building" : "XÂY DỰNG",
+    "feature" : "Tính năng (mới ra mắt)",
+    "infantry" : "Bộ Binh",
+    "archer" : "Cung Thủ",
+    "cavalry" : "Kỵ Binh",
+    "xe" : "Xe",
+    "tier4" : "LÍNH 4",
+    "tier5" : "LÍNH 5",
+    "atk" : "TẤN CÔNG",
+    "def" : "PHÒNG THỦ",
+    "health" : "SỨC KHỎE",
+    "cal_troop" : "Tính luyện lính",
+    "train" : "HUẤN LUYỆN",
+    "update" : "NÂNG CẤP",
+    "total_time" : "Tổng thời gian huấn luyện",
+    "total_power" : "Tổng sức mạnh cộng thêm",
+    "vip" : "VIP"
+
+
+
 
 
 

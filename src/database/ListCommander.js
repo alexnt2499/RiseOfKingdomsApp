@@ -62,7 +62,11 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/11/takeda-field-battle-1024x575.jpg'
             }
         ],
-        partner : [],
+        partner : [
+            1,
+            
+        ],
+        partnerEpic : [],
         trangBi : 'kỵ binh'
     },
     {
@@ -133,7 +137,11 @@ export default [
            
         ],
         partner : [
-            2
+            22,
+            
+        ],
+        partnerEpic : [
+           
         ],
         trangBi : 'kỵ binh'
     },
@@ -198,7 +206,13 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/06/cao-cao-fatest-1024x740.jpg'
             }
         ],
-        partner : [],
+        partner : [
+            11,18,
+            
+        ],
+        partnerEpic : [
+           1,2,3,52
+        ],
         trangBi : 'kỵ binh'
     },
     {
@@ -262,7 +276,13 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/11/alexander-field-battle-rally-talent-tree-1024x473.png'
             }
         ],
-        partner : [],
+        partner : [
+            5,19,25
+            
+        ],
+        partnerEpic : [
+           4,54
+        ],
         trangBi : 'bộ binh'
     },
     {
@@ -326,7 +346,13 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/09/charlemagne-skill-build-1024x574.jpg'
             }
         ],
-        partner : [],
+        partner : [
+            15,17,13
+            
+        ],
+        partnerEpic : [
+            53,51
+        ],
         trangBi : ''
     },
     {
@@ -390,7 +416,13 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/11/charles-martel-field-battle-talent-tree-1-1024x575.png'
             }
         ],
-        partner : [],
+        partner : [
+            19,3,7,16
+            
+        ],
+        partnerEpic : [
+            4,54
+        ],
         trangBi : 'bộ binh'
     },
     {
@@ -457,7 +489,13 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/09/cleopatra-support-build-1024x558.jpg',
             }
         ],
-        partner : [],
+        partner : [
+           21
+            
+        ],
+        partnerEpic : [
+            26
+        ],
         trangBi : 'thu gom'
     },
     {
@@ -525,7 +563,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/11/constantine-garrison-tree-2-1024x577.png'
         }],
-        partner : [],
+        partner : [
+            5,19,16
+        ],
+        partnerEpic : [
+            4,54
+        ],
         trangBi : 'bộ binh'
     },
     {
@@ -597,7 +640,12 @@ export default [
             uri : 'https://rok.guide/wp-content/uploads/2019/07/edward-of-woodstock-skill-tree-3-1024x576.png'
         }
 ],
-        partner : [],
+        partner : [
+            23,25
+        ],
+        partnerEpic : [
+            5,16
+        ],
         trangBi : 'cung thủ'
     },
     {
@@ -662,7 +710,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/09/el-cid-skill-tree-1024x558.jpg'
         }],
-        partner : [],
+        partner : [
+            25
+        ],
+        partnerEpic : [
+            5,16
+        ],
         trangBi : 'cung thủ'
     },
     {
@@ -730,7 +783,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/06/uncle-fred-ultimate-build-1024x677.jpg'
         }],
-        partner : [],
+        partner : [
+            17,15
+        ],
+        partnerEpic : [
+            51,1
+        ],
         trangBi : ''
     },
     {
@@ -795,7 +853,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/06/genghis-khan-talent-tree-1024x576.png'
         },],
-        partner : [],
+        partner : [
+            2,20,18,
+        ],
+        partnerEpic : [
+            52,1,2
+        ],
         trangBi : 'kỵ binh'
     },
     {
@@ -857,8 +920,13 @@ export default [
         talentTree : [ {
             uri : 'https://rok.guide/wp-content/uploads/2019/11/Guan-Yu-Field-Battle-1024x684.jpg'
         },],
-        partner : [],
-        trangBi : 'kỵ binh'
+        partner : [
+            16,3
+        ],
+        partnerEpic : [
+            54,4
+        ],
+        trangBi : 'bộ binh'
     },
     {
         id: 13,
@@ -922,7 +990,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/11/hannibal-barca-rally-attack-tree-1024x576.png'
         }],
-        partner : [],
+        partner : [
+            15,10
+        ],
+        partnerEpic : [
+            51,
+        ],
         trangBi : ''
     },
     {
@@ -984,7 +1057,12 @@ export default [
         talentTree : [{
             uri : 'https://riseofkingdomsguides.com/wp-content/uploads/2020/01/Ishida-Mitsunari-.jpg'
         }],
-        partner : [],
+        partner : [
+            6,21
+        ],
+        partnerEpic : [
+            26
+        ],
         trangBi : 'thu gom'
     },
     {
@@ -1052,7 +1130,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/06/julius-talent-tree-1-1024x576.png'
         }],
-        partner : [],
+        partner : [
+            13,10
+        ],
+        partnerEpic : [
+            51,53,1
+        ],
         trangBi : ''
     },
     {
@@ -1114,7 +1197,12 @@ export default [
         talentTree : [ {
             uri : 'https://rok.guide/wp-content/uploads/2019/11/Leonidas-Field-Battle-1024x576.jpg'
         }],
-        partner : [],
+        partner : [
+            12,5,19,3
+        ],
+        partnerEpic : [
+            54,4,53
+        ],
         trangBi : 'bộ binh'
     },
     {
@@ -1179,7 +1267,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/09/mehmed-ii-pvp-map-build-1024x570.jpg'
         }],
-        partner : [],
+        partner : [
+            13,10,15
+        ],
+        partnerEpic : [
+            51,53,1
+        ],
         trangBi : ''
     },
     {
@@ -1241,7 +1334,12 @@ export default [
         talentTree : [{
             uri : 'https://rok.guide/wp-content/uploads/2019/06/minamoto-no-yoshitsune-talent-1024x576.png'
         }],
-        partner : [],
+        partner : [
+            2,11
+        ],
+        partnerEpic : [
+            1,2,3,52
+        ],
         trangBi : 'kỵ binh'
     },
     {
@@ -1309,7 +1407,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/09/richard-i-infantry-talent-1024x570.jpg'
         }],
-        partner : [],
+        partner : [
+            5,3,16,12,25,26
+        ],
+        partnerEpic : [
+            54,4,53,3,26
+        ],
         trangBi : 'bộ binh'
     },
     {
@@ -1371,7 +1474,12 @@ export default [
         talentTree : [{
             uri : 'https://rok.guide/wp-content/uploads/2019/06/saladin-talent-tree-1024x576.png'
         },],
-        partner : [],
+        partner : [
+            11,2
+        ],
+        partnerEpic : [
+            1,2,53,52,51
+        ],
         trangBi : 'kỵ binh'
     },
     {
@@ -1433,7 +1541,12 @@ export default [
         talentTree : [ {
             uri : 'https://riseofkingdomsboss.com/wp-content/uploads/2020/02/Seondeok-build-rise-of-kingdoms-768x439.jpg'
         }],
-        partner : [],
+        partner : [
+            6
+         ],
+         partnerEpic : [
+            26
+         ],
         trangBi : 'thu gom'
     },
     {
@@ -1495,7 +1608,12 @@ export default [
         talentTree : [{
             uri : 'https://rok.guide/wp-content/uploads/2019/09/Tomyris-1024x576.jpg'
         },],
-        partner : [],
+        partner : [
+            8,25
+         ],
+         partnerEpic : [
+            5,16
+         ],
         trangBi : 'cung thủ'
     },
     {
@@ -1563,7 +1681,12 @@ export default [
         {
             uri : 'https://rok.guide/wp-content/uploads/2019/10/wu-zetian-talent-tree-open-field-1024x650.jpg'
         }],
-        partner : [],
+        partner : [
+            19,7,5,25            
+        ],
+        partnerEpic : [
+            4,54
+        ],
         trangBi : ''
     },
     {
@@ -1630,7 +1753,12 @@ export default [
                 uri : 'https://rok.guide/wp-content/uploads/2019/09/Yi_Seong-Gye-1024x576.jpg'
             }
         ],
-        partner : [],
+        partner : [
+            19,7,5,8,24,23,26            
+        ],
+        partnerEpic : [
+            5,16,54,3
+        ],
         trangBi : 'cung thủ'
     },
     {

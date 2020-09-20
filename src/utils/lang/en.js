@@ -110,7 +110,28 @@ export default {
     "chua_co_bai_viet" : "There are no posts on this topic yet",
     "khong_tim_thay_ket_qua" : "No matching results were found",
     "ket_qua_tim_duoc" : "results found",
-    "xem_them" : "view more"
+    "xem_them" : "view more",
+    "troop" : "TROOPS",
+    "building" : "BUILDING",
+    "feature" : "Feature (new)",
+    "infantry" : "Infantry",
+    "archer" : "Archer",
+    "cavalry" : "Cavalry",
+    "xe" : "Siege",
+    "tier4" : "TIER 4",
+    "tier5" : "LIER 5",
+    "atk" : "ATTACK",
+    "def" : "DEFENSE",
+    "health" : "HEALTH",
+    "cal_troop" : "Traning calculator",
+    "train" : "TRAINING",
+    "update" : "UPDATE",
+    "input_number" : "Number of troop to train",
+    "training_buff" : "Total training buff %",
+    "total_time" : "TOTAL TIME",
+    "total_power" : "TOTAL POWER",
+    "vip" : "VIP"
+
 
     
 

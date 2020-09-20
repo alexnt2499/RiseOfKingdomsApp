@@ -364,7 +364,7 @@ export default [
             
             },
             {
-                image : require('./../../assets/images/Commander/Epic/Joan/skill2.png') ,
+                image : require('./../../assets/images/Commander/Epic/Joan/skill3.png') ,
                 name : 'Nơi ẩn náu',
                 type : 'Bị động',
                 rage : '',

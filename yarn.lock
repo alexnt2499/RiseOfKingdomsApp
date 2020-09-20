@@ -1393,6 +1393,11 @@ ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+all@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/all/-/all-0.0.0.tgz#fb2aa75d4759d40e39ecbb118fabf0cc11ff554f"
+  integrity sha1-+yqnXUdZ1A457LsRj6vwzBH/VU8=
+
 ansi-colors@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-1.1.0.tgz#6374b4dd5d4718ff3ce27a671a3b1cad077132a9"
@@ -6589,6 +6594,11 @@ react-native-scrollable-tab-view@^1.0.0:
     create-react-class "^15.6.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
+
+react-native-shared-element@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/react-native-shared-element/-/react-native-shared-element-0.6.1.tgz#fc81d43eb6c8af5c087a174161f34e007039fa25"
+  integrity sha512-hQebSp3sGBFGFblFy1uBN/XRZUb7gTQm37KSiC3KxmqtaFZm2T+984yvA9N04DyopFCVGQkrj1I2MXafNIpP8Q==
 
 react-native-snap-carousel@*:
   version "3.8.4"

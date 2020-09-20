@@ -26,7 +26,7 @@ const SearchNews = ({navigation}) => {
 
         let getPosts = await Axios.get(`${BASE_URL}/api/posts/getAllPost?page=${page}&lang=${locale}`);
         if(getPosts.data.status == 200) {
-            console.log(getPosts.data.data);
+           
             
             setListNews(getPosts.data.data.reverse());
         }
@@ -36,11 +36,10 @@ const SearchNews = ({navigation}) => {
 
     const onSearch = async (keyword) => {
      setIsLoading3(true);
-        console.log(keyword);
+        
         
         let getPosts = await Axios.get(`${BASE_URL}/api/posts/getByKeyword?keyword=${keyword}&lang=${locale}`);
         if(getPosts.data.status == 200) {
-            console.log(getPosts.data.data);
             
             setListNews(getPosts.data.data.reverse());
         }

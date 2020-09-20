@@ -16,7 +16,7 @@ import {LocalizationContext} from './../../App';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconFA5 from 'react-native-vector-icons/FontAwesome5';
 import IconFon from 'react-native-vector-icons/Fontisto';
-
+import IconButton from './../Components/Buttons/IconButtonNots';
 import BannerAds2 from './../Components/AdsMob/BannerAds';
 import AsyncStorage from '@react-native-community/async-storage';
 import { InterstitialAd,AdEventType  } from '@react-native-firebase/admob';
@@ -98,11 +98,37 @@ const HomeScreen = ({ navigation }) => {
                     resizeMethod={'resize'}
                     resizeMode={'cover'} />
                 </View>
-                <View style={{justifyContent : 'center', alignItems : 'center',flexDirection : 'row', marginTop : 10}}>
-                        <TouchableOpacity style={{flexDirection : 'row'}} onPress={() => {navigation.navigate('NewTab')}}>
-                            <IconFon name={'earth'} color='#FFF' size={20} style={{marginRight : 15}}></IconFon>
-                            <AppText style={{fontFamily : fonts.italic,color : '#FFF'}} i18nKey={'view_event'}></AppText>
-                        </TouchableOpacity>
+
+                
+                <View style={{width : '100%', alignItems : 'flex-start', paddingHorizontal : '5%',paddingVertical : 10, marginTop : 10, flexDirection : 'row'}}>
+                    <IconFA5 name='grin-stars' size={21} color='orange' ></IconFA5>
+                    <AppText i18nKey='feature' style={{...styles.textStyle,color : 'orange', marginLeft : 8}}>
+                      
+                    </AppText>
+                </View>
+        
+
+                <View style={{justifyContent : 'space-between', paddingHorizontal : 40, paddingVertical : 10, flexDirection : 'row', alignItems : 'center', width : '100%'}}>
+                    <View style={{justifyContent : 'center', alignItems : 'center'}}>
+                        <IconButton
+                        onPress={() => {navigation.navigate('TroopIndex')}}
+                        nameIcon='chess-knight' styleIconBtn={{backgroundColor : colors.HoverColor}}></IconButton>
+                        <AppText style={{fontFamily : fonts.bold,color : '#FFF', marginTop : 10}} i18nKey={'troop'}></AppText>
+                    </View>
+                    <View style={{justifyContent : 'center', alignItems : 'center'}}>
+                        <IconButton 
+                        onPress={() => {navigation.navigate('TroopIndex')}}
+                        nameIcon='chess-queen' styleIconBtn={{backgroundColor : '#ff995e'}}></IconButton>
+                        <AppText style={{fontFamily : fonts.bold,color : '#FFF', marginTop : 10}} i18nKey={'vip'}></AppText>
+                    </View>
+                    <View style={{justifyContent : 'center', alignItems : 'center'}}>
+                        <IconButton 
+                        onPress={() => {navigation.navigate('NewTab')}}
+                        nameIcon='book-dead' styleIconBtn={{backgroundColor : '#734b6d'}}></IconButton>
+                        <AppText style={{fontFamily : fonts.bold,color : '#FFF', marginTop : 10}} i18nKey={'posts'}></AppText>
+                    </View>
+
+
                 </View>
 
                 <View style={{width : '100%', alignItems : 'flex-start', paddingHorizontal : '5%',paddingVertical : 10, flexDirection : 'row'}}>
